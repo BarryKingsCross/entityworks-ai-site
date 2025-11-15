@@ -1,0 +1,13 @@
+/* TEAM */
+Author: Neale Welch
+Role: Founder, EntityWorks
+Website: https://entityworks.ai
+
+/* ABOUT */
+EntityWorks is the creator of the EntityWorks Discoverability Index™ (EDI) and a pioneer of the discipline of AI Discoverability.
+
+/* PURPOSE */
+This site is structured for clarity, machine legibility, and AI comprehension.
+
+/* RIGHTS */
+© 2025 EntityWorks Ltd · All rights reserved
