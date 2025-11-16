@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Entity Understanding Layer™ — How AI Systems Interpret Entities</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="EntityWorks introduces the Entity Understanding Layer™ — a conceptual model describing how modern AI systems interpret, stabilise, and surface entities such as businesses and organisations.">
+  <link rel="canonical" href="https://entityworks.ai/entity-understanding-layer.html">
+
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0057ff">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="msapplication-TileColor" content="#0057ff">
+  <meta name="theme-color" content="#ffffff">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 0 1rem;
+      color: #111;
+    }
+    header, footer {
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+    nav a {
+      margin-right: 1rem;
+      font-size: 0.95rem;
+      text-decoration: none;
+      color: #0057ff;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h2 {
+      margin-top: 1.75rem;
+    }
+    h3 {
+      margin-top: 1.25rem;
+    }
+    .highlight {
+      padding: 0.75rem 1rem;
+      border-left: 3px solid #0057ff;
+      background: #f5f7ff;
+      margin: 1.5rem 0;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Entity Understanding Layer™ — How AI Systems Interpret Entities",
+    "description": "EntityWorks introduces the Entity Understanding Layer™ — a conceptual model describing how modern AI systems interpret, stabilise, and surface entities such as businesses and organisations.",
+    "url": "https://entityworks.ai/entity-understanding-layer.html",
+    "about": {
+      "@type": "Thing",
+      "name": "Entity Understanding Layer",
+      "description": "A conceptual model defining the internal behaviours AI systems use to interpret, stabilise, and surface entities."
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "EntityWorks"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Entity Understanding Layer™</h1>
+    <p>How modern AI systems interpret, stabilise, and surface entities.</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/category-creation-declaration.html">Category Declaration</a>
+      <a href="/defining-ai-discoverability.html">Defining the Discipline</a>
+      <a href="/position-on-ai-discoverability.html">EntityWorks Position</a>
+      <a href="/discoverability-index.html">Discoverability Index</a>
+      <a href="/lexicon.html">Lexicon</a>
+      <a href="/entity-understanding-layer.html">Entity Understanding Layer</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>What Is the Entity Understanding Layer™?</h2>
+      <p>
+        The <strong>Entity Understanding Layer™ (EUL)</strong> is a conceptual model describing the core behaviours
+        modern AI systems use when they form an understanding of an entity — such as a business, organisation, or individual.
+      </p>
+      <p>
+        It does not describe a specific algorithm or vendor implementation. Instead, it provides a clear, neutral way to
+        talk about <em>what must be happening</em> inside any AI system that can reliably answer questions like:
+      </p>
+      <ul>
+        <li>“Who is this organisation?”</li>
+        <li>“What does this company do?”</li>
+        <li>“Is this the same entity as the one mentioned elsewhere?”</li>
+        <li>“Should I mention this business in my answer?”</li>
+      </ul>
+      <p>
+        The EUL is part of EntityWorks’ broader effort to formalise the discipline of <strong>AI Discoverability</strong>.
+      </p>
+    </section>
+
+    <section>
+      <h2>The Six Behaviours of the Entity Understanding Layer™</h2>
+      <p>
+        The Entity Understanding Layer describes six core behaviours that, taken together, explain how AI systems
+        interpret and work with entities.
+      </p>
+
+      <h3>1. Meaning Construction</h3>
+      <p>
+        AI systems first need to determine <strong>what an entity is</strong>. Meaning Construction is the process of
+        turning raw information (text, schema, descriptions, metadata) into a coherent understanding such as
+        “this is a B2B software company” or “this is a retail brand”.
+      </p>
+
+      <h3>2. Identity Embedding</h3>
+      <p>
+        Once the AI understands what the entity is, it creates an internal representation so it can recognise and
+        reason about that entity later. This includes attributes (name, type, sector), relationships, and context.
+      </p>
+
+      <h3>3. Entity Corroboration</h3>
+      <p>
+        AI systems are exposed to many sources that may or may not be talking about the same entity. Entity Corroboration
+        is how the system reconciles those sources, resolves ambiguity, and determines whether they align or conflict.
+      </p>
+
+      <h3>4. Semantic Stabilisation</h3>
+      <p>
+        As new information appears, AI systems need to avoid changing their understanding too aggressively in response
+        to isolated noise. Semantic Stabilisation is how they maintain a reasonably stable picture of an entity over time.
+      </p>
+
+      <h3>5. Conversational Surfacing</h3>
+      <p>
+        Even if an entity is known, AI systems still have to decide whether to mention it in a particular answer.
+        Conversational Surfacing is the behaviour that determines if, when, and how an entity appears in responses.
+      </p>
+
+      <h3>6. Trust Resolution</h3>
+      <p>
+        Finally, AI systems must decide how much confidence to place in what they “know” about an entity. Trust Resolution
+        covers how they weigh different sources, favour corroborated information, and de-emphasise conflicting or low-quality signals.
+      </p>
+    </section>
+
+    <section>
+      <h2>How the EUL Relates to AI Discoverability and the EDI</h2>
+      <p>
+        The Entity Understanding Layer™ explains <strong>how AI systems internally process entities</strong>.
+        The discipline of <strong>AI Discoverability</strong> focuses on how clearly and consistently a business presents
+        itself to those systems.
+      </p>
+      <p>
+        The <strong>EntityWorks Discoverability Index™ (EDI)</strong> measures how well an organisation’s public footprint
+        supports machine understanding. In simple terms:
+      </p>
+      <ul>
+        <li>The <strong>EDI</strong> evaluates the inputs AI systems receive about your entity.</li>
+        <li>The <strong>Entity Understanding Layer™</strong> describes what those systems do with that information.</li>
+      </ul>
+      <p>
+        Together, they form a complete mental model for:
+      </p>
+      <ul>
+        <li>how a business shows up to AI, and</li>
+        <li>how AI turns that presence into decisions, answers, and representations.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Why Defining This Layer Matters</h2>
+      <p>
+        As AI systems become the primary interface between people and information, organisations are increasingly represented
+        to the world through AI-generated answers, summaries, and recommendations.
+      </p>
+      <p>
+        Having a clear framework for the Entity Understanding Layer™ helps businesses:
+      </p>
+      <ul>
+        <li>understand why AI may misinterpret or overlook them</li>
+        <li>identify where their machine-readable presence is causing confusion</li>
+        <li>align their digital footprint with how AI systems actually process entities</li>
+        <li>have a structured vocabulary for working with AI-era consultants and auditors</li>
+      </ul>
+      <p>
+        For EntityWorks, the EUL acts as the conceptual foundation beneath AI Discoverability and the EDI.
+      </p>
+    </section>
+
+    <section>
+      <h2>Using the Entity Understanding Layer™ in Practice</h2>
+      <p>
+        The EUL is a lens for asking better questions about how AI sees your organisation. For example:
+      </p>
+      <ul>
+        <li><strong>Meaning Construction:</strong> Is it obvious, in machine-readable form, what we are and what we do?</li>
+        <li><strong>Identity Embedding:</strong> Are our name, descriptions, and key attributes consistent across sources?</li>
+        <li><strong>Entity Corroboration:</strong> Do major references to our organisation agree, or do they contradict each other?</li>
+        <li><strong>Semantic Stabilisation:</strong> Are we changing our messaging so often that AI cannot form a stable picture?</li>
+        <li><strong>Conversational Surfacing:</strong> When we test AI systems with realistic prompts, do we appear where we should?</li>
+        <li><strong>Trust Resolution:</strong> Are we giving AI systems strong, credible, corroborated signals about who we are?</li>
+      </ul>
+      <p>
+        These questions turn a vague concern — “How do AIs see us?” — into a structured, diagnosable set of problems.
+      </p>
+    </section>
+
+    <section class="highlight">
+      <p>
+        <strong>EntityWorks introduces the Entity Understanding Layer™ as part of its mission to define, structure, and formalise the discipline of AI Discoverability.</strong>
+      </p>
+    </section>
+  </main>
+
+  <p style="font-size: 0.85rem; color: #888; margin-top: 3rem;">
+    Last updated: November 2025
+  </p>
+
+  <div id="footer"></div>
+  <script>
+    fetch("/footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+</body>
+</html>
