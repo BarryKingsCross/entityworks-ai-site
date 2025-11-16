@@ -7,7 +7,6 @@
   <meta name="description"
         content="The EntityWorks Lexicon defines the core vocabulary of AI Discoverability, including key terms used in the EntityWorks Discoverability Index™ (EDI) and Presence Stack™.">
   <link rel="canonical" href="https://entityworks.ai/lexicon.html">
-
   <style>
     body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; margin: 2rem auto; max-width: 900px; padding: 0 1rem; color: #111; }
     header, footer { margin-bottom: 2rem; }
@@ -20,7 +19,6 @@
     .intro { margin-top: 1rem; }
     .tagline { font-style: italic; margin-top: 0.5rem; }
   </style>
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,7 +38,6 @@
   }
   </script>
 </head>
-
 <body>
   <header>
     <h1>EntityWorks Lexicon</h1>
@@ -50,7 +47,6 @@
     <p class="tagline">
       These definitions support the EntityWorks Discoverability Index™ (EDI) and the Presence Stack™ model.
     </p>
-
     <nav>
       <a href="/">Home</a>
       <a href="/category-creation-declaration.html">Category Declaration</a>
@@ -81,6 +77,14 @@
         <dd>
           How confidently an AI system can determine what an organisation is, what it does, and what it offers
           based on available information.
+        </dd>
+
+        <dt>Entity Understanding Layer™</dt>
+        <dd>
+          A conceptual model describing the six internal behaviours AI systems use to interpret, stabilise,
+          and surface entities: Meaning Construction, Identity Embedding, Entity Corroboration, Semantic
+          Stabilisation, Conversational Surfacing, and Trust Resolution. It represents the underlying
+          machine-interpretation layer that determines how an entity is understood across models.
         </dd>
 
         <dt>Representation Drift</dt>
@@ -189,15 +193,14 @@
   <p style="font-size: 0.85rem; color: #888; margin-top: 3rem;">
     Last updated: November 2025
   </p>
-
+  
   <div id="footer"></div>
   <script>
     fetch("/footer.html")
-      .then(response => response.text())
-      .then(data => {
+      .then((response) => response.text())
+      .then((data) => {
         document.getElementById("footer").innerHTML = data;
       });
   </script>
-
 </body>
 </html>
