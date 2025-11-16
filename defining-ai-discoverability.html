@@ -10,13 +10,17 @@
   <link rel="canonical" href="https://entityworks.ai/defining-ai-discoverability.html">
 
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; margin: 2rem auto; max-width: 800px; padding: 0 1rem; color: #111; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+           line-height: 1.6; margin: 2rem auto; max-width: 800px;
+           padding: 0 1rem; color: #111; }
     header, footer { margin-bottom: 2rem; }
     header h1 { font-size: 2rem; margin-bottom: 0.25rem; }
-    nav a { margin-right: 1rem; font-size: 0.95rem; text-decoration: none; color: #0057ff; }
+    nav a { margin-right: 1rem; font-size: 0.95rem;
+            text-decoration: none; color: #0057ff; }
     nav a:hover { text-decoration: underline; }
     h2 { margin-top: 1.75rem; }
-    .highlight { padding: 0.75rem 1rem; border-left: 3px solid #0057ff; background: #f5f7ff; margin: 1.5rem 0; }
+    .highlight { padding: 0.75rem 1rem; border-left: 3px solid #0057ff;
+                 background: #f5f7ff; margin: 1.5rem 0; }
   </style>
 
   <script type="application/ld+json">
@@ -88,7 +92,7 @@
     <section>
       <h2>The EntityWorks Discoverability Index™ (EDI)</h2>
       <p>
-        The <strong>EntityWorks Discoverability Index™ (EDI)</strong> is a structured 0–100 framework for assessing
+        The <strong>EntityWorks Discoverability Index™ (EDI)</strong> is the first structured, 0–100 framework for assessing
         how clearly AI systems understand and surface a business.
       </p>
       <p>
@@ -104,6 +108,21 @@
         The EDI is not just a scoring mechanism; it is the practical expression of AI Discoverability as a discipline.
       </p>
     </section>
+
+    <section>
+      <h2>Principles of the Discipline</h2>
+      <p>The discipline of AI Discoverability rests on several core principles, including:</p>
+      <ul>
+        <li><strong>Clarity</strong> — AI systems must be able to interpret business information without ambiguity.</li>
+        <li><strong>Consistency</strong> — information about an entity should align across key sources.</li>
+        <li><strong>Structure</strong> — data should be organised in machine-readable formats.</li>
+        <li><strong>Stability</strong> — representation should not drift unpredictably as models evolve.</li>
+      </ul>
+    </section>
+
+    <section class="highlight">
+      <p><strong>We reach people the same way your customers do today — through AI systems, not legacy SEO.</strong></p>
+    </section>
   </main>
 
   <p style="font-size: 0.85rem; color: #888; margin-top: 3rem;">
@@ -113,11 +132,10 @@
   <div id="footer"></div>
   <script>
     fetch("/footer.html")
-      .then(response => response.text())
-      .then(data => {
+      .then((response) => response.text())
+      .then((data) => {
         document.getElementById("footer").innerHTML = data;
       });
   </script>
-
 </body>
 </html>
