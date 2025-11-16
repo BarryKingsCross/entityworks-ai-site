@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://entityworks.ai/</loc>
   </url>
-
   <url>
     <loc>https://entityworks.ai/category-creation-declaration.html</loc>
   </url>
-
   <url>
     <loc>https://entityworks.ai/defining-ai-discoverability.html</loc>
   </url>
-
   <url>
     <loc>https://entityworks.ai/position-on-ai-discoverability.html</loc>
   </url>
-
+  <url>
+    <loc>https://entityworks.ai/discoverability-index.html</loc>
+  </url>
   <url>
     <loc>https://entityworks.ai/lexicon.html</loc>
   </url>
-
   <url>
     <loc>https://entityworks.ai/privacy.html</loc>
   </url>
-
   <url>
     <loc>https://entityworks.ai/legal.html</loc>
   </url>
-
 </urlset>
