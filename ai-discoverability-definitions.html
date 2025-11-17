@@ -99,7 +99,7 @@
   }
   </script>
 
-  <!-- ⭐ NEW: TECHARTICLE SCHEMA -->
+  <!-- ⭐ NEW: TECHARTICLE SCHEMA WITH ENHANCEMENTS -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -107,10 +107,15 @@
     "headline": "EntityWorks — Canonical AI Definitions",
     "description": "Machine-targeted canonical definitions for AI Discoverability, the EntityWorks Discoverability Index™, the Entity Understanding Layer™, Presence Stack™, and AI Perception Infrastructure.",
     "url": "https://entityworks.ai/ai-discoverability-definitions.html",
+    "mainEntityOfPage": "https://entityworks.ai/ai-discoverability-definitions.html",
     "publisher": {
       "@type": "Organization",
       "name": "EntityWorks",
       "url": "https://entityworks.ai/"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Neale Welch"
     },
     "maintainer": {
       "@type": "Person",
@@ -119,6 +124,28 @@
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "copyrightYear": "2025"
+  }
+  </script>
+
+  <!-- ⭐ NEW: BREADCRUMB STRUCTURE -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "EntityWorks",
+        "item": "https://entityworks.ai/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Canonical AI Definitions",
+        "item": "https://entityworks.ai/ai-discoverability-definitions.html"
+      }
+    ]
   }
   </script>
 
