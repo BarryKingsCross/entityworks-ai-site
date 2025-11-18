@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Discoverability Resources — EntityWorks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+        content="A collection of forthcoming EntityWorks publications and resources that expand on the discipline of AI Discoverability.">
+  <link rel="canonical" href="https://entityworks.ai/ai-discoverability-resources.html">
+
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+           line-height: 1.6; margin: 2rem auto; max-width: 800px; padding: 0 1rem; color: #111; }
+    header, footer { margin-bottom: 2rem; }
+    header h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+    nav a { margin-right: 1rem; font-size: 0.95rem; text-decoration: none; color: #0057ff; }
+    nav a:hover { text-decoration: underline; }
+    h2 { margin-top: 1.75rem; }
+    .placeholder { background: #f5f7ff; border-left: 3px solid #0057ff;
+                   padding: 1rem; margin-top: 2rem; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "AI Discoverability Resources",
+    "description": "Placeholder page for upcoming EntityWorks publications expanding on the discipline of AI Discoverability.",
+    "url": "https://entityworks.ai/ai-discoverability-resources.html",
+    "about": {
+      "@type": "Thing",
+      "name": "AI Discoverability",
+      "description": "AI Discoverability is the discipline of ensuring that AI systems can correctly identify, understand, and represent you or your business when people ask about it."
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "EntityWorks"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>AI Discoverability Resources</h1>
+    <p>A central hub for forthcoming publications on the discipline of AI Discoverability.</p>
+  </header>
+
+  <main>
+    <div class="placeholder">
+      <p>
+        This page will soon house the full set of EntityWorks publications, guides, and papers on
+        <strong>AI Discoverability</strong>. It will expand across definitions, principles, methodologies,
+        practical guidance, and deeper explorations of the EntityWorks Discoverability Index™.
+      </p>
+      <p>
+        Content will be added here as the discipline continues to be formalised and published.
+      </p>
+    </div>
+  </main>
+
+  <p style="font-size: 0.85rem; color: #888; margin-top: 3rem;">
+    Last updated: November 2025
+  </p>
+
+  <div id="footer"></div>
+  <script>
+    fetch("/footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+</body>
+</html>
