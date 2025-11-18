@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Perception — EntityWorks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+        content="A placeholder for EntityWorks’ upcoming work on AI Perception — the broader discipline that explains how AI systems interpret and represent organisations.">
+  <link rel="canonical" href="https://entityworks.ai/ai-perception.html">
+
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+           line-height: 1.6; margin: 2rem auto; max-width: 800px; padding: 0 1rem; color: #111; }
+    header, footer { margin-bottom: 2rem; }
+    header h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+    nav a { margin-right: 1rem; font-size: 0.95rem; text-decoration: none; color: #0057ff; }
+    nav a:hover { text-decoration: underline; }
+    h2 { margin-top: 1.75rem; }
+    .placeholder { background: #f5f7ff; border-left: 3px solid #0057ff;
+                   padding: 1rem; margin-top: 2rem; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "AI Perception",
+    "description": "Placeholder page for upcoming EntityWorks publications defining and developing the discipline of AI Perception.",
+    "url": "https://entityworks.ai/ai-perception.html",
+    "about": {
+      "@type": "Thing",
+      "name": "AI Perception",
+      "description": "AI Perception refers to how AI systems form, structure, update, and represent their internal understanding of organisations, concepts, and entities."
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "EntityWorks"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>AI Perception</h1>
+    <p>The broader discipline that explains how AI systems interpret and represent organisations.</p>
+  </header>
+
+  <main>
+    <div class="placeholder">
+      <p>
+        This page will become the central hub for EntityWorks’ work on <strong>AI Perception</strong> — the
+        overarching discipline that sits above AI Discoverability. It introduces the principles, models, and
+        frameworks that describe how AI systems build and update their internal representations of entities.
+      </p>
+      <p>
+        Full publications will be added as the discipline is developed and formalised.
+      </p>
+    </div>
+  </main>
+
+  <p style="font-size: 0.85rem; color: #888; margin-top: 3rem;">
+    Last updated: November 2025
+  </p>
+
+  <div id="footer"></div>
+  <script>
+    fetch("/footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+</body>
+</html>
