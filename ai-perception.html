@@ -9,46 +9,139 @@
         content="EntityWorks defines the discipline of AI Perception — how AI systems form, update, and express their understanding of people, organisations, relationships, and ideas.">
   <link rel="canonical" href="https://entityworks.ai/ai-perception.html">
 
+  <!-- FAVICONS -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
   <style>
+    :root {
+      --ew-max-width: 900px;
+      --ew-accent: #0057ff;
+      --ew-border: #e0e0e0;
+      --ew-bg-soft: #f5f7ff;
+      --ew-text: #111111;
+      --ew-muted: #666666;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
+      margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.6;
+      color: var(--ew-text);
+      background-color: #fff;
+    }
+
+    /* GLOBAL NAV */
+    .site-header {
+      border-bottom: 1px solid var(--ew-border);
+      background: #ffffff;
+    }
+
+    .nav-inner {
+      max-width: var(--ew-max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--ew-text);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: var(--ew-text);
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    .site-nav a[aria-current="page"] {
+      background: var(--ew-bg-soft);
+      border: 1px solid var(--ew-accent);
+    }
+
+    main {
+      max-width: var(--ew-max-width);
       margin: 2rem auto;
-      max-width: 800px;
-      padding: 0 1rem;
-      color: #111;
+      padding: 0 1rem 3rem;
     }
-    header, footer {
-      margin-bottom: 2rem;
-    }
+
     header h1 {
       font-size: 2rem;
       margin-bottom: 0.25rem;
     }
-    nav a {
-      margin-right: 1rem;
-      font-size: 0.95rem;
-      text-decoration: none;
-      color: #0057ff;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    h2 {
-      margin-top: 1.75rem;
-    }
+
+    h2 { margin-top: 1.75rem; }
+
     .placeholder {
-      background: #f5f7ff;
-      border-left: 3px solid #0057ff;
+      background: var(--ew-bg-soft);
+      border-left: 3px solid var(--ew-accent);
       padding: 1rem;
       margin-top: 2rem;
     }
+
     ul {
       margin: 0.5rem 0 1rem 1.2rem;
       padding: 0;
     }
-    li {
-      margin: 0.25rem 0;
+
+    li { margin: 0.25rem 0; }
+
+    /* FOOTER (pulled in from /footer.html manually here) */
+    .site-footer {
+      border-top: 1px solid var(--ew-border);
+      padding-top: 1.5rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .footer-container {
+      max-width: var(--ew-max-width);
+      margin: 0 auto;
+      padding: 0 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .footer-nav-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-nav-link {
+      text-decoration: none;
+      color: #555;
+      font-size: 0.85rem;
+    }
+
+    .footer-nav-link:hover,
+    .footer-nav-link:focus {
+      text-decoration: underline;
     }
   </style>
 
@@ -73,12 +166,26 @@
 </head>
 
 <body>
-  <header>
-    <h1>AI Perception</h1>
-    <p>The discipline that explains how AI systems form, update, and express their understanding of the world.</p>
+
+  <!-- GLOBAL NAV -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="/index.html" class="brand">EntityWorks</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/why-entityworks-exists.html">Why EntityWorks</a>
+        <a href="/ai-discoverability-resources.html">AI Discoverability</a>
+        <a href="/how-we-score-the-edi.html">EDI</a>
+        <a href="/ai-perception.html" aria-current="page">AI Perception</a>
+      </nav>
+    </div>
   </header>
 
   <main>
+    <header>
+      <h1>AI Perception</h1>
+      <p>The discipline that explains how AI systems form, update, and express their understanding of the world.</p>
+    </header>
+
     <div class="placeholder">
       <p>
         <strong>AI Perception is the discipline concerned with how AI systems form, update, and express their understanding of people, organisations, relationships, and ideas.</strong>
@@ -104,11 +211,6 @@
         <li>how different AI systems can diverge in their perception of the same entity</li>
         <li>how those internal views are expressed back to people in answers, summaries, or recommendations</li>
       </ul>
-      <p>
-        By treating perception as a discipline, EntityWorks aims to bring structure to how these questions are asked and
-        answered — so that AI systems can form more stable, accurate, and interpretable understandings of the entities
-        they describe.
-      </p>
     </section>
 
     <section>
@@ -125,7 +227,7 @@
         and alignment of signals — to form that understanding in the first place.
       </p>
       <p>
-        You can read more about how EntityWorks has formalised AI Discoverability as an applied discipline in
+        You can read more about how EntityWorks has formalised AI Discoverability in
         <a href="/defining-ai-discoverability.html">AI Discoverability: Defining the Discipline</a>.
       </p>
     </section>
@@ -139,29 +241,37 @@
         <li>defining the core concepts and language of AI Perception</li>
         <li>mapping how AI systems build and update their internal views of entities</li>
         <li>formalising AI Discoverability as a subdiscipline concerned with legibility to AI systems</li>
-        <li>developing the EntityWorks Discoverability Index™ as a measurable lens on AI-facing representation</li>
-        <li>introducing the Entity Understanding Layer™ as a way to describe the structures AI rely on to interpret entities</li>
+        <li>developing the EntityWorks Discoverability Index™</li>
+        <li>introducing the Entity Understanding Layer™</li>
         <li>publishing machine-readable frameworks that help align human intentions with AI interpretations</li>
       </ul>
       <p>
-        Over time, this page will serve as the hub for EntityWorks’ publications on AI Perception — connecting the
-        underlying theory, the applied disciplines that sit beneath it, and the standards that support AI-era
-        interpretation in practice.
+        Over time, this page will become the hub for all EntityWorks AI Perception publications.
       </p>
     </section>
   </main>
 
-  <p style="font-size: 0.85rem; color: #888; margin-top: 3rem;">
-    Last updated: November 2025
-  </p>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-meta">
+        <p>&copy; EntityWorks. All rights reserved.</p>
+        <p>
+          <a href="mailto:hello@entityworks.ai" class="footer-nav-link">hello@entityworks.ai</a>
+        </p>
+      </div>
 
-  <div id="footer"></div>
-  <script>
-    fetch("/footer.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("footer").innerHTML = data;
-      });
-  </script>
+      <nav aria-label="Footer">
+        <ul class="footer-nav-list">
+          <li><a href="/index.html" class="footer-nav-link">Home</a></li>
+          <li><a href="/why-entityworks-exists.html" class="footer-nav-link">Why EntityWorks</a></li>
+          <li><a href="/ai-discoverability-resources.html" class="footer-nav-link">AI Discoverability</a></li>
+          <li><a href="/how-we-score-the-edi.html" class="footer-nav-link">EDI</a></li>
+          <li><a href="/ai-perception.html" class="footer-nav-link">AI Perception</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
 </body>
 </html>
