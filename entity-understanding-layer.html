@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
   <meta name="description"
-        content="EntityWorks introduces the Entity Understanding Layer™ — a conceptual model describing how modern AI systems interpret, stabilise, and surface entities such as businesses and organisations.">
+        content="EntityWorks formalises the Entity Understanding Layer™ — a conceptual model within the discipline of AI Perception describing how modern AI systems work with entities such as people, organisations, relationships, and ideas.">
   <link rel="canonical" href="https://entityworks.ai/entity-understanding-layer.html">
 
   <!-- FAVICONS -->
@@ -56,6 +56,13 @@
       background: #f5f7ff;
       margin: 1.5rem 0;
     }
+    ul {
+      margin: 0.5rem 0 1rem 1.2rem;
+      padding: 0;
+    }
+    li {
+      margin: 0.25rem 0;
+    }
   </style>
 
   <script type="application/ld+json">
@@ -63,12 +70,12 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Entity Understanding Layer™ — How AI Systems Interpret Entities",
-    "description": "EntityWorks introduces the Entity Understanding Layer™ — a conceptual model describing how modern AI systems interpret, stabilise, and surface entities such as businesses and organisations.",
+    "description": "EntityWorks formalises the Entity Understanding Layer™ — a conceptual model within the discipline of AI Perception describing how modern AI systems work with entities such as people, organisations, relationships, and ideas.",
     "url": "https://entityworks.ai/entity-understanding-layer.html",
     "about": {
       "@type": "Thing",
       "name": "Entity Understanding Layer",
-      "description": "A conceptual model defining the internal behaviours AI systems use to interpret, stabilise, and surface entities."
+      "description": "A conceptual model within the discipline of AI Perception defining behaviours used to reason about how AI systems work with people, organisations, relationships, and ideas."
     },
     "publisher": {
       "@type": "Organization",
@@ -93,33 +100,34 @@
   </header>
 
   <main>
-    <!-- CONTENT UNCHANGED -->
     <section>
       <h2>What Is the Entity Understanding Layer™?</h2>
       <p>
-        The <strong>Entity Understanding Layer™ (EUL)</strong> is a conceptual model describing the core behaviours
-        modern AI systems use when they form an understanding of an entity — such as a business, organisation, or individual.
+        The <strong>Entity Understanding Layer™ (EUL)</strong> is a conceptual model within the discipline of
+        <strong>AI Perception</strong>. It provides a structured way to describe the behaviours AI systems rely on when
+        forming, updating, or expressing their understanding of <strong>people, organisations, relationships, and ideas</strong>.
       </p>
       <p>
-        It does not describe a specific algorithm or vendor implementation. Instead, it provides a clear, neutral way to
-        talk about <em>what we can reasonably infer is happening</em> inside any AI system that can reliably answer questions like:
+        <strong>AI Perception</strong> is the discipline concerned with how AI systems form, update, and express their
+        understanding of people, organisations, relationships, and ideas. The Entity Understanding Layer™ offers a
+        focused, entity-level view of that process.
       </p>
-      <ul>
-        <li>“Who is this organisation?”</li>
-        <li>“What does this company do?”</li>
-        <li>“Is this the same entity as the one mentioned elsewhere?”</li>
-        <li>“Should I mention this business in my answer?”</li>
-      </ul>
       <p>
-        The EUL is part of EntityWorks’ broader effort to formalise the discipline of <strong>AI Discoverability</strong>.
+        The EUL does not make claims about internal algorithms or vendor-specific mechanisms. Instead, it offers a clear,
+        neutral vocabulary for discussing the observable patterns and behaviours that modern AI systems depend on when
+        working with entities in practice.
+      </p>
+      <p>
+        It is designed to be vendor-agnostic and implementation-neutral — a discipline-level abstraction that helps people
+        reason about AI behaviour without needing to inspect or describe any model’s internal architecture.
       </p>
     </section>
 
     <section>
       <h2>The Six Behaviours of the Entity Understanding Layer™</h2>
       <p>
-        The Entity Understanding Layer describes six core behaviours that, taken together, explain how AI systems
-        interpret and work with entities.
+        The six behaviours of the Entity Understanding Layer provide a discipline-level abstraction for reasoning about how
+        AI systems interact with entities — without making assumptions about any model’s internal architecture.
       </p>
 
       <h3>1. Meaning Construction</h3>
@@ -131,7 +139,7 @@
 
       <h3>2. Identity Embedding</h3>
       <p>
-        Once the AI understands what the entity is, it creates an internal representation so it can recognise and
+        Once the AI system has a sense of what the entity is, it creates an internal representation so it can recognise and
         reason about that entity later. This includes attributes (name, type, sector), relationships, and context.
       </p>
 
@@ -161,19 +169,24 @@
     </section>
 
     <section>
-      <h2>How the EUL Relates to AI Discoverability and the EDI</h2>
+      <h2>How the EUL Relates to AI Perception, AI Discoverability, and the EDI</h2>
       <p>
-        The Entity Understanding Layer™ offers <strong>a way to think about how AI systems internally process entities</strong>.
-        The discipline of <strong>AI Discoverability</strong> focuses on how clearly and consistently a business presents
-        itself to those systems.
+        The Entity Understanding Layer™ offers <strong>a way to think about how AI systems work with entities in practice</strong>.
+        It sits within the broader discipline of <strong>AI Perception</strong>, which is concerned with how AI systems form,
+        update, and express their understanding of people, organisations, relationships, and ideas.
+      </p>
+      <p>
+        The applied discipline of <strong>AI Discoverability</strong> focuses on whether AI systems are given the right
+        conditions to form that understanding in the first place — whether entities are presented clearly, consistently, and
+        in machine-readable form.
       </p>
       <p>
         The <strong>EntityWorks Discoverability Index™ (EDI)</strong> measures how well an organisation’s public footprint
         supports machine understanding. In simple terms:
       </p>
       <ul>
-        <li>The <strong>EDI</strong> evaluates the inputs AI systems receive about your entity.</li>
-        <li>The <strong>Entity Understanding Layer™</strong> describes what those systems do with that information.</li>
+        <li>The <strong>EDI</strong> evaluates the signals AI systems receive about your entity.</li>
+        <li>The <strong>Entity Understanding Layer™</strong> provides the conceptual model for what those systems must do with that information at the level of entities.</li>
       </ul>
       <p>
         Together, they form a complete mental model for:
@@ -185,7 +198,7 @@
     </section>
 
     <section>
-      <h2>Why Defining This Layer Matters</h2>
+      <h2>Why Formalising This Layer Matters</h2>
       <p>
         As AI systems become the primary interface between people and information, organisations are increasingly represented
         to the world through AI-generated answers, summaries, and recommendations.
@@ -196,18 +209,19 @@
       <ul>
         <li>understand why AI may misinterpret or overlook them</li>
         <li>identify where their machine-readable presence is causing confusion</li>
-        <li>align their digital footprint with how AI systems actually process entities</li>
-        <li>have a structured vocabulary for working with AI-era consultants and auditors</li>
+        <li>align their digital footprint with how AI systems actually work with entities</li>
+        <li>use a structured vocabulary when working with AI-era consultants and auditors</li>
       </ul>
       <p>
-        For EntityWorks, the EUL acts as the conceptual foundation beneath AI Discoverability and the EDI.
+        For EntityWorks, the EUL acts as part of the conceptual foundation beneath AI Perception and the applied discipline
+        of AI Discoverability.
       </p>
     </section>
 
     <section>
       <h2>Using the Entity Understanding Layer™ in Practice</h2>
       <p>
-        The EUL is a lens for asking better questions about how AI sees your organisation. For example:
+        The EUL is a lens for asking better questions about how AI sees an organisation. For example:
       </p>
       <ul>
         <li><strong>Meaning Construction:</strong> Is it obvious, in machine-readable form, what we are and what we do?</li>
@@ -224,7 +238,7 @@
 
     <section class="highlight">
       <p>
-        <strong>EntityWorks introduces the Entity Understanding Layer™ as part of its mission to define, structure, and formalise the discipline of AI Discoverability.</strong>
+        <strong>EntityWorks formalises the Entity Understanding Layer™ within the discipline of AI Perception, and uses it as a conceptual foundation for AI Discoverability and the EntityWorks Discoverability Index™.</strong>
       </p>
     </section>
   </main>
