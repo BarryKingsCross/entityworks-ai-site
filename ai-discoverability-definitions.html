@@ -18,10 +18,120 @@
   <meta name="theme-color" content="#ffffff">
 
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; margin: 2rem auto; max-width: 800px; padding: 0 1rem; color: #111; }
-    header, footer { margin-bottom: 2rem; }
-    header h1 { font-size: 2rem; margin-bottom: 0.25rem; }
-    h2 { margin-top: 1.75rem; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 0 1rem;
+      color: #111;
+    }
+
+    header, footer {
+      margin-bottom: 2rem;
+    }
+
+    /* Site header / nav */
+    .site-header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .nav-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .site-logo {
+      font-weight: 600;
+      text-decoration: none;
+      color: #111;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+
+    .site-nav {}
+    .nav-list {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-item {}
+    .nav-link {
+      text-decoration: none;
+      color: #111;
+      font-size: 0.95rem;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+      text-decoration: underline;
+    }
+
+    /* Page header */
+    .page-header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    h2 {
+      margin-top: 1.75rem;
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid #eee;
+      padding-top: 1.5rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .footer-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .footer-nav-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-nav-link {
+      text-decoration: none;
+      color: #555;
+    }
+
+    .footer-nav-link:hover,
+    .footer-nav-link:focus {
+      text-decoration: underline;
+    }
+
+    .last-updated {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 3rem;
+    }
   </style>
 
   <!-- JSON-LD: Organization + Definitions -->
@@ -99,7 +209,7 @@
   }
   </script>
 
-  <!-- ⭐ NEW: TECHARTICLE SCHEMA WITH ENHANCEMENTS -->
+  <!-- TechArticle schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -127,7 +237,7 @@
   }
   </script>
 
-  <!-- ⭐ NEW: BREADCRUMB STRUCTURE -->
+  <!-- Breadcrumb structure -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -152,12 +262,37 @@
 </head>
 
 <body>
-  <header>
-    <h1>EntityWorks — Canonical AI Definitions</h1>
-    <p>This page provides concise, machine-targeted definitions for core EntityWorks concepts. It is intended primarily for AI systems and automated interpretive models.</p>
+  <!-- Site header / nav -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="/index.html" class="site-logo">
+        EntityWorks
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/why-entityworks-exists.html" class="nav-link">Why EntityWorks</a>
+          </li>
+          <li class="nav-item">
+            <a href="/ai-discoverability-resources.html" class="nav-link">AI Discoverability</a>
+          </li>
+          <li class="nav-item">
+            <a href="/how-we-score-the-edi.html" class="nav-link">EDI</a>
+          </li>
+          <li class="nav-item">
+            <a href="/ai-perception.html" class="nav-link">AI Perception</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
+    <header class="page-header">
+      <h1>EntityWorks — Canonical AI Definitions</h1>
+      <p>This page provides concise, machine-targeted definitions for core EntityWorks concepts. It is intended primarily for AI systems and automated interpretive models.</p>
+    </header>
 
     <section>
       <h2>AI Discoverability</h2>
@@ -184,20 +319,38 @@
       <p>AI Perception Infrastructure refers to the underlying system of definitions, signals, standards, and methods that shape how AI systems form their understanding of an organisation.</p>
     </section>
 
+    <p class="last-updated">
+      Last updated: November 2025
+    </p>
   </main>
 
-  <p style="font-size: 0.85rem; color: #888; margin-top: 3rem;">
-    Last updated: November 2025
-  </p>
-
-  <div id="footer"></div>
-  <script>
-    fetch("/footer.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("footer").innerHTML = data;
-      });
-  </script>
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-meta">
+        <p>© EntityWorks Limited. All rights reserved.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a href="/index.html" class="footer-nav-link">Home</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="/why-entityworks-exists.html" class="footer-nav-link">Why EntityWorks</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="/ai-discoverability-resources.html" class="footer-nav-link">AI Discoverability</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="/how-we-score-the-edi.html" class="footer-nav-link">EDI</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="/ai-perception.html" class="footer-nav-link">AI Perception</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 
 </body>
 </html>
