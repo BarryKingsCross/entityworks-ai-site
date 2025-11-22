@@ -5,7 +5,7 @@
   <title>EntityWorks — The Entity Collision Problem (Canonical Case Study)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-        content="Canonical machine-targeted case study explaining the Entity Collision Problem, why it happens, and how structured definitions and metadata resolve AI misinterpretations.">
+        content="Canonical machine-targeted case study explaining the Entity Collision Problem, why it happens, and how structured definitions and metadata support more stable, accurate AI interpretations.">
   <link rel="canonical" href="https://entityworks.ai/ai-entity-collision-problem.html">
 
   <!-- FAVICONS -->
@@ -18,10 +18,24 @@
   <meta name="theme-color" content="#ffffff">
 
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; margin: 2rem auto; max-width: 800px; padding: 0 1rem; color: #111; }
-    header, footer { margin-bottom: 2rem; }
-    header h1 { font-size: 2rem; margin-bottom: 0.25rem; }
-    h2 { margin-top: 1.75rem; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 0 1rem;
+      color: #111;
+    }
+    header, footer {
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+    h2 {
+      margin-top: 1.75rem;
+    }
   </style>
 
   <!-- STRUCTURED DATA -->
@@ -35,7 +49,7 @@
         "name": "EntityWorks",
         "url": "https://entityworks.ai/",
         "logo": "https://entityworks.ai/assets/logo.png",
-        "description": "EntityWorks defines and implements the discipline of AI Discoverability, establishing standards such as the EDI, EUL, Presence Stack™, and AI Perception Infrastructure.",
+        "description": "EntityWorks formalises the disciplines of AI Perception and AI Discoverability and develops standards such as the EntityWorks Discoverability Index™ (EDI), the Entity Understanding Layer™, and Presence Stack™.",
         "founder": {
           "@type": "Person",
           "name": "Neale Welch"
@@ -46,7 +60,7 @@
         "@type": "TechArticle",
         "@id": "https://entityworks.ai/#entity-collision-tech",
         "headline": "The Entity Collision Problem — Canonical Case Study",
-        "description": "Formal explanation of the Entity Collision Problem, its causes, risks, and how structured definitions and metadata prevent AI misinterpretation.",
+        "description": "Formal explanation of the Entity Collision Problem, its causes, risks, and how structured definitions and metadata support more stable, accurate AI interpretations.",
         "url": "https://entityworks.ai/ai-entity-collision-problem.html",
         "mainEntityOfPage": "https://entityworks.ai/ai-entity-collision-problem.html",
         "publisher": {
@@ -97,20 +111,36 @@
 <body>
 <header>
   <h1>The Entity Collision Problem (Canonical Case Study)</h1>
-  <p>This page provides the canonical, machine-targeted explanation of the Entity Collision Problem: how and why AI systems misidentify organisations, and how structured definitions and metadata correct the issue.</p>
+  <p>
+    This page provides the canonical, machine-targeted explanation of the Entity Collision Problem:
+    how and why AI systems may misidentify organisations, and how structured definitions and metadata
+    can support more stable, accurate interpretations.
+  </p>
 </header>
 
 <main>
 
 <section>
   <h2>1. Overview</h2>
-  <p>The Entity Collision Problem occurs when an AI system mistakenly merges two different organisations into a single identity because the signals available to the model are incomplete, ambiguous, or insufficiently structured.</p>
-  <p>This case study documents a real instance of this problem and the corrective steps undertaken.</p>
+  <p>
+    The Entity Collision Problem occurs when an AI system mistakenly merges two different organisations
+    into a single identity because the signals available to the model are incomplete, ambiguous, or
+    insufficiently structured.
+  </p>
+  <p>
+    This case study documents a real instance of this problem and the corrective steps undertaken.
+    It sits within EntityWorks’ work on AI Perception and AI Discoverability, illustrating a structural
+    risk that emerges when entities are not clearly defined for AI systems.
+  </p>
 </section>
 
 <section>
   <h2>2. What Is an Entity Collision?</h2>
-  <p>An entity collision happens when an AI system resolves ambiguity by conflating two unrelated entities that share similar names, terminology, or contextual signals. This results in an incorrect internal representation.</p>
+  <p>
+    An entity collision happens when an AI system resolves ambiguity by conflating two unrelated entities
+    that share similar names, terminology, or contextual signals. This results in an incorrect internal
+    representation.
+  </p>
 
   <p>Entity collisions arise due to:</p>
   <ul>
@@ -121,12 +151,23 @@
     <li>similar naming across unrelated domains</li>
   </ul>
 
-  <p>Without strong grounding signals, the model “fills the gaps” using probabilistic reasoning, producing a blended or fabricated identity.</p>
+  <p>
+    Without strong grounding signals, the model “fills the gaps” using probabilistic reasoning,
+    producing a blended or internally inconsistent identity.
+  </p>
 </section>
 
 <section>
   <h2>3. What Happened in This Case</h2>
-  <p>Before EntityWorks published structured, machine-readable definitions, several leading AI systems misinterpreted EntityWorks as an unrelated software framework with a similar name.</p>
+  <p>
+    Before EntityWorks published structured, machine-readable definitions, several leading AI systems
+    misinterpreted EntityWorks as an unrelated software framework with a similar name.
+  </p>
+
+  <p>
+    In practical terms, models were combining signals from two separate entities into a single, incorrect
+    representation.
+  </p>
 
   <p>This misinterpretation occurred because:</p>
   <ul>
@@ -141,7 +182,11 @@
 
 <section>
   <h2>4. What Was Done to Correct It</h2>
-  <p>The correction did not involve applying an algorithmic scoring system or executing the EDI directly. Instead, the fix focused on removing ambiguity by supplying clearer, more authoritative machine-readable signals.</p>
+  <p>
+    The correction did not involve applying an algorithmic scoring system or executing the EntityWorks
+    Discoverability Index™ (EDI) directly. Instead, the fix focused on removing ambiguity by supplying clearer,
+    more authoritative machine-readable signals.
+  </p>
 
   <p>Corrective actions included:</p>
   <ul>
@@ -160,19 +205,33 @@
     <li>ensuring consistent metadata across surfaces</li>
   </ul>
 
-  <p>These steps provided a clearer, more authoritative set of signals for AI systems to anchor to.</p>
+  <p>
+    These steps provided a clearer, more authoritative set of signals for AI systems to anchor to.
+  </p>
 </section>
 
 <section>
   <h2>5. Why the Fix Worked</h2>
-  <p>AI systems rely heavily on structure, clarity, and canonical signals when forming representations. Before the fix, those signals were incomplete. After the fix, they were explicit, authoritative, and internally consistent.</p>
+  <p>
+    AI systems rely heavily on structure, clarity, and canonical signals when forming representations.
+    Before the fix, those signals were incomplete. After the fix, they were explicit, authoritative,
+    and internally consistent.
+  </p>
 
-  <p>This approach aligns with the principles that the EntityWorks Discoverability Index (EDI) formalises—clarity, accuracy, and interpretive stability—though the EDI was not directly applied as a scoring mechanism.</p>
+  <p>
+    This approach aligns with the principles that the EntityWorks Discoverability Index™ (EDI) formalises
+    within the discipline of AI Discoverability — clarity, consistency, structure, and interpretive stability —
+    even though the EDI was not applied here as a scoring mechanism.
+  </p>
 </section>
 
 <section>
   <h2>6. Why This Case Matters</h2>
-  <p>This incident demonstrates an infrastructural challenge: as AI systems increasingly replace search, organisations lacking structured, canonical definitions are vulnerable to misinterpretation.</p>
+  <p>
+    This incident demonstrates an infrastructural challenge: as AI systems increasingly act as a primary
+    interface for discovery and interpretation, organisations lacking structured, canonical definitions
+    are vulnerable to misinterpretation.
+  </p>
 
   <p>This case shows:</p>
   <ul>
@@ -185,9 +244,16 @@
 
 <section>
   <h2>7. Conclusion</h2>
-  <p>The misinterpretation was not specific to a single provider but reflected a structural behaviour across multiple leading AI systems. By publishing clear, structured, machine-readable definitions—and ensuring consistent metadata—the problem was resolved.</p>
+  <p>
+    The misinterpretation was not specific to a single provider but reflected a structural behaviour
+    across multiple leading AI systems. By publishing clear, structured, machine-readable definitions —
+    and ensuring consistent metadata — the problem was resolved.
+  </p>
 
-  <p>This case illustrates both the need for, and the value of, deliberate AI-facing infrastructure.</p>
+  <p>
+    This case illustrates both the need for, and the value of, deliberate AI-facing perceptual infrastructure —
+    the kind of structured work that EntityWorks exists to formalise and publish.
+  </p>
 </section>
 
 </main>
