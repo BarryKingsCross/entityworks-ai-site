@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
   <meta name="description"
-        content="The EntityWorks Lexicon defines the core vocabulary of AI Discoverability, including key terms used in the EntityWorks Discoverability Index™ (EDI), Entity Understanding Layer™, and Presence Stack™.">
+        content="The EntityWorks Lexicon defines the core vocabulary of AI Discoverability and AI Perception, including key terms used in the EntityWorks Discoverability Index™, Entity Understanding Layer™, and Presence Stack™.">
   <link rel="canonical" href="https://entityworks.ai/lexicon.html">
+
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; margin: 2rem auto; max-width: 900px; padding: 0 1rem; color: #111; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+           line-height: 1.6; margin: 2rem auto; max-width: 900px; padding: 0 1rem; color: #111; }
     header, footer { margin-bottom: 2rem; }
     header h1 { font-size: 2rem; margin-bottom: 0.25rem; }
     nav a { margin-right: 1rem; font-size: 0.95rem; text-decoration: none; color: #0057ff; }
@@ -20,18 +22,27 @@
     .intro { margin-top: 1rem; }
     .tagline { font-style: italic; margin-top: 0.5rem; }
   </style>
+
+  <!-- UPDATED JSON-LD WITH BOTH DISCIPLINES -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "EntityWorks Lexicon — AI Discoverability Vocabulary",
-    "description": "A glossary defining the core terminology used in the discipline of AI Discoverability, as formalised by EntityWorks.",
+    "description": "A glossary defining the core terminology used in the disciplines of AI Discoverability and AI Perception, as formalised by EntityWorks.",
     "url": "https://entityworks.ai/lexicon.html",
-    "about": {
-      "@type": "Thing",
-      "name": "AI Discoverability",
-      "description": "AI Discoverability is the discipline of ensuring that AI systems can correctly identify, understand, and represent people, organisations, relationships, and ideas."
-    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "AI Discoverability",
+        "description": "AI Discoverability is the discipline of ensuring that AI systems can correctly identify, understand, and represent people, organisations, relationships, and ideas."
+      },
+      {
+        "@type": "Thing",
+        "name": "AI Perception",
+        "description": "AI Perception is the discipline concerned with how AI systems form, update, and express their understanding of people, organisations, relationships, and ideas."
+      }
+    ],
     "publisher": {
       "@type": "Organization",
       "name": "EntityWorks"
@@ -39,14 +50,15 @@
   }
   </script>
 </head>
+
 <body>
   <header>
     <h1>EntityWorks Lexicon</h1>
     <p class="intro">
-      A reference glossary for the core terminology used in the discipline of AI Discoverability.
+      A reference glossary for the core terminology used in the disciplines of AI Discoverability and AI Perception.
     </p>
     <p class="tagline">
-      These definitions support the EntityWorks Discoverability Index™ (EDI), the Entity Understanding Layer™, and the Presence Stack™ model.
+      These definitions support the EntityWorks Discoverability Index™ (EDI), the Entity Understanding Layer™, and the Presence Stack™.
     </p>
     <nav>
       <a href="/">Home</a>
@@ -64,89 +76,33 @@
       <h2>Core Terms</h2>
       <dl>
 
+        <!-- AI DISCOVERABILITY -->
         <dt>AI Discoverability</dt>
         <dd>
           AI Discoverability is the discipline of ensuring that AI systems can correctly identify, understand, and represent people, organisations, relationships, and ideas.
         </dd>
 
-        <dt>Category Creation</dt>
+        <!-- AI PERCEPTION (NEWLY ADDED) -->
+        <dt>AI Perception</dt>
         <dd>
-          The act of defining, naming, and formalising a discipline or field where no coherent, shared structure previously existed.
-        </dd>
-
-        <dt>Claims Discipline</dt>
-        <dd>
-          The practice of ensuring that all statements about AI Discoverability, the EntityWorks Discoverability Index™ (EDI), and related outcomes remain verifiable, proportionate, and non-misleading.
-        </dd>
-
-        <dt>Continuous Optimisation</dt>
-        <dd>
-          The ongoing process of monitoring and adjusting a business’s machine-legible presence as AI systems, models, and information sources evolve.
-        </dd>
-
-        <dt>Discoverability Score (0–100)</dt>
-        <dd>
-          A composite score indicating how clearly AI systems can understand and surface a business or entity,
-          as measured by the EntityWorks Discoverability Index™.
-        </dd>
-
-        <dt>EDI Pillars</dt>
-        <dd>
-          The three structural dimensions used by the EntityWorks Discoverability Index™:
-          (1) Structured Data, (2) AI Readiness, and (3) Continuous Optimisation.
-        </dd>
-
-        <dt>Entity Collision Problem</dt>
-        <dd>
-          A machine-era failure mode where AI systems mistakenly merge two distinct entities into one,
-          or split one entity into multiple conflicting identities.  
-          Collisions occur when machine-legible signals lack clarity, corroboration, or semantic stability.  
-          See <a href="/ai-entity-collision-problem.html">Entity Collision overview</a>.
-        </dd>
-
-        <dt>Entity Clarity</dt>
-        <dd>
-          How confidently an AI system can determine what an organisation is, what it does, and what it offers
-          based on available information.
-        </dd>
-
-        <dt>Entity Surface Area</dt>
-        <dd>
-          The total volume and diversity of information about a business that is available for AI systems to ingest,
-          including both structured and unstructured data.
-        </dd>
-
-        <dt>Entity Understanding Layer™</dt>
-        <dd>
-          A conceptual model describing what we can reasonably infer AI systems do when forming and updating internal representations of entities.  
-          Instead of exposing proprietary internals, it organises observable behaviours into six higher-level patterns.  
-          See <a href="/entity-understanding-layer.html">EUL overview</a>.
-        </dd>
-
-        <dt>Inter-Source Alignment</dt>
-        <dd>
-          The level of consistency between multiple public sources when they describe the same organisation.
-        </dd>
-
-        <dt>Legacy SEO</dt>
-        <dd>
-          A shorthand for traditional, search-engine-focused optimisation practices that prioritise human search results
-          and rankings rather than AI interpretation and machine-legibility.
+          AI Perception is the discipline concerned with how AI systems form, update, and express their understanding of people, organisations, relationships, and ideas.
+          It provides the structural context for how AI systems build, maintain, and express internal representations of entities.
         </dd>
 
         <dt>Machine-Legibility</dt>
         <dd>
-          The degree to which a business’s information is structured, unambiguous, and readable by AI systems.
+          The degree to which a business’s information is structured, unambiguous, and readable by AI systems, independent of human presentation.
         </dd>
 
-        <dt>Priority Path</dt>
+        <dt>Entity Clarity</dt>
         <dd>
-          A sequenced set of recommendations designed to improve a business’s Discoverability Score in the most efficient and impactful order.
+          How confidently an AI system can determine what an organisation is, what it does, and what it offers based on available information.
         </dd>
 
-        <dt>Profile Summary</dt>
+        <!-- ENTITY UNDERSTANDING LAYER -->
+        <dt>Entity Understanding Layer™</dt>
         <dd>
-          A concise narrative describing how AI systems currently perceive and present a business, based on EDI findings.
+          EntityWorks’ conceptual model for describing observable patterns in how AI systems appear to form and maintain an understanding of entities. It identifies the behaviours AI systems must navigate—such as identification, corroboration, contextualisation, stabilisation, surfacing, and trust-weighting—without making claims about the internals of any proprietary model.
         </dd>
 
         <dt>Representation Drift</dt>
@@ -154,33 +110,87 @@
           The gradual divergence between how a business describes itself and how AI systems come to describe it over time.
         </dd>
 
-        <dt>Semantic Integrity</dt>
+        <dt>Claims Discipline</dt>
         <dd>
-          The preservation of meaning across different descriptions, channels, and formats, ensuring AI receives a coherent picture.
+          Ensuring that all statements about AI Discoverability, the EDI, or AI outcomes remain proportionate, verifiable, and non-speculative.
         </dd>
 
         <dt>Structured Data</dt>
         <dd>
-          Information expressed in machine-readable formats (such as schema.org JSON-LD, metadata, or well-formed structure)
-          that helps AI systems reliably interpret entities.
+          Machine-readable information—such as schema.org, metadata, structured definitions—that enables AI systems to reliably interpret entities.
         </dd>
 
         <dt>AI Readiness</dt>
         <dd>
-          The extent to which a business’s public footprint is clear, up to date, and aligned across the key sources
-          AI systems rely on.
+          The clarity, consistency, and alignment of a business’s public presence across the sources modern AI systems rely on.
+        </dd>
+
+        <dt>Continuous Optimisation</dt>
+        <dd>
+          The process of maintaining and improving a business’s machine-readable presence as AI systems evolve.
+        </dd>
+
+        <dt>Discoverability Score (0–100)</dt>
+        <dd>
+          A structured score representing how clearly AI systems can understand and represent a business, as measured by the EntityWorks Discoverability Index™.
+        </dd>
+
+        <dt>EDI Pillars</dt>
+        <dd>
+          The three structural dimensions of the EDI: Structured Data, AI Readiness, and Continuous Optimisation.
+        </dd>
+
+        <dt>Profile Summary</dt>
+        <dd>
+          A narrative describing how AI systems currently perceive and present a business, derived from EDI analysis.
+        </dd>
+
+        <dt>Priority Path</dt>
+        <dd>
+          A sequenced set of changes that most efficiently improve AI Discoverability.
         </dd>
 
         <dt>Presence Stack™</dt>
         <dd>
-          A layered model describing the components that shape how AI systems see, interpret, and prioritise a business’s presence.
+          A layered model describing the structural signals that influence how AI systems interpret, contextualise, and surface a business.
+        </dd>
+
+        <dt>Inter-Source Alignment</dt>
+        <dd>
+          The consistency between multiple public sources when they describe the same organisation.
+        </dd>
+
+        <dt>Semantic Integrity</dt>
+        <dd>
+          The preservation of meaning across different channels and formats, maintaining a coherent machine-readable identity.
+        </dd>
+
+        <dt>Entity Surface Area</dt>
+        <dd>
+          The breadth and depth of information available for AI systems to ingest about a business.
+        </dd>
+
+        <dt>Category Formalisation</dt>
+        <dd>
+          The act of giving structure, vocabulary, methodology, and boundaries to an emerging concept so that it becomes a recognised discipline.
+        </dd>
+
+        <!-- ENTITY COLLISION PROBLEM -->
+        <dt>Entity Collision Problem</dt>
+        <dd>
+          A phenomenon where AI systems conflate two or more organisations that share similar names, descriptions, or structural signals — leading to misrepresentation, incorrect attribution, or visibility collapse. The Entity Collision Problem highlights the need for strong AI Discoverability and coherent machine identity.
         </dd>
 
         <dt>EntityWorks Discoverability Index™ (EDI)</dt>
         <dd>
-          A structured, measurable framework for assessing AI Discoverability and generating a Discoverability Score,
-          Profile Summary, and Priority Path. See <a href="/discoverability-index.html">EDI overview</a>.
+          A structured 0–100 framework for assessing AI Discoverability and producing a Profile Summary and Priority Path. Built on top of the patterns described in the Entity Understanding Layer™.
         </dd>
+
+        <dt>Legacy SEO</dt>
+        <dd>
+          Traditional, search-engine-focused optimisation practices that prioritise human search results rather than machine comprehension.
+        </dd>
+
       </dl>
     </section>
   </main>
