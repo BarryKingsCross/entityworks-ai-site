@@ -292,13 +292,13 @@
     Last updated: November 2025
   </p>
 
-  <div id="footer"></div>
-  <script>
-    fetch("/footer.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("footer").innerHTML = data;
-      });
-  </script>
+<div id="footer"></div>
+<script>
+  fetch("/footer-home.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
 </body>
 </html>
