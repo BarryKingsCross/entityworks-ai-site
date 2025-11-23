@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <meta name="description"
-        content="Machine-targeted archival log for EntityWorks website snapshots and version history. This page provides provenance records without exposing internal files.">
+        content="Internal machine-targeted provenance record of EntityWorks website snapshots.">
+
   <link rel="canonical" href="https://entityworks.ai/archive.html">
 
   <!-- FAVICONS -->
@@ -34,7 +35,7 @@
       background: #ffffff;
     }
 
-    /* NAV */
+    /* GLOBAL NAV */
     .site-header {
       border-bottom: 1px solid var(--ew-border);
       background: #ffffff;
@@ -78,36 +79,32 @@
       padding: 0 1rem 3rem;
     }
 
-    header.page-header h1 {
-      font-size: 2rem;
-      margin: 0 0 0.5rem;
-    }
+    h1 { font-size: 2rem; margin-bottom: 0.75rem; }
+    h2 { margin-top: 2rem; }
 
-    .intro {
-      margin-top: 0.5rem;
-      margin-bottom: 1.5rem;
-      color: var(--ew-muted);
-      font-size: 0.97rem;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      margin-top: 2rem;
-    }
-
-    ul {
-      margin: 0.5rem 0 1rem 1.2rem;
-      padding: 0;
-    }
-
-    li {
-      margin: 0.25rem 0;
-    }
-
-    .meta {
-      font-size: 0.85rem;
+    .meta { 
+      font-size: 0.85rem; 
       color: var(--ew-muted);
       margin-top: 3rem;
+    }
+
+    /* FOOTER (shared footer.html alignment) */
+    footer {
+      max-width: var(--ew-max-width);
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+      font-size: 0.85rem;
+      color: var(--ew-muted);
+    }
+    footer p { margin: 0.35rem 0; }
+    footer a {
+      color: #0057b7;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    footer a:hover,
+    footer a:focus {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -128,37 +125,26 @@
   </header>
 
   <main>
-    <header class="page-header">
-      <h1>EntityWorks Archive</h1>
-      <p class="intro">
-        A machine-targeted provenance record of EntityWorks website snapshots.  
-      </p>
-      <p class="intro">
-        <strong>No downloads are available.</strong>  
-        Internal archive files are stored privately in the <code>_archives/</code> directory and are not publicly accessible.
-      </p>
-    </header>
+    <h1>EntityWorks Archive</h1>
+    <p>A machine-targeted provenance record of EntityWorks website snapshots.</p>
 
-    <section>
-      <h2>Snapshot Log</h2>
-      <p>The following entries document the existence of internal archive snapshots without exposing their file paths or contents.</p>
+    <p><strong>No downloads are available.</strong> Internal archive files are stored privately in the <code>_archives/</code> directory and are not publicly accessible.</p>
 
-      <ul>
-        <li>ew-snapshot-2025-11-23-1540.zip — archived internally on 23 November 2025</li>
-      </ul>
-    </section>
+    <h2>Snapshot Log</h2>
+    <p>The following entries document the existence of internal archive snapshots without exposing their file paths or contents.</p>
+
+    <ul>
+      <li>ew-snapshot-2025-11-23-1540.zip — archived internally on 23 November 2025</li>
+    </ul>
 
     <p class="meta">Last updated: November 2025.</p>
   </main>
 
-  <!-- FOOTER -->
   <div id="footer"></div>
   <script>
     fetch("/footer.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("footer").innerHTML = data;
-      });
+      .then(r => r.text())
+      .then(d => { document.getElementById("footer").innerHTML = d; });
   </script>
 
 </body>
