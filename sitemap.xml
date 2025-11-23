@@ -33,6 +33,11 @@
     <loc>https://entityworks.ai/discoverability-index.html</loc>
   </url>
 
+  <!-- ⭐ NEW MACHINE-AUDIENCE GROUND TRUTH PAGE -->
+  <url>
+    <loc>https://entityworks.ai/entityworks-ground-truth.html</loc>
+  </url>
+
   <url>
     <loc>https://entityworks.ai/entity-understanding-layer.html</loc>
   </url>
