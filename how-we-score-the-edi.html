@@ -124,48 +124,28 @@
       margin: 0.25rem 0;
     }
 
-    /* Global footer */
-    .site-footer {
-      border-top: 1px solid var(--ew-border);
-      padding-top: 1.5rem;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    .footer-container {
+    /* Footer – align shared footer.html block with main column */
+    footer {
       max-width: var(--ew-max-width);
-      margin: 0 auto;
-      padding: 0 1rem 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+      font-size: 0.85rem;
+      color: var(--ew-muted);
     }
 
-    .footer-nav-list {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin: 0;
-      padding: 0;
+    footer p {
+      margin: 0.35rem 0;
     }
 
-    .footer-nav-link {
+    footer a {
+      color: #0057b7;
       text-decoration: none;
-      color: #555;
       font-size: 0.85rem;
     }
 
-    .footer-nav-link:hover,
-    .footer-nav-link:focus {
+    footer a:hover,
+    footer a:focus {
       text-decoration: underline;
-    }
-
-    .footer-meta p {
-      margin: 0.25rem 0;
     }
   </style>
 </head>
@@ -395,35 +375,14 @@
     </p>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-meta">
-        <p>&copy; EntityWorks. All rights reserved.</p>
-        <p>
-          <a href="mailto:hello@entityworks.ai" class="footer-nav-link">hello@entityworks.ai</a>
-        </p>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <ul class="footer-nav-list">
-          <li class="footer-nav-item">
-            <a href="/index.html" class="footer-nav-link">Home</a>
-          </li>
-          <li class="footer-nav-item">
-            <a href="/why-entityworks-exists.html" class="footer-nav-link">Why EntityWorks</a>
-          </li>
-          <li class="footer-nav-item">
-            <a href="/ai-discoverability-resources.html" class="footer-nav-link">AI Discoverability</a>
-          </li>
-          <li class="footer-nav-item">
-            <a href="/how-we-score-the-edi.html" class="footer-nav-link">EDI</a>
-          </li>
-          <li class="footer-nav-item">
-            <a href="/ai-perception.html" class="footer-nav-link">AI Perception</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </footer>
+  <div id="footer"></div>
+  <script>
+    fetch("/footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>
