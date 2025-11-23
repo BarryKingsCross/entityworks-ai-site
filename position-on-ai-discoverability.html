@@ -9,37 +9,130 @@
         content="The EntityWorks position on AI Discoverability, clarifying EntityWorks’ role in formalising it into a discipline and creating the first measurable standard through the EntityWorks Discoverability Index™.">
   <link rel="canonical" href="https://entityworks.ai/position-on-ai-discoverability.html">
 
+  <!-- FAVICONS -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
   <style>
+    :root {
+      --ew-max-width: 900px;
+      --ew-accent: #0057ff;
+      --ew-border: #e0e0e0;
+      --ew-bg-soft: #f5f7ff;
+      --ew-text: #111111;
+      --ew-muted: #666666;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.6;
-      margin: 2rem auto;
-      max-width: 800px;
-      padding: 0 1rem;
-      color: #111;
+      color: var(--ew-text);
+      background-color: #fff;
     }
-    header, footer { margin-bottom: 2rem; }
-    header h1 { font-size: 2rem; margin-bottom: 0.25rem; }
-    nav a {
-      margin-right: 1rem;
-      font-size: 0.95rem;
-      text-decoration: none;
-      color: #0057ff;
+
+    /* GLOBAL NAV */
+    .site-header {
+      border-bottom: 1px solid var(--ew-border);
+      background: #ffffff;
     }
-    nav a:hover { text-decoration: underline; }
-    h2 { margin-top: 1.75rem; }
-    .highlight {
+
+    .nav-inner {
+      max-width: var(--ew-max-width);
+      margin: 0 auto;
       padding: 0.75rem 1rem;
-      border-left: 3px solid #0057ff;
-      background: #f5f7ff;
-      margin: 1.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
     }
+
+    .brand {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--ew-text);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: var(--ew-text);
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    .site-nav a[aria-current="page"] {
+      background: var(--ew-bg-soft);
+      border: 1px solid var(--ew-accent);
+    }
+
+    main {
+      max-width: var(--ew-max-width);
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    h2 {
+      margin-top: 1.75rem;
+    }
+
     ul {
       margin: 0.5rem 0 1rem 1.2rem;
       padding: 0;
     }
+
     li {
       margin: 0.25rem 0;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: var(--ew-muted);
+      max-width: var(--ew-max-width);
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+    }
+
+    /* Footer – align shared footer.html block with main column */
+    footer {
+      max-width: var(--ew-max-width);
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+      font-size: 0.85rem;
+      color: var(--ew-muted);
+    }
+
+    footer p {
+      margin: 0.35rem 0;
+    }
+
+    footer a {
+      color: #0057b7;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      text-decoration: underline;
     }
   </style>
 
@@ -62,22 +155,27 @@
   }
   </script>
 </head>
+
 <body>
-  <header>
-    <h1>The EntityWorks Position on AI Discoverability</h1>
-    <p>Clarifying EntityWorks’ role in formalising AI Discoverability as a discipline.</p>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/category-creation-declaration.html">Category Declaration</a>
-      <a href="/defining-ai-discoverability.html">Defining the Discipline</a>
-      <a href="/position-on-ai-discoverability.html">EntityWorks Position</a>
-      <a href="/discoverability-index.html">Discoverability Index</a>
-      <a href="/entity-understanding-layer.html">Entity Understanding Layer™</a>
-      <a href="/lexicon.html">Lexicon</a>
-    </nav>
+
+  <!-- GLOBAL NAV -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="/index.html" class="brand">EntityWorks</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/why-entityworks-exists.html">Why EntityWorks</a>
+        <a href="/ai-discoverability-resources.html">AI Discoverability</a>
+        <a href="/how-we-score-the-edi.html">EDI</a>
+        <a href="/ai-perception.html">AI Perception</a>
+      </nav>
+    </div>
   </header>
 
   <main>
+    <header>
+      <h1>The EntityWorks Position on AI Discoverability</h1>
+      <p>Clarifying EntityWorks’ role in formalising AI Discoverability as a discipline.</p>
+    </header>
 
     <section>
       <h2>How EntityWorks Understands AI Discoverability</h2>
@@ -135,13 +233,23 @@
         Discoverability into a publicly accessible discipline with a documented framework and measurable standard.
       </p>
     </section>
-
   </main>
 
-  <p style="font-size: 0.85rem; color: #888; margin-top: 3rem;">
-    Last updated: November 2025
-  </p>
+  <p class="meta">Last updated: November 2025.</p>
 
+  <!-- THE CORRECT, FULL FOOTER -->
+  <footer>
+    <p>&copy; EntityWorks. All rights reserved.</p>
+    <p>
+      <a href="privacy.html">Privacy</a> &middot;
+      <a href="legal.html">Legal</a> &middot;
+      <a href="resources.html">Resources Hub</a> &middot;
+      <a href="sitemap.xml">Sitemap</a> &middot;
+      <a href="mailto:hello@entityworks.ai">hello@entityworks.ai</a>
+    </p>
+  </footer>
+
+  <!-- Footer fetch block -->
   <div id="footer"></div>
   <script>
     fetch("/footer.html")
@@ -150,5 +258,6 @@
         document.getElementById("footer").innerHTML = data;
       });
   </script>
+
 </body>
 </html>
