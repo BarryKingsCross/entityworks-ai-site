@@ -39,7 +39,7 @@
       background: #ffffff;
     }
 
-    /* Site header / nav (canonical style) */
+    /* Canonical header / nav (homepage style — no highlighting) */
     .site-header {
       border-bottom: 1px solid var(--ew-border);
       background: #ffffff;
@@ -77,12 +77,6 @@
       border-radius: 999px;
     }
 
-    /* Highlight AI Discoverability as the active pillar for this page */
-    .site-nav a[href="/ai-discoverability-resources.html"] {
-      background: var(--ew-bg-soft);
-      border: 1px solid var(--ew-accent);
-    }
-
     main {
       max-width: var(--ew-max-width);
       margin: 2rem auto;
@@ -110,6 +104,12 @@
       margin-bottom: 0.75rem;
     }
 
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
     p {
       margin: 0.75rem 0;
     }
@@ -121,13 +121,6 @@
 
     li {
       margin: 0.25rem 0;
-    }
-
-    .highlight {
-      padding: 0.75rem 1rem;
-      border-left: 3px solid #0057ff;
-      background: #f5f7ff;
-      margin: 1.5rem 0;
     }
 
     .updated {
@@ -178,13 +171,6 @@
     footer a:focus {
       text-decoration: underline;
     }
-
-    @media (max-width: 600px) {
-      .nav-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
   </style>
 
   <script type="application/ld+json">
@@ -208,7 +194,7 @@
 </head>
 
 <body>
-  <!-- Global site header / nav -->
+  <!-- EW_CANONICAL_HEADER (no aria-current on this secondary page) -->
   <header class="site-header">
     <div class="nav-inner">
       <a href="/index.html" class="brand">EntityWorks</a>
@@ -256,16 +242,27 @@
         and an operational method.</strong>
       </p>
 
-      <p>This work gives AI models a coherent way to interpret entities, and it gives organisations a practical method
-        for improving how they are interpreted in an AI-led environment.</p>
-
+      <p>
+        This work gives AI models a coherent way to interpret entities, and it gives organisations a practical method
+        for improving how they are interpreted in an AI-led environment.
+      </p>
     </section>
+
+    <hr>
+    <p><strong>Related:</strong>
+      <a href="/why-entityworks-exists.html">Why EntityWorks Exists</a> ·
+      <a href="/ai-discoverability-resources.html">AI Discoverability Resources</a> ·
+      <a href="/entity-understanding-layer.html">Entity Understanding Layer™</a>
+    </p>
+    <hr>
 
     <section>
       <h2>Why AI Discoverability Matters</h2>
 
-      <p>As AI becomes the primary interface between people and information, the ability for an organisation to be
-      accurately understood by these systems becomes critical.</p>
+      <p>
+        As AI becomes the primary interface between people and information, the ability for an organisation to be
+        accurately understood by these systems becomes critical.
+      </p>
 
       <ul>
         <li>See how AI interprets their identity and offer</li>
@@ -273,7 +270,9 @@
         <li>Adapt confidently as model behaviour evolves</li>
       </ul>
 
-      <p>AI Discoverability is not a trend. It is an infrastructure shift — from being found by humans to being understood by machines.</p>
+      <p>
+        AI Discoverability is not a trend. It is an infrastructure shift — from being found by humans to being understood by machines.
+      </p>
     </section>
 
     <section>
@@ -289,8 +288,10 @@
         for AI Discoverability through the EntityWorks Discoverability Index™ and the surrounding lexicon and principles.
       </p>
 
-      <p>This page stands as the category formalisation statement:<br>
-      <strong>AI Discoverability, as a formal discipline, begins here.</strong></p>
+      <p>
+        This page stands as the category formalisation statement:<br>
+        <strong>AI Discoverability, as a formal discipline, begins here.</strong>
+      </p>
     </section>
 
     <p class="updated">
@@ -299,14 +300,13 @@
 
     <div class="explore-block">
       <h2>Explore Related Work</h2>
-      <p>If you’d like to see how this declaration connects to the rest of the EntityWorks framework, you can explore:</p>
+      <p>If you’d like to see how AI Perception connects to the rest of the EntityWorks framework, you can explore:</p>
       <ul>
-        <li><a href="/defining-ai-discoverability.html">AI Discoverability: Formalising the Discipline</a></li>
-        <li><a href="/position-on-ai-discoverability.html">EntityWorks Position on AI Discoverability</a></li>
-        <li><a href="/discoverability-index.html">EntityWorks Discoverability Index™ (EDI)</a></li>
-        <li><a href="/entity-understanding-layer.html">Entity Understanding Layer™</a></li>
-        <li><a href="/lexicon.html">EntityWorks Lexicon</a></li>
         <li><a href="/ai-discoverability-resources.html">AI Discoverability &amp; AI Perception — Canonical Documents</a></li>
+        <li><a href="/defining-ai-discoverability.html">AI Discoverability: Formalising the Discipline</a></li>
+        <li><a href="/entity-understanding-layer.html">Entity Understanding Layer™</a></li>
+        <li><a href="/discoverability-index.html">EntityWorks Discoverability Index™ (EDI)</a></li>
+        <li><a href="/lexicon.html">EntityWorks Lexicon</a></li>
       </ul>
     </div>
   </main>
