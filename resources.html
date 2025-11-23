@@ -142,6 +142,30 @@
       color: var(--ew-muted);
       margin-top: 3rem;
     }
+
+    /* Footer container alignment (matches AI Perception + EDI) */
+    footer {
+      max-width: var(--ew-max-width);
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+      font-size: 0.85rem;
+      color: var(--ew-muted);
+    }
+
+    footer p {
+      margin: 0.35rem 0;
+    }
+
+    footer a {
+      color: #0057b7;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      text-decoration: underline;
+    }
   </style>
 
   <script type="application/ld+json">
@@ -151,23 +175,6 @@
     "name": "EntityWorks — Resources Hub",
     "description": "Resource hub for EntityWorks: canonical documents and reference pages for AI Perception, AI Discoverability, the EntityWorks Discoverability Index™, and supporting frameworks.",
     "url": "https://entityworks.ai/resources.html",
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "AI Perception",
-        "description": "AI Perception is the discipline concerned with how AI systems form, update, and express their understanding of people, organisations, relationships, and ideas."
-      },
-      {
-        "@type": "Thing",
-        "name": "AI Discoverability",
-        "description": "AI Discoverability is the discipline of ensuring that AI systems can correctly identify, understand, and represent people, organisations, relationships, and ideas."
-      },
-      {
-        "@type": "Thing",
-        "name": "EntityWorks Discoverability Index™ (EDI)",
-        "description": "The EntityWorks Discoverability Index™ (EDI) is a structured assessment that measures how clearly AI systems understand and surface an entity."
-      }
-    ],
     "publisher": {
       "@type": "Organization",
       "name": "EntityWorks",
@@ -178,6 +185,7 @@
 </head>
 
 <body>
+
   <!-- Site header / nav -->
   <header class="site-header">
     <div class="nav-inner">
@@ -206,16 +214,8 @@
         Core pages that define AI Perception and the conceptual structures behind how AI systems understand entities.
       </p>
       <ul class="resource-list">
-        <li>
-          <a class="resource-link" href="/ai-perception.html">
-            AI Perception — The Discipline
-          </a>
-        </li>
-        <li>
-          <a class="resource-link" href="/entity-understanding-layer.html">
-            Entity Understanding Layer™ — Conceptual Model
-          </a>
-        </li>
+        <li><a class="resource-link" href="/ai-perception.html">AI Perception — The Discipline</a></li>
+        <li><a class="resource-link" href="/entity-understanding-layer.html">Entity Understanding Layer™ — Conceptual Model</a></li>
       </ul>
     </section>
 
@@ -226,21 +226,9 @@
         of the discipline.
       </p>
       <ul class="resource-list">
-        <li>
-          <a class="resource-link" href="/defining-ai-discoverability.html">
-            AI Discoverability: Defining the Discipline
-          </a>
-        </li>
-        <li>
-          <a class="resource-link" href="/position-on-ai-discoverability.html">
-            EntityWorks Position on AI Discoverability
-          </a>
-        </li>
-        <li>
-          <a class="resource-link" href="/category-creation-declaration.html">
-            Category Creation Declaration — AI Discoverability
-          </a>
-        </li>
+        <li><a class="resource-link" href="/defining-ai-discoverability.html">AI Discoverability: Defining the Discipline</a></li>
+        <li><a class="resource-link" href="/position-on-ai-discoverability.html">EntityWorks Position on AI Discoverability</a></li>
+        <li><a class="resource-link" href="/category-creation-declaration.html">Category Creation Declaration — AI Discoverability</a></li>
       </ul>
     </section>
 
@@ -250,16 +238,8 @@
         Pages that explain what the EDI is, why it matters, and how EntityWorks scores AI Discoverability in practice.
       </p>
       <ul class="resource-list">
-        <li>
-          <a class="resource-link" href="/why-the-edi-matters.html">
-            Why the EDI Matters
-          </a>
-        </li>
-        <li>
-          <a class="resource-link" href="/how-we-score-the-edi.html">
-            How We Score the EDI
-          </a>
-        </li>
+        <li><a class="resource-link" href="/why-the-edi-matters.html">Why the EDI Matters</a></li>
+        <li><a class="resource-link" href="/how-we-score-the-edi.html">How We Score the EDI</a></li>
       </ul>
     </section>
 
@@ -269,18 +249,22 @@
         Reference material for EntityWorks terminology, definitions, and supporting concepts.
       </p>
       <ul class="resource-list">
-        <li>
-          <a class="resource-link" href="/lexicon.html">
-            EntityWorks Lexicon
-          </a>
-        </li>
-        <!-- REMOVED: ai-discoverability-definitions.html -->
+        <li><a class="resource-link" href="/lexicon.html">EntityWorks Lexicon</a></li>
       </ul>
     </section>
 
-    <p class="meta">
-      Last updated: November 2025.
-    </p>
+    <p class="meta">Last updated: November 2025.</p>
   </main>
+
+  <!-- Shared global footer -->
+  <div id="footer"></div>
+  <script>
+    fetch("/footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+
 </body>
 </html>
