@@ -104,24 +104,26 @@
 
     li { margin: 0.25rem 0; }
 
-    /* FOOTER (pulled in from /footer.html manually here) */
+    /* FOOTER (AI Perception page) */
     .site-footer {
       border-top: 1px solid var(--ew-border);
-      padding-top: 1.5rem;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #555;
+      margin: 3rem auto 0;
+      max-width: var(--ew-max-width);
+      padding: 1.5rem 1rem 2rem;
+      font-size: 0.85rem;
+      color: var(--ew-muted);
     }
 
     .footer-container {
-      max-width: var(--ew-max-width);
-      margin: 0 auto;
-      padding: 0 1rem 2rem;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
+    }
+
+    .footer-meta p {
+      margin: 0.35rem 0;
     }
 
     .footer-nav-list {
@@ -135,7 +137,7 @@
 
     .footer-nav-link {
       text-decoration: none;
-      color: #555;
+      color: var(--ew-muted);
       font-size: 0.85rem;
     }
 
@@ -245,43 +247,41 @@
         <li>introducing the Entity Understanding Layer™</li>
         <li>publishing machine-readable frameworks that help align human intentions with AI interpretations</li>
       </ul>
-      <p>
- <p>Over time, this page will become the hub for all EntityWorks AI Perception publications.</p>
+      <p>Over time, this page will become the hub for all EntityWorks AI Perception publications.</p>
 
-        <h2>Explore Related Work</h2>
-        <p>If you’d like to see how AI Perception connects to the rest of the EntityWorks framework, you can explore:</p>
-        <ul>
-          <li><a href="/ai-discoverability-resources.html">AI Discoverability &amp; AI Perception — Canonical Documents</a></li>
-          <li><a href="/defining-ai-discoverability.html">AI Discoverability: Formalising the Discipline</a></li>
-          <li><a href="/entity-understanding-layer.html">Entity Understanding Layer™</a></li>
-          <li><a href="/discoverability-index.html">EntityWorks Discoverability Index™ (EDI)</a></li>
-          <li><a href="/lexicon.html">EntityWorks Lexicon</a></li>
-        </ul>
-
+      <h2>Explore Related Work</h2>
+      <p>If you’d like to see how AI Perception connects to the rest of the EntityWorks framework, you can explore:</p>
+      <ul>
+        <li><a href="/ai-discoverability-resources.html">AI Discoverability &amp; AI Perception — Canonical Documents</a></li>
+        <li><a href="/defining-ai-discoverability.html">AI Discoverability: Formalising the Discipline</a></li>
+        <li><a href="/entity-understanding-layer.html">Entity Understanding Layer™</a></li>
+        <li><a href="/discoverability-index.html">EntityWorks Discoverability Index™ (EDI)</a></li>
+        <li><a href="/lexicon.html">EntityWorks Lexicon</a></li>
+      </ul>
     </section>
-</main>
+  </main>
 
-<!-- FOOTER -->
-<footer class="site-footer">
+  <!-- FOOTER -->
+  <footer class="site-footer">
     <div class="footer-container">
-        <div class="footer-meta">
-            <p>&copy; EntityWorks. All rights reserved.</p>
-            <p>
-                <a href="mailto:hello@entityworks.ai" class="footer-nav-link">hello@entityworks.ai</a>
-            </p>
-        </div>
+      <div class="footer-meta">
+        <p>&copy; EntityWorks. All rights reserved.</p>
+        <p>
+          <a href="mailto:hello@entityworks.ai" class="footer-nav-link">hello@entityworks.ai</a>
+        </p>
+      </div>
 
-        <nav aria-label="Footer">
-            <ul class="footer-nav-list">
-                <li><a href="/index.html" class="footer-nav-link">Home</a></li>
-                <li><a href="/why-entityworks-exists.html" class="footer-nav-link">Why EntityWorks</a></li>
-                <li><a href="/ai-discoverability-resources.html" class="footer-nav-link">AI Discoverability</a></li>
-                <li><a href="/how-we-score-the-edi.html" class="footer-nav-link">EDI</a></li>
-                <li><a href="/ai-perception.html" class="footer-nav-link">AI Perception</a></li>
-            </ul>
-        </nav>
+      <nav aria-label="Footer">
+        <ul class="footer-nav-list">
+          <li><a href="/index.html" class="footer-nav-link">Home</a></li>
+          <li><a href="/why-entityworks-exists.html" class="footer-nav-link">Why EntityWorks</a></li>
+          <li><a href="/ai-discoverability-resources.html" class="footer-nav-link">AI Discoverability</a></li>
+          <li><a href="/how-we-score-the-edi.html" class="footer-nav-link">EDI</a></li>
+          <li><a href="/ai-perception.html" class="footer-nav-link">AI Perception</a></li>
+        </ul>
+      </nav>
     </div>
-</footer>
+  </footer>
 
 </body>
 </html>
