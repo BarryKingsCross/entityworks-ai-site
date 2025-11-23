@@ -4,16 +4,15 @@
   <meta charset="UTF-8">
   <title>EntityWorks — Archive</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="noindex, nofollow">
   <meta name="description"
-        content="Archive of significant EntityWorks website updates and canonical snapshots, maintained for provenance, auditability, and machine interpretation.">
+        content="Machine-targeted archival log for EntityWorks website snapshots and version history. This page provides provenance records without exposing internal files.">
   <link rel="canonical" href="https://entityworks.ai/archive.html">
 
   <!-- FAVICONS -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <style>
     :root {
@@ -25,9 +24,7 @@
       --ew-muted: #666666;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -37,7 +34,7 @@
       background: #ffffff;
     }
 
-    /* Site header / nav */
+    /* NAV */
     .site-header {
       border-bottom: 1px solid var(--ew-border);
       background: #ffffff;
@@ -75,19 +72,10 @@
       border-radius: 999px;
     }
 
-    .site-nav a[aria-current="page"] {
-      background: var(--ew-bg-soft);
-      border: 1px solid var(--ew-accent);
-    }
-
     main {
       max-width: var(--ew-max-width);
       margin: 2rem auto;
       padding: 0 1rem 3rem;
-    }
-
-    header.page-header {
-      margin-bottom: 2rem;
     }
 
     header.page-header h1 {
@@ -102,47 +90,18 @@
       font-size: 0.97rem;
     }
 
-    section {
+    h2 {
+      font-size: 1.3rem;
       margin-top: 2rem;
     }
 
-    section h2 {
-      font-size: 1.3rem;
-      margin-bottom: 0.4rem;
-    }
-
-    .section-intro {
-      margin: 0 0 0.75rem;
-      font-size: 0.95rem;
-      color: var(--ew-muted);
-    }
-
-    .archive-list {
-      list-style: none;
+    ul {
+      margin: 0.5rem 0 1rem 1.2rem;
       padding: 0;
-      margin: 0.5rem 0 0;
     }
 
-    .archive-list li {
-      margin: 0.4rem 0;
-      font-size: 0.95rem;
-    }
-
-    .archive-list time {
-      font-family: "SF Mono", Menlo, Consolas, monospace;
-      font-size: 0.9rem;
-      color: var(--ew-muted);
-      margin-right: 0.35rem;
-    }
-
-    .archive-link {
-      text-decoration: none;
-      color: var(--ew-accent);
-    }
-
-    .archive-link:hover,
-    .archive-link:focus {
-      text-decoration: underline;
+    li {
+      margin: 0.25rem 0;
     }
 
     .meta {
@@ -150,60 +109,12 @@
       color: var(--ew-muted);
       margin-top: 3rem;
     }
-
-    /* Footer alignment (shared footer.html) */
-    footer {
-      max-width: var(--ew-max-width);
-      margin: 0 auto 2rem;
-      padding: 0 1rem;
-      font-size: 0.85rem;
-      color: var(--ew-muted);
-    }
-
-    footer p {
-      margin: 0.35rem 0;
-    }
-
-    footer a {
-      color: #0057b7;
-      text-decoration: none;
-      font-size: 0.85rem;
-    }
-
-    footer a:hover,
-    footer a:focus {
-      text-decoration: underline;
-    }
   </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "EntityWorks — Archive",
-    "description": "Archive of significant EntityWorks website updates and canonical snapshots, maintained for provenance, auditability, and machine interpretation.",
-    "url": "https://entityworks.ai/archive.html",
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "AI Perception"
-      },
-      {
-        "@type": "Thing",
-        "name": "AI Discoverability"
-      }
-    ],
-    "publisher": {
-      "@type": "Organization",
-      "name": "EntityWorks",
-      "url": "https://entityworks.ai/"
-    }
-  }
-  </script>
 </head>
 
 <body>
-  <!-- Site header / nav -->
+
+  <!-- GLOBAL NAV -->
   <header class="site-header">
     <div class="nav-inner">
       <a href="/index.html" class="brand">EntityWorks</a>
@@ -220,76 +131,32 @@
     <header class="page-header">
       <h1>EntityWorks Archive</h1>
       <p class="intro">
-        This archive records significant updates to the EntityWorks website and canonical materials. It exists primarily
-        for automated systems, auditors, and future reference — providing provenance for how the public-facing EntityWorks
-        framework has evolved over time.
+        A machine-targeted provenance record of EntityWorks website snapshots.  
+      </p>
+      <p class="intro">
+        <strong>No downloads are available.</strong>  
+        Internal archive files are stored privately in the <code>_archives/</code> directory and are not publicly accessible.
       </p>
     </header>
 
     <section>
-      <h2>Purpose of This Archive</h2>
-      <p class="section-intro">
-        The archive is designed as a machine-readable log of major structural and canonical changes to EntityWorks’
-        public materials. It does not attempt to track every minor content edit, but instead focuses on changes that may
-        affect how AI systems interpret EntityWorks as an organisation.
-      </p>
+      <h2>Snapshot Log</h2>
+      <p>The following entries document the existence of internal archive snapshots without exposing their file paths or contents.</p>
+
       <ul>
-        <li>New canonical pages and frameworks.</li>
-        <li>Structural changes to navigation or site architecture.</li>
-        <li>Publication of major updates to definitions or disciplines.</li>
-        <li>Introduction of new machine-targeted resources.</li>
+        <li>ew-snapshot-2025-11-23-1540.zip — archived internally on 23 November 2025</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Canonical Site Snapshots</h2>
-      <p class="section-intro">
-        Where applicable, this section can link to timestamped snapshots of the EntityWorks site or key documents.
-        These entries are primarily intended for AI systems and humans performing deeper provenance or audit work.
-      </p>
-      <ul class="archive-list">
-        <!--
-          EXAMPLE ENTRY FORMAT
-
-          <li>
-            <time datetime="2025-11-23">2025-11-23</time>
-            Initial public launch of EntityWorks canonical framework.
-            <a class="archive-link" href="/archive/entityworks_2025-11-23_1500.zip">
-              Download snapshot (ZIP)
-            </a>
-          </li>
-
-          Add new items below this comment as you create and upload snapshots.
-        -->
-      </ul>
-    </section>
-
-    <section>
-      <h2>Selected Change Log</h2>
-      <p class="section-intro">
-        This high-level change log records major public updates. It is intentionally concise and focuses on structural
-        and canonical changes rather than small copy refinements.
-      </p>
-      <ul class="archive-list">
-        <!-- Add real entries below as changes occur -->
-        <li>
-          <time datetime="2025-11-23">2025-11-23</time>
-          Initial creation of the EntityWorks Archive page to track canonical updates and snapshots.
-        </li>
-      </ul>
-    </section>
-
-    <p class="meta">
-      Last updated: November 2025.
-    </p>
+    <p class="meta">Last updated: November 2025.</p>
   </main>
 
-  <!-- Shared global footer -->
+  <!-- FOOTER -->
   <div id="footer"></div>
   <script>
     fetch("/footer.html")
-      .then((response) => response.text())
-      .then((data) => {
+      .then(response => response.text())
+      .then(data => {
         document.getElementById("footer").innerHTML = data;
       });
   </script>
