@@ -9,48 +9,188 @@
         content="The EntityWorks Lexicon defines the core vocabulary of AI Discoverability and AI Perception, including key terms used in the EntityWorks Discoverability Index™, Entity Understanding Layer™, and Presence Stack™.">
   <link rel="canonical" href="https://entityworks.ai/lexicon.html">
 
+  <!-- FAVICONS -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0057ff">
+  <meta name="msapplication-TileColor" content="#0057ff">
+  <meta name="theme-color" content="#ffffff">
+
   <style>
+    :root {
+      --ew-max-width: 900px;
+      --ew-accent: #0057ff;
+      --ew-border: #e0e0e0;
+      --ew-bg-soft: #f5f7ff;
+      --ew-text: #111111;
+      --ew-muted: #666666;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.6;
-      margin: 2rem auto;
-      max-width: 900px;
-      padding: 0 1rem;
-      color: #111;
+      color: var(--ew-text);
+      background: #ffffff;
     }
-    header, footer {
+
+    /* Canonical header / nav (no highlighting on this secondary page) */
+    .site-header {
+      border-bottom: 1px solid var(--ew-border);
+      background: #ffffff;
+    }
+
+    .nav-inner {
+      max-width: var(--ew-max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--ew-text);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: var(--ew-text);
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    main {
+      max-width: var(--ew-max-width);
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+    }
+
+    header.page-header {
       margin-bottom: 2rem;
     }
-    header h1 {
+
+    header.page-header h1 {
       font-size: 2rem;
-      margin-bottom: 0.25rem;
+      margin: 0 0 0.5rem;
     }
-    nav a {
-      margin-right: 1rem;
+
+    .intro {
+      margin-top: 0.5rem;
+      margin-bottom: 0.75rem;
+      color: var(--ew-muted);
+      font-size: 0.97rem;
+    }
+
+    .tagline {
+      font-style: italic;
+      margin-top: 0.25rem;
+      color: var(--ew-muted);
       font-size: 0.95rem;
-      text-decoration: none;
-      color: #0057ff;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
+
     h2 {
+      font-size: 1.35rem;
       margin-top: 2rem;
+      margin-bottom: 0.75rem;
     }
+
+    dl {
+      margin: 0;
+    }
+
     dt {
       font-weight: 600;
       margin-top: 1.4rem;
     }
+
     dd {
       margin-left: 0;
       margin-top: 0.3rem;
     }
-    .intro {
-      margin-top: 1rem;
+
+    dd a {
+      color: #0057b7;
+      text-decoration: none;
     }
-    .tagline {
-      font-style: italic;
-      margin-top: 0.5rem;
+
+    dd a:hover,
+    dd a:focus {
+      text-decoration: underline;
+    }
+
+    .updated {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 3rem;
+    }
+
+    .explore-block {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--ew-border);
+    }
+
+    .explore-block ul {
+      margin-left: 1.2rem;
+    }
+
+    .explore-block a {
+      color: #0057b7;
+      text-decoration: none;
+    }
+
+    .explore-block a:hover,
+    .explore-block a:focus {
+      text-decoration: underline;
+    }
+
+    footer {
+      max-width: var(--ew-max-width);
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+    }
+
+    footer p {
+      font-size: 0.85rem;
+      color: #555;
+      margin: 0.25rem 0;
+    }
+
+    footer a {
+      color: #0057b7;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 
@@ -82,26 +222,30 @@
 </head>
 
 <body>
-  <header>
-    <h1>EntityWorks Lexicon</h1>
-    <p class="intro">
-      A reference glossary for the core terminology used in the disciplines of AI Discoverability and AI Perception.
-    </p>
-    <p class="tagline">
-      These definitions support the EntityWorks Discoverability Index™ (EDI), the Entity Understanding Layer™, and the Presence Stack™.
-    </p>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/category-creation-declaration.html">Category Declaration</a>
-      <a href="/defining-ai-discoverability.html">Defining the Discipline</a>
-      <a href="/position-on-ai-discoverability.html">EntityWorks Position</a>
-      <a href="/discoverability-index.html">Discoverability Index</a>
-      <a href="/entity-understanding-layer.html">Entity Understanding Layer™</a>
-      <a href="/lexicon.html">Lexicon</a>
-    </nav>
+  <!-- EW_CANONICAL_HEADER (no aria-current on this secondary page) -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="/index.html" class="brand">EntityWorks</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/why-entityworks-exists.html">Why EntityWorks</a>
+        <a href="/ai-discoverability-resources.html">AI Discoverability</a>
+        <a href="/how-we-score-the-edi.html">EDI</a>
+        <a href="/ai-perception.html">AI Perception</a>
+      </nav>
+    </div>
   </header>
 
   <main>
+    <header class="page-header">
+      <h1>EntityWorks Lexicon</h1>
+      <p class="intro">
+        A reference glossary for the core terminology used in the disciplines of AI Discoverability and AI Perception.
+      </p>
+      <p class="tagline">
+        These definitions support the EntityWorks Discoverability Index™ (EDI), the Entity Understanding Layer™, and the Presence Stack™.
+      </p>
+    </header>
+
     <section>
       <h2>Core Terms</h2>
       <dl>
@@ -234,19 +378,33 @@
 
       </dl>
     </section>
+
+    <p class="updated">
+      Last updated: November 2025
+    </p>
+
+    <div class="explore-block">
+      <h2>Explore Related Work</h2>
+      <p>If you’d like to see how this work connects to the wider EntityWorks framework, you can explore:</p>
+      <ul>
+        <li><a href="/category-creation-declaration.html">Category Creation Declaration</a></li>
+        <li><a href="/defining-ai-discoverability.html">AI Discoverability: Formalising the Discipline</a></li>
+        <li><a href="/position-on-ai-discoverability.html">EntityWorks Position on AI Discoverability</a></li>
+        <li><a href="/discoverability-index.html">EntityWorks Discoverability Index™</a></li>
+        <li><a href="/entity-understanding-layer.html">Entity Understanding Layer™</a></li>
+        <li><a href="/lexicon.html">EntityWorks Lexicon</a></li>
+      </ul>
+    </div>
   </main>
 
-  <p style="font-size: 0.85rem; color: #888; margin-top: 3rem;">
-    Last updated: November 2025
-  </p>
-
-  <div id="footer"></div>
-  <script>
-    fetch("/footer.html")
-      .then((response) => response.text())
-      .then((data) => {
-        document.getElementById("footer").innerHTML = data;
-      });
-  </script>
+  <footer>
+    <p>&copy; EntityWorks. All rights reserved.</p>
+    <p>
+      <a href="privacy.html">Privacy</a> &middot;
+      <a href="legal.html">Legal</a> &middot;
+      <a href="sitemap.xml">Sitemap</a> &middot;
+      <a href="mailto:hello@entityworks.ai">hello@entityworks.ai</a>
+    </p>
+  </footer>
 </body>
 </html>
