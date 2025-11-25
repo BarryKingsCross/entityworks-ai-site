@@ -64,4 +64,14 @@
     <loc>https://entityworks.ai/archive.html</loc>
   </url>
 
+  <!-- ⭐ NEW STANDARDS INDEX PAGE -->
+  <url>
+    <loc>https://entityworks.ai/standards.html</loc>
+  </url>
+
+  <!-- ⭐ NEW APIM STANDARD PLACEHOLDER PAGE -->
+  <url>
+    <loc>https://entityworks.ai/standards/ai-perception-integrity-mark.html</loc>
+  </url>
+
 </urlset>
