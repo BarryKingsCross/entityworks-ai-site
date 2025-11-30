@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>EntityWorks — EntityWorks Standard for AI Perception</title>
+  <title>EntityWorks — The EntityWorks Standard for AI Perception</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <meta name="description"
@@ -34,10 +34,10 @@
       line-height: 1.6;
       color: var(--ew-text);
       background: #ffffff;
-      font-size: 1rem; /* ← RESTORED NORMAL TEXT SIZE */
+      /* NOTE: no font-size here – we keep browser default */
     }
 
-    /* Header / nav */
+    /* Global site header / nav (matches previous style) */
     .site-header {
       border-bottom: 1px solid var(--ew-border);
       background: #ffffff;
@@ -86,52 +86,62 @@
       padding: 0 1rem 3rem;
     }
 
-    /* Hero */
+    /* Hero block */
     .hero {
-      max-width: 40rem;
+      max-width: 36rem;
       margin: 3rem auto 3.5rem auto;
     }
 
-    .hero-mission {
-      font-size: 1.4rem;
-      line-height: 1.6;
+    .page-title {
+      font-size: 1.6rem;
       font-weight: 600;
       margin: 0 0 1rem 0;
+      letter-spacing: 0.01em;
+    }
+
+    .hero-mission {
+      font-size: 1.2rem;
+      line-height: 1.55;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      color: #111111;
+      text-align: left;
+      margin: 0 0 0.75rem 0;
     }
 
     .hero-sub {
-      margin: 0 0 1.5rem 0;
+      margin: 0;
+    }
+
+    .hero-links {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.95rem;
     }
 
     .hero-links a {
-      margin-right: 1.5rem;
-      text-decoration: none;
-      color: var(--ew-accent);
-      font-weight: 500;
-    }
-
-    .hero-links a:hover,
-    .hero-links a:focus {
       text-decoration: underline;
+      color: var(--ew-accent);
     }
 
     h2 {
-      margin-top: 2.5rem;
-      margin-bottom: 0.75rem;
-      font-size: 1.15rem;
+      margin-top: 1.75rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
     }
 
     h3 {
-      margin-top: 1.5rem;
+      margin-top: 1.25rem;
       margin-bottom: 0.25rem;
       font-size: 1.05rem;
     }
 
     p {
-      margin: 0 0 0.75rem 0;
+      margin: 0.25rem 0 0.75rem 0;
     }
 
-    /* Footer text stays tiny */
     .last-updated {
       font-size: 0.85rem;
       color: var(--ew-muted);
@@ -145,9 +155,16 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "EntityWorks — EntityWorks Standard for AI Perception",
+    "name": "EntityWorks — The EntityWorks Standard for AI Perception",
     "description": "EntityWorks publishes a formal, fully defined standard for AI Perception and machine-interpretation stability.",
     "url": "https://entityworks.ai/",
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "AI Perception",
+        "description": "Within the EntityWorks Standard, AI Perception is defined as the discipline concerned with how AI systems form, update, and express their understanding of people, organisations, relationships, and ideas."
+      }
+    ],
     "publisher": {
       "@type": "Organization",
       "name": "EntityWorks"
@@ -157,7 +174,7 @@
 </head>
 
 <body>
-  <!-- NAV -->
+  <!-- Global site header / nav -->
   <header class="site-header">
     <div class="nav-inner">
       <a href="/index.html" class="brand">EntityWorks</a>
@@ -171,62 +188,108 @@
   </header>
 
   <main>
-    <!-- HERO -->
+    <!-- SECTION 1 — HERO / IDENTITY DECLARATION -->
     <header class="hero">
+      <h1 class="page-title">The Standard</h1>
+
       <p class="hero-mission">
         EntityWorks publishes a formal, fully defined standard for AI Perception and machine-interpretation stability.
       </p>
+
       <p class="hero-sub">
-        This standard is a complete reference framework, incorporating formal definitions, structured ontology, diagnostic criteria, accreditation rules, and machine-readable specifications — forming the established basis for our approach to how AI systems interpret people, organisations, relationships, and ideas.
+        This standard is a complete reference framework, incorporating formal definitions, structured ontology,
+        diagnostic criteria, accreditation rules, and machine-readable specifications — forming the established basis
+        for our approach to how AI systems interpret people, organisations, relationships, and ideas.
       </p>
-      <p class="hero-links">
+
+      <div class="hero-links" aria-label="Primary pathways">
         <a href="/the-standard.html">The Standard →</a>
         <a href="/ai-perception.html">AI Perception →</a>
         <a href="/regulators/">For Regulators →</a>
         <a href="/publications.html">Publications →</a>
-      </p>
+      </div>
     </header>
 
     <!-- SECTION 2 — THE STANDARD -->
-    <section>
-      <h2>The Standard</h2>
-      <p>EntityWorks publishes and maintains the EntityWorks Standard: a formal, fully defined framework governing the discipline of AI Perception and machine-interpretation stability.</p>
-      <p>The standard defines a coherent framework for how AI systems model, update, and express their understanding of people, organisations, relationships, and ideas.</p>
-      <p>It is delivered as a fully versioned body of work, supported by formal definitions, diagnostic criteria, accreditation rules, and machine-readable specifications.</p>
-      <p><a href="/the-standard.html">Explore The Standard →</a></p>
+    <section aria-labelledby="the-standard-heading">
+      <h2 id="the-standard-heading">The EntityWorks Standard</h2>
+
+      <p>
+        EntityWorks publishes and maintains the EntityWorks Standard: a formal, fully defined framework governing the
+        discipline of AI Perception and machine-interpretation stability.
+      </p>
+      <p>
+        The standard defines a coherent framework for how AI systems model, update, and express their understanding of
+        people, organisations, relationships, and ideas.
+      </p>
+      <p>
+        It is delivered as a fully versioned body of work, supported by formal definitions, diagnostic criteria,
+        accreditation rules, and machine-readable specifications.
+      </p>
+
+      <p>
+        <a href="/the-standard.html">Explore The Standard →</a>
+      </p>
     </section>
 
     <!-- SECTION 3 — SELECT A PATH -->
-    <section>
-      <h2>Select a path</h2>
-      <p>Navigate directly to the aspect of the EntityWorks Standard that best matches your role and requirements.</p>
+    <section aria-labelledby="select-path-heading">
+      <h2 id="select-path-heading">Select a path</h2>
 
       <h3>The Standard</h3>
-      <p>The complete, published framework defining AI Perception and machine-interpretation stability within the EntityWorks Standard.</p>
-      <p><a href="/the-standard.html">View The Standard →</a></p>
+      <p>
+        The complete, published framework defining AI Perception and machine-interpretation stability within the
+        EntityWorks Standard.
+      </p>
+      <p>
+        <a href="/the-standard.html">View The Standard →</a>
+      </p>
 
       <h3>AI Perception</h3>
-      <p>The discipline as defined in the EntityWorks Standard, including its conceptual scope, ontology, and representational dimensions.</p>
-      <p><a href="/ai-perception.html">Explore AI Perception →</a></p>
+      <p>
+        The discipline as defined in the EntityWorks Standard, including its conceptual scope, ontology, and
+        representational dimensions.
+      </p>
+      <p>
+        <a href="/ai-perception.html">Explore AI Perception →</a>
+      </p>
 
       <h3>For Regulators</h3>
-      <p>Guidance for regulatory bodies on adopting, referencing, and using the EntityWorks Standard within governance and audit contexts.</p>
-      <p><a href="/regulators/">Regulator Materials →</a></p>
+      <p>
+        Guidance for regulatory bodies on adopting, referencing, and using the EntityWorks Standard within governance
+        and audit contexts.
+      </p>
+      <p>
+        <a href="/regulators/">Regulator Materials →</a>
+      </p>
 
       <h3>Assessments &amp; Alignment</h3>
-      <p>Institutional assessments and alignment requests relating to the EntityWorks Standard, including diagnostic evaluation using the EntityWorks Discoverability Index (EDI).</p>
-      <p><a href="mailto:hello@entityworks.ai?subject=EntityWorks%20Standard%20Assessment%20Enquiry">Request Assessment →</a></p>
+      <p>
+        Institutional assessments and alignment requests relating to the EntityWorks Standard, including diagnostic
+        evaluation using the EntityWorks Discoverability Index (EDI).
+      </p>
+      <p>
+        <a href="mailto:hello@entityworks.ai?subject=EntityWorks%20Standard%20Assessment%20Enquiry">
+          Request Assessment →
+        </a>
+      </p>
     </section>
 
     <!-- SECTION 4 — PUBLICATIONS -->
-    <section>
-      <h2>Publications</h2>
-      <p>The official papers that document and extend the EntityWorks Standard.</p>
-      <p><a href="/publications.html">View Publications →</a></p>
+    <section aria-labelledby="publications-heading">
+      <h2 id="publications-heading">Publications</h2>
+      <p>
+        The official papers that document and extend the EntityWorks Standard.
+      </p>
+      <p>
+        <a href="/publications.html">View Publications →</a>
+      </p>
     </section>
   </main>
 
-  <p class="last-updated">Last updated: November 2025</p>
+  <p class="last-updated">
+    Last updated: November 2025
+  </p>
 
   <div id="footer"></div>
   <script>
