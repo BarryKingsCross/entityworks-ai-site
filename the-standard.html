@@ -335,25 +335,14 @@
     </p>
   </main>
 
-  <footer style="max-width: 900px; margin: 3rem auto 2rem; padding: 0 1rem; text-align: left; font-size: 0.9rem; color: #333;">
-    <p style="margin: 0;">
-      <strong>EntityWorks Ltd</strong> 82a James Carter Road, Mildenhall, Bury St. Edmunds, England, IP28 7DE
-      Company No: 16849701
-      <a href="mailto:hello@entityworks.ai">hello@entityworks.ai</a>
-    </p>
+ <div id="footer"></div>
+<script>
+  fetch("/footer.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
 
-    <p style="color:#777; margin: 0.75rem 0 0;">
-      EntityWorks does not use cookies, analytics tools, or tracking technologies.
-    </p>
-
-    <p style="margin: 0.75rem 0 0;">
-      <a href="/privacy.html">Privacy</a> &middot;
-      <a href="/legal.html">Legal</a> &middot;
-      <a href="/publications.html">Publications</a> &middot;
-      <a href="/sitemap.xml">Sitemap</a>
-    </p>
-
-    <p style="margin: 0.75rem 0 0;">&copy; 2025 EntityWorks Ltd. All rights reserved.</p>
-  </footer>
 </body>
 </html>
