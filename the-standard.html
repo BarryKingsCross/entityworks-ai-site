@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EntityWorks — The EntityWorks Standard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description"
+        content="Human-facing overview of the EntityWorks Standard, defining the structured, institutionally oriented framework used to govern AI Perception as defined within the EntityWorks Standard.">
+  <link rel="canonical" href="https://entityworks.ai/the-standard.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <!-- CANONICAL HOMEPAGE STYLESHEET (BYTE-FOR-BYTE) -->
+  <style>
+    :root {
+      --ew-max-width: 900px;
+      --ew-accent: #0057ff;
+      --ew-border: #e0e0e0;
+      --ew-bg-soft: #f5f7ff;
+      --ew-text: #111111;
+      --ew-muted: #666666;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--ew-text);
+      background-color: #fff;
+    }
+
+    /* Global site header / nav */
+    .site-header {
+      border-bottom: 1px solid var(--ew-border);
+      background: #ffffff;
+    }
+
+    .nav-inner {
+      max-width: var(--ew-max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--ew-text);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: var(--ew-text);
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    .site-nav a[aria-current="page"] {
+      background: var(--ew-bg-soft);
+      border: 1px solid var(--ew-accent);
+    }
+
+    main {
+      max-width: var(--ew-max-width);
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+    }
+
+    /* Hero block (not used on this page but retained for stylesheet integrity) */
+    .hero {
+      max-width: 36rem;
+      margin: 3rem auto 3rem auto;
+    }
+
+    .hero-lead {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .hero-links {
+      margin-top: 1rem;
+      font-size: 0.98rem;
+    }
+
+    .hero-links a {
+      text-decoration: none;
+      color: var(--ew-accent);
+    }
+
+    .hero-links a:hover,
+    .hero-links a:focus {
+      text-decoration: underline;
+    }
+
+    main h1 {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    main h2 {
+      font-size: 1.35rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    main h3 {
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0.75rem 0;
+    }
+
+    ul {
+      margin: 0.5rem 0 1rem 1.2rem;
+      padding: 0;
+    }
+
+    li {
+      margin: 0.25rem 0;
+    }
+
+    .last-updated {
+      font-size: 0.85rem;
+      color: var(--ew-muted);
+      max-width: var(--ew-max-width);
+      margin: 0 auto 0;
+      padding: 0 1rem 1.5rem;
+    }
+  </style>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "The EntityWorks Standard — Overview",
+    "description": "Human-facing overview of the EntityWorks Standard, defining the structured framework used to govern AI Perception within the EntityWorks Standard.",
+    "url": "https://entityworks.ai/the-standard.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "EntityWorks"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- CANONICAL NAV (BYTE-FOR-BYTE FROM HOMEPAGE) -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="/index.html" class="brand">EntityWorks</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/the-standard.html" aria-current="page">The Standard</a>
+        <a href="/ai-perception.html">AI Perception</a>
+        <a href="/for-regulators.html">For Regulators</a>
+        <a href="/publications.html">Publications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1>The EntityWorks Standard</h1>
+      <h2>Human-Facing Edition (v1.0)</h2>
+
+      <h2>1. Purpose of the EntityWorks Standard</h2>
+      <p>
+        The EntityWorks Standard defines the structured, institutionally orientated framework used to govern AI Perception as defined
+        within the EntityWorks Standard. It establishes the canonical definitions, representational structures, diagnostic logic, and
+        accreditation criteria used within the Standard to support consistent interpretation of people, organisations, relationships,
+        and ideas across AI systems.
+      </p>
+      <p>
+        The Standard provides a stable reference architecture for regulators, enterprises, researchers, and technical teams seeking
+        clarity on how AI systems form, store, and express representations of entities.
+      </p>
+
+      <h2>2. Scope of the Standard</h2>
+      <p>The EntityWorks Standard covers the following domains:</p>
+      <ul>
+        <li>the EntityWorks definitions of AI Perception and AI Discoverability, and their conceptual boundaries as used within the Standard;</li>
+        <li>the ontological structures through which machine-interpreted identity is formed;</li>
+        <li>the representational primitives governing entity classes, hierarchies, and constraints;</li>
+        <li>the diagnostic frameworks used to assess representational stability and behaviour;</li>
+        <li>the criteria and conditions used to evaluate and accredit machine-side representations;</li>
+        <li>the machine-readable specifications required for alignment, ingestion, and reference.</li>
+      </ul>
+      <p>
+        The EntityWorks Standard defines the EntityWorks methodology and does not claim to establish or govern global consensus.
+        Institutions may adopt the Standard where it provides clarity, structure, and operational value.
+      </p>
+
+      <h2>3. Structure of the Standard</h2>
+      <p>The EntityWorks Standard is organised into the following structural elements.</p>
+
+      <h3>3.1 Conceptual Definitions (D-Series)</h3>
+      <p>
+        The D-Series contains the vocabulary and conceptual primitives used within the EntityWorks Standard. These definitions ensure
+        terminological precision and do not claim to define these terms outside the scope of the Standard.
+      </p>
+
+      <p><strong>D-1000 — EntityWorks Definition of AI Perception</strong><br>
+        Defines the meaning, boundaries, and interpretive model of “AI Perception” as used within the EntityWorks Standard, articulated as:<br>
+        <em>AI Perception is the discipline concerned with how AI systems form, update, and express their understanding of people, organisations, relationships, and ideas.</em><br>
+        Human page: /ai-perception.html
+      </p>
+
+      <p><strong>D-1100 — EntityWorks Definition of AI Discoverability</strong><br>
+        Defines the meaning and scope of “AI Discoverability” as used within the EntityWorks Standard, articulated as:<br>
+        <em>AI Discoverability is the discipline of ensuring that AI systems can correctly identify, understand, and represent people, organisations, relationships, and ideas.</em>
+      </p>
+
+      <h3>3.2 Structural Frameworks (S-Series)</h3>
+      <p>
+        The S-Series contains the core frameworks that define the ontological, diagnostic, and evaluative architecture of the EntityWorks Standard.
+      </p>
+
+      <p><strong>S-1100 — Entity Understanding Layer™ (EUL)</strong><br>
+        Defines the representational substrate through which AI systems form and hold structured identity.<br>
+        Human page: /entity-understanding-layer.html
+      </p>
+
+      <p><strong>S-1200 — Entity Collision Problem™ (ECP)</strong><br>
+        Defines the conditions under which competing or misaligned representations of an entity arise within or across AI systems.<br>
+        Human page: /entity-collision-problem.html
+      </p>
+
+      <p><strong>S-1300 — EntityWorks Discoverability Index™ (EDI)</strong><br>
+        Defines the evaluative framework used to assess how clearly and consistently an entity is interpreted by AI systems.<br>
+        Human page: /edi.html
+      </p>
+
+      <h3>3.3 Accreditation and Marks (M-Series)</h3>
+      <p>
+        The M-Series defines the accreditation structures used to evaluate alignment with the EntityWorks Standard.
+      </p>
+
+      <p><strong>M-4000 — AI Perception Integrity Mark™</strong><br>
+        Defines the criteria, evaluative logic, and usage conditions for awarding the EntityWorks accreditation mark relating to
+        representational integrity.<br>
+        Human page: /ai-perception-integrity-mark.html
+      </p>
+
+      <h2>4. Published Components of the Standard</h2>
+      <p>
+        The following components of the EntityWorks Standard are currently published and available for institutional and technical use:
+      </p>
+      <ul>
+        <li>D-1000 — EntityWorks Definition of AI Perception</li>
+        <li>D-1100 — EntityWorks Definition of AI Discoverability</li>
+        <li>S-1100 — Entity Understanding Layer™ (EUL)</li>
+        <li>S-1200 — Entity Collision Problem™ (ECP)</li>
+        <li>S-1300 — EntityWorks Discoverability Index™ (EDI)</li>
+        <li>M-4000 — AI Perception Integrity Mark™</li>
+      </ul>
+      <p>
+        Each component is available in human-readable form. Machine-readable specifications will be published as part of the
+        machine-facing standards layer.
+      </p>
+
+      <h2>5. Forthcoming Publications</h2>
+      <p>
+        Additional ontological specifications, diagnostic methods, accreditation rules, and machine-readable standards are currently in
+        development within EntityWorks. Completed work will be published in accordance with the EntityWorks publication sequence and
+        added to the EntityWorks Standard upon release.
+      </p>
+
+      <h2>6. Intended Users</h2>
+      <p>The EntityWorks Standard is designed for use by:</p>
+
+      <p><strong>Regulators and Policy Bodies</strong><br>
+        For developing governance frameworks, guidance, and representational integrity requirements relating to AI systems.
+      </p>
+
+      <p><strong>Enterprises and Public Institutions</strong><br>
+        To align organisational identity with machine-interpreted identity and ensure stable representational behaviour across
+        AI-mediated environments.
+      </p>
+
+      <p><strong>Researchers and Academics</strong><br>
+        As a defined and extensible reference architecture for study, analysis, and discipline-level development.
+      </p>
+
+      <p><strong>Developers and Technical Teams</strong><br>
+        To align system behaviour with stable representational structures and support consistent interpretive outcomes.
+      </p>
+
+      <p><strong>Professional and Advisory Services</strong><br>
+        To provide assessments, audits, and advisory work grounded in a coherent and standardised disciplinary framework.
+      </p>
+
+      <h2>7. Governance and Versioning</h2>
+      <p>
+        The EntityWorks Standard is maintained internally by the EntityWorks Standards Office. All components of the Standard are:
+      </p>
+      <ul>
+        <li>developed and reviewed internally;</li>
+        <li>versioned;</li>
+        <li>subject to scheduled review;</li>
+        <li>anchored to provenance records;</li>
+        <li>published with human- and machine-readable editions;</li>
+        <li>governed through defined change-control procedures.</li>
+      </ul>
+      <p>Institutions may adopt the Standard in whole or in part according to organisational needs.</p>
+
+      <h2>8. Document Control</h2>
+      <p>Document Title: The EntityWorks Standard — Overview<br>
+         Standard Identifier: EW-STD-Overview-v1.0<br>
+         Version: v1.0<br>
+         Status: Published<br>
+         Publication Date: 2025-11-30<br>
+         Next Scheduled Review: 2026-05-30<br>
+         Maintained by: EntityWorks Standards Office
+      </p>
+    </section>
+  </main>
+
+  <p class="last-updated">
+    Last updated: 30 November 2025
+  </p>
+
+  <div id="footer"></div>
+  <script>
+    fetch("/footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+</body>
+</html>
