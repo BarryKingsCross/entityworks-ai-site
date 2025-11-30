@@ -34,9 +34,10 @@
       line-height: 1.6;
       color: var(--ew-text);
       background: #ffffff;
+      font-size: 1rem; /* ← RESTORED NORMAL TEXT SIZE */
     }
 
-    /* Global site header / nav */
+    /* Header / nav */
     .site-header {
       border-bottom: 1px solid var(--ew-border);
       background: #ffffff;
@@ -95,7 +96,6 @@
       font-size: 1.4rem;
       line-height: 1.6;
       font-weight: 600;
-      letter-spacing: 0.01em;
       margin: 0 0 1rem 0;
     }
 
@@ -131,6 +131,7 @@
       margin: 0 0 0.75rem 0;
     }
 
+    /* Footer text stays tiny */
     .last-updated {
       font-size: 0.85rem;
       color: var(--ew-muted);
@@ -147,13 +148,6 @@
     "name": "EntityWorks — EntityWorks Standard for AI Perception",
     "description": "EntityWorks publishes a formal, fully defined standard for AI Perception and machine-interpretation stability.",
     "url": "https://entityworks.ai/",
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "AI Perception",
-        "description": "AI Perception is the discipline concerned with how AI systems form, update, and express their understanding of people, organisations, relationships, and ideas."
-      }
-    ],
     "publisher": {
       "@type": "Organization",
       "name": "EntityWorks"
@@ -163,7 +157,7 @@
 </head>
 
 <body>
-  <!-- Global site header / nav -->
+  <!-- NAV -->
   <header class="site-header">
     <div class="nav-inner">
       <a href="/index.html" class="brand">EntityWorks</a>
@@ -177,7 +171,7 @@
   </header>
 
   <main>
-    <!-- SECTION 1 — HERO -->
+    <!-- HERO -->
     <header class="hero">
       <p class="hero-mission">
         EntityWorks publishes a formal, fully defined standard for AI Perception and machine-interpretation stability.
@@ -196,15 +190,9 @@
     <!-- SECTION 2 — THE STANDARD -->
     <section>
       <h2>The Standard</h2>
-      <p>
-        EntityWorks publishes and maintains the EntityWorks Standard: a formal, fully defined framework governing the discipline of AI Perception and machine-interpretation stability.
-      </p>
-      <p>
-        The standard defines a coherent framework for how AI systems model, update, and express their understanding of people, organisations, relationships, and ideas.
-      </p>
-      <p>
-        It is delivered as a fully versioned body of work, supported by formal definitions, diagnostic criteria, accreditation rules, and machine-readable specifications.
-      </p>
+      <p>EntityWorks publishes and maintains the EntityWorks Standard: a formal, fully defined framework governing the discipline of AI Perception and machine-interpretation stability.</p>
+      <p>The standard defines a coherent framework for how AI systems model, update, and express their understanding of people, organisations, relationships, and ideas.</p>
+      <p>It is delivered as a fully versioned body of work, supported by formal definitions, diagnostic criteria, accreditation rules, and machine-readable specifications.</p>
       <p><a href="/the-standard.html">Explore The Standard →</a></p>
     </section>
 
@@ -238,9 +226,7 @@
     </section>
   </main>
 
-  <p class="last-updated">
-    Last updated: November 2025
-  </p>
+  <p class="last-updated">Last updated: November 2025</p>
 
   <div id="footer"></div>
   <script>
