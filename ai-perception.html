@@ -1,5 +1,3 @@
-<!-- STATUS: ALIGNED — EntityWorks Positioning Codex Compliant -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,20 +71,14 @@
       text-decoration: none;
       color: var(--ew-text);
       padding: 0.25rem 0.5rem;
-      border-radius: 999px; /* harmless, unchanged */
+      border-radius: 999px;
     }
 
-    /* MATCH LIVE-SITE NAV: active link is bold only */
+    /* Match live-site nav: bold only for active link */
     .site-nav a[aria-current="page"] {
       background: none;
       border: none;
       font-weight: 600;
-    }
-
-    /* Remove browser focus halo */
-    .site-nav a:focus,
-    .site-nav a:focus-visible {
-      outline: none;
     }
 
     main {
@@ -132,6 +124,7 @@
       max-width: var(--ew-max-width);
       margin: 0 auto 0;
       padding: 0 1rem 1.5rem;
+      text-align: left;
     }
   </style>
 
@@ -142,7 +135,6 @@
     "name": "EntityWorks — AI Perception",
     "description": "AI Perception is the discipline concerned with how AI systems form, update, and express their understanding of people, organisations, relationships, and ideas.",
     "url": "https://entityworks.ai/ai-perception.html",
-    "dateModified": "2025-12-05",
     "publisher": {
       "@type": "Organization",
       "name": "EntityWorks"
@@ -166,7 +158,8 @@
   </header>
 
   <main>
-    <h1>AI PERCEPTION</h1>
+    <h1>AI Perception</h1>
+
     <p><strong>Human-Facing Edition (v1.1)</strong></p>
 
     <h2>1. Definition</h2>
@@ -193,43 +186,8 @@
       As AI systems support search, retrieval, reasoning, and organisational workflows, their internal representations of people, organisations, relationships, and ideas influence how information is interpreted. In contexts where these systems contribute to analytical or decision-support work, misaligned or unstable representations may create inconsistencies in how entities are understood.
     </p>
 
-    <p>
-      The EntityWorks Standard provides a structured way to describe, analyse, and evaluate these representations. It does not prescribe outcomes for external systems but may be used where clarity and interpretability of representational behaviour are required.
-    </p>
-
-    <h2>5. Applications Within This Framework</h2>
-    <ul>
-      <li>describing how systems form and express representations</li>
-      <li>analysing conditions that lead to instability or drift</li>
-      <li>interpreting structures influencing retrieval or reasoning outputs</li>
-      <li>examining how systems differentiate between entities</li>
-      <li>evaluating representational behaviour using structured terminology</li>
-    </ul>
-
-    <h2>6. Who the Discipline Is For</h2>
-    <p>The discipline may be relevant to:</p>
-    <ul>
-      <li>regulators examining representational behaviour</li>
-      <li>enterprises deploying AI systems that interact with real-world entities</li>
-      <li>governance and compliance teams assessing representational stability</li>
-      <li>technical groups working with retrieval, reasoning, or classification</li>
-      <li>researchers studying interpretive structures or representational mechanisms</li>
-    </ul>
-
-    <h2>7. Relationship to Other Components of the Standard</h2>
-    <p>
-      AI Perception forms the conceptual foundation upon which other components of the EntityWorks Standard are organised, including conceptual definitions (D-series), structural frameworks (S-series), failure modes (F-series), and evaluative components (M-series).
-    </p>
-
-    <h2>8. Next Points of Reference</h2>
-    <ul>
-      <li><strong>The Standard</strong> — structural and diagnostic criteria</li>
-      <li><strong>For Regulators</strong> — interpretive material for oversight bodies</li>
-      <li><strong>Publications</strong> — papers expanding on concepts within the Standard</li>
-    </ul>
-
     <p class="last-updated">
-      Last updated: December 2025
+      Last updated: November 2025
     </p>
   </main>
 
@@ -238,7 +196,7 @@
     fetch("/footer.html")
       .then(response => response.text())
       .then(html => {
-        document.getElementById("footer").innerHTML = html);
+        document.getElementById("footer").innerHTML = html;
       });
   </script>
 
