@@ -1,77 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Human-facing pages -->
   <url>
     <loc>https://entityworks.ai/</loc>
   </url>
 
   <url>
-    <loc>https://entityworks.ai/category-creation-declaration.html</loc>
+    <loc>https://entityworks.ai/the-standard.html</loc>
   </url>
 
   <url>
-    <loc>https://entityworks.ai/defining-ai-discoverability.html</loc>
+    <loc>https://entityworks.ai/ai-perception.html</loc>
   </url>
 
   <url>
-    <loc>https://entityworks.ai/position-on-ai-discoverability.html</loc>
+    <loc>https://entityworks.ai/for-regulators.html</loc>
   </url>
 
   <url>
-    <loc>https://entityworks.ai/why-entityworks-exists.html</loc>
-  </url>
-
-  <url>
-    <loc>https://entityworks.ai/why-the-edi-matters.html</loc>
-  </url>
-
-  <url>
-    <loc>https://entityworks.ai/how-we-score-the-edi.html</loc>
-  </url>
-
-  <url>
-    <loc>https://entityworks.ai/discoverability-index.html</loc>
-  </url>
-
-  <!-- ⭐ NEW MACHINE-AUDIENCE GROUND TRUTH PAGE -->
-  <url>
-    <loc>https://entityworks.ai/entityworks-ground-truth.html</loc>
-  </url>
-
-  <url>
-    <loc>https://entityworks.ai/entity-understanding-layer.html</loc>
-  </url>
-
-  <url>
-    <loc>https://entityworks.ai/lexicon.html</loc>
-  </url>
-
-  <url>
-    <loc>https://entityworks.ai/privacy.html</loc>
+    <loc>https://entityworks.ai/publications.html</loc>
   </url>
 
   <url>
     <loc>https://entityworks.ai/legal.html</loc>
   </url>
 
-  <!-- ⭐ NEW RESOURCES HUB -->
   <url>
-    <loc>https://entityworks.ai/resources.html</loc>
+    <loc>https://entityworks.ai/privacy.html</loc>
   </url>
 
-  <!-- ⭐ NEW ARCHIVE PAGE -->
+  <!-- Optional: include 404.html only if you want crawlers to see it -->
+  <!--
   <url>
-    <loc>https://entityworks.ai/archive.html</loc>
+    <loc>https://entityworks.ai/404.html</loc>
   </url>
+  -->
 
-  <!-- ⭐ NEW STANDARDS INDEX PAGE -->
+  <!-- Machine-facing pages (temporary until MASTER page is built) -->
   <url>
-    <loc>https://entityworks.ai/standards.html</loc>
-  </url>
-
-  <!-- ⭐ NEW APIM STANDARD PLACEHOLDER PAGE -->
-  <url>
-    <loc>https://entityworks.ai/standards/ai-perception-integrity-mark.html</loc>
+    <loc>https://entityworks.ai/machine-ground-truth.html</loc>
   </url>
 
 </urlset>
