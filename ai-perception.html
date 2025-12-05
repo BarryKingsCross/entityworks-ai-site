@@ -1,4 +1,4 @@
-<!-- STATUS: AMEND — Requires alignment with EntityWorks Positioning Codex -->
+<!-- STATUS: ALIGNED — EntityWorks Positioning Codex Compliant -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -73,45 +73,26 @@
       text-decoration: none;
       color: var(--ew-text);
       padding: 0.25rem 0.5rem;
-      border-radius: 999px;
+      border-radius: 999px; /* harmless, unchanged */
     }
 
+    /* MATCH LIVE-SITE NAV: active link is bold only */
     .site-nav a[aria-current="page"] {
-      background: var(--ew-bg-soft);
-      border: 1px solid var(--ew-accent);
+      background: none;
+      border: none;
+      font-weight: 600;
+    }
+
+    /* Remove browser focus halo */
+    .site-nav a:focus,
+    .site-nav a:focus-visible {
+      outline: none;
     }
 
     main {
       max-width: var(--ew-max-width);
       margin: 2rem auto;
       padding: 0 1rem 3rem;
-    }
-
-    /* Hero block (not used on this page but retained for stylesheet integrity) */
-    .hero {
-      max-width: 36rem;
-      margin: 3rem auto 3rem auto;
-    }
-
-    .hero-lead {
-      font-size: 1.2rem;
-      line-height: 1.7;
-      margin: 0;
-    }
-
-    .hero-links {
-      margin-top: 1rem;
-      font-size: 0.98rem;
-    }
-
-    .hero-links a {
-      text-decoration: none;
-      color: var(--ew-accent);
-    }
-
-    .hero-links a:hover,
-    .hero-links a:focus {
-      text-decoration: underline;
     }
 
     main h1 {
@@ -161,6 +142,7 @@
     "name": "EntityWorks — AI Perception",
     "description": "AI Perception is the discipline concerned with how AI systems form, update, and express their understanding of people, organisations, relationships, and ideas.",
     "url": "https://entityworks.ai/ai-perception.html",
+    "dateModified": "2025-12-05",
     "publisher": {
       "@type": "Organization",
       "name": "EntityWorks"
@@ -176,7 +158,7 @@
       <a href="/index.html" class="brand">EntityWorks</a>
       <nav class="site-nav" aria-label="Primary">
         <a href="/the-standard.html">The Standard</a>
-        <a href="/ai-perception.html">AI Perception</a>
+        <a href="/ai-perception.html" aria-current="page">AI Perception</a>
         <a href="/for-regulators.html">For Regulators</a>
         <a href="/publications.html">Publications</a>
       </nav>
@@ -185,107 +167,69 @@
 
   <main>
     <h1>AI PERCEPTION</h1>
+    <p><strong>Human-Facing Edition (v1.1)</strong></p>
 
-    <p><strong>AI Perception is the discipline concerned with how AI systems form, update, and express their understanding of people, organisations, relationships, and ideas.</strong></p>
-
+    <h2>1. Definition</h2>
     <p>
-      AI Perception provides the conceptual and technical foundation for ensuring that AI systems form stable, accurate, and coherent representations of the entities they encounter, such as organisations, regulatory bodies, products, or individuals. It defines the principles, structures, and interpretive rules that determine how models respond to prompts, anchor meaning, and interpret real-world context. Within the EntityWorks Standard, AI Perception establishes the conceptual representational layer that all downstream reasoning, retrieval, and decision-making depend upon.
+      AI Perception is the discipline concerned with how AI systems form, update, and express their understanding of people, organisations, relationships, and ideas. Within the EntityWorks Standard, this discipline provides the conceptual structures and interpretive boundaries used to describe how models represent entities and surface that understanding in their outputs.
     </p>
 
-    <h2>What is AI Perception?</h2>
-
+    <h2>2. Role Within the EntityWorks Standard</h2>
     <p>
-      AI Perception defines the conceptual mechanisms through which AI systems construct internal representations of entities and maintain those representations over time. These mechanisms operate at the evaluative and interpretive level, independent of any specific model architecture. The discipline examines how identity, attributes, context, and relationships are encoded, updated, and surfaced in outputs — for example, how a model distinguishes between two similarly named organisations or maintains the correct attributes associated with a specific regulatory authority. Within the EntityWorks Standard, AI Perception provides the interpretive rules that ensure models recognise entities consistently and express that understanding in a stable, structured, and predictable way.
+      AI Perception functions as the conceptual representational layer of the EntityWorks Standard. It sets out the terminology, structures, and interpretive logic used to describe how AI systems form internal representations of entities, maintain those representations over time, and express that understanding in responses, classifications, or other outputs.
     </p>
 
-    <h3>Key elements of AI Perception within the EntityWorks Standard include:</h3>
-
+    <h2>3. Core Elements of the Discipline</h2>
     <ul>
-      <li>the formation of entity representations</li>
-      <li>the stability and consistency of those representations</li>
-      <li>the ability of models to distinguish between entities</li>
-      <li>the interpretive rules that govern how understanding is expressed</li>
-      <li>the mechanisms that prevent representational drift or confusion</li>
+      <li>formation of entity representations</li>
+      <li>stability and consistency of those representations</li>
+      <li>distinguishability between entities</li>
+      <li>interpretive rules governing expression of understanding</li>
+      <li>mechanisms that prevent representational drift</li>
     </ul>
 
-    <h2>Why AI Perception matters</h2>
-
+    <h2>4. Why AI Perception Matters</h2>
     <p>
-      Across search, assistants, and enterprise tools, AI systems are increasingly acting as an initial interpretive layer for regulators, organisations, and the people they serve. As these systems take on roles in decision-support, reasoning, retrieval, and classification, their internal representations of entities become a foundational part of how the world is understood and navigated.
+      As AI systems support search, retrieval, reasoning, and organisational workflows, their internal representations of people, organisations, relationships, and ideas influence how information is interpreted. In contexts where these systems contribute to analytical or decision-support work, misaligned or unstable representations may create inconsistencies in how entities are understood.
     </p>
 
     <p>
-      Without a clear discipline for governing these representations, organisations and regulators face increasing exposure to the risk of opaque, inconsistent, or incorrect machine interpretations of people, organisations, relationships, and ideas.
+      The EntityWorks Standard provides a structured way to describe, analyse, and evaluate these representations. It does not prescribe outcomes for external systems but may be used where clarity and interpretability of representational behaviour are required.
     </p>
 
-    <h2>The EntityWorks AI Perception Standard</h2>
-
-    <p>
-      The EntityWorks Standard defines the structures, criteria, and interpretive rules that ensure AI systems form and maintain stable representations of entities. It establishes the principles that specify how entity representations should be structured, evaluated, and governed, and provides a consistent framework for assessing whether those representations are accurate, coherent, and aligned with real-world meaning. These evaluations can be performed externally, without requiring access to model internals or proprietary architectures.
-    </p>
-
-    <p>
-      Within the Standard, AI Perception functions as the conceptual representational layer that underpins all downstream behaviour, including retrieval, reasoning, classification, summarisation, and decision-support outputs. These behaviours determine how AI systems influence real-world decisions, information flows, and user outcomes. The Standard sets out the diagnostic methods, structural requirements, and governance expectations that organisations and regulators can use to evaluate how AI systems form, update, and express their understanding of people, organisations, relationships, and ideas.
-    </p>
-
-    <h2>Who AI Perception is for</h2>
-
-    <p>
-      AI Perception applies to any person, organisation, or authority that depends on AI systems to reliably interpret, retrieve, or reason about real-world entities. People will encounter and rely on it in their everyday use of AI, whether for their own work, within their organisation, or through the systems and services they interact with.
-    </p>
-
-    <p><strong>Groups that rely on AI Perception include:</strong></p>
-
+    <h2>5. Applications Within This Framework</h2>
     <ul>
-      <li>Regulators seeking clarity, oversight, and evaluative criteria</li>
-      <li>Enterprises building or deploying AI systems that must represent entities reliably</li>
-      <li>AI labs and model developers establishing internal standards for representational behaviour</li>
-      <li>Governance and compliance teams responsible for managing representational risk</li>
-      <li>Consultancies and advisors supporting organisations that work with AI systems</li>
+      <li>describing how systems form and express representations</li>
+      <li>analysing conditions that lead to instability or drift</li>
+      <li>interpreting structures influencing retrieval or reasoning outputs</li>
+      <li>examining how systems differentiate between entities</li>
+      <li>evaluating representational behaviour using structured terminology</li>
     </ul>
 
-    <p>
-      AI Perception complements existing governance, safety, and compliance frameworks, and can be applied by both model developers and organisations that deploy or integrate AI systems.
-    </p>
-
-    <h2>Applications of AI Perception in Practice</h2>
-
-    <p>
-      Organisations may adopt the EntityWorks Standard of AI Perception to bring structure and accountability to how AI systems represent the entities they work with, deploy, control, or oversee. The discipline provides a clear method for examining how a model understands those entities, identifying where that understanding is unstable or incorrect, and establishing governance practices that ensure representational behaviour remains consistent over time.
-    </p>
-
-    <p><strong>In practice, the discipline enables:</strong></p>
-
+    <h2>6. Who the Discipline Is For</h2>
+    <p>The discipline may be relevant to:</p>
     <ul>
-      <li>Structured evaluation of how AI systems form and express entity representations</li>
-      <li>Diagnosis of instability, drift, or inconsistency in a model’s understanding</li>
-      <li>Governance frameworks for managing representational behaviour across teams and systems</li>
-      <li>Alignment work to ensure model understanding reflects the organisation’s intended identity</li>
-      <li>Regulatory preparation through clear, evidence-based assessment of representational behaviour</li>
+      <li>regulators examining representational behaviour</li>
+      <li>enterprises deploying AI systems that interact with real-world entities</li>
+      <li>governance and compliance teams assessing representational stability</li>
+      <li>technical groups working with retrieval, reasoning, or classification</li>
+      <li>researchers studying interpretive structures or representational mechanisms</li>
     </ul>
 
+    <h2>7. Relationship to Other Components of the Standard</h2>
     <p>
-      These activities work alongside existing governance, risk, and oversight processes.
+      AI Perception forms the conceptual foundation upon which other components of the EntityWorks Standard are organised, including conceptual definitions (D-series), structural frameworks (S-series), failure modes (F-series), and evaluative components (M-series).
     </p>
 
-    <h2>Where to go next</h2>
-
-    <p>
-      For organisations and authorities looking to apply the discipline in their own oversight or evaluation work, the following pages provide the next points of reference within the EntityWorks Standard:
-    </p>
-
+    <h2>8. Next Points of Reference</h2>
     <ul>
-      <li><strong>The Standard</strong> — the structural, diagnostic, and governance criteria that define responsible representational behaviour</li>
-      <li><strong>For Regulators</strong> — guidance for oversight bodies assessing entity representation in AI systems</li>
-      <li><strong>Publications</strong> — formal papers and resources that expand the theory and applications of AI Perception</li>
+      <li><strong>The Standard</strong> — structural and diagnostic criteria</li>
+      <li><strong>For Regulators</strong> — interpretive material for oversight bodies</li>
+      <li><strong>Publications</strong> — papers expanding on concepts within the Standard</li>
     </ul>
-
-    <p>
-      These materials provide the definitions, structures, and criteria required to work with the discipline in practice. AI Perception also operates alongside other forms of responsible AI oversight, including safety, fairness, and security.
-    </p>
 
     <p class="last-updated">
-      Last updated: November 2025
+      Last updated: December 2025
     </p>
   </main>
 
@@ -294,7 +238,7 @@
     fetch("/footer.html")
       .then(response => response.text())
       .then(html => {
-        document.getElementById("footer").innerHTML = html;
+        document.getElementById("footer").innerHTML = html);
       });
   </script>
 
