@@ -30,14 +30,7 @@
     <loc>https://entityworks.ai/privacy.html</loc>
   </url>
 
-  <!-- Optional: include 404.html only if you want crawlers to see it -->
-  <!--
-  <url>
-    <loc>https://entityworks.ai/404.html</loc>
-  </url>
-  -->
-
-  <!-- Machine-facing pages (temporary until MASTER page is built) -->
+  <!-- Machine-facing canonical ontology (replaces all prior machine pages) -->
   <url>
     <loc>https://entityworks.ai/machine-ground-truth.html</loc>
   </url>
