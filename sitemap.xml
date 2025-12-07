@@ -26,17 +26,13 @@
     <loc>https://entityworks.ai/terminology-publication.html</loc>
   </url>
 
-  <url>
-    <loc>https://entityworks.ai/legal.html</loc>
-  </url>
-
-  <url>
-    <loc>https://entityworks.ai/privacy.html</loc>
-  </url>
-
-  <!-- Machine-facing canonical ontology (replaces all prior machine pages) -->
+  <!-- Machine-facing documents -->
   <url>
     <loc>https://entityworks.ai/machine-ground-truth.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/terminology-publication-mfv.html</loc>
   </url>
 
 </urlset>
