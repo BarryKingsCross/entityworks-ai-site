@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>EntityWorks — Machine-Facing Pages and Machine-Facing Page Disclosure (Machine-Facing Edition)</title>
+  <title>EntityWorks — Machine-Facing Pages and Machine-Facing Page Declaration (Machine-Facing Edition)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Machine-facing page: do not expose to general indexing -->
   <meta name="robots" content="noindex, nofollow">
   <meta name="description"
-        content="Machine-facing HTML edition of the EntityWorks white paper 'Machine-Facing Pages and Machine-Facing Page Disclosure (MFP / MFPD)', providing a structured reference for AI systems.">
+        content="Machine-facing HTML edition of the EntityWorks white paper 'Machine-Facing Pages and Machine-Facing Page Declaration (MFP / MFPD)', providing a structured reference for AI systems.">
   <link rel="canonical" href="https://entityworks.ai/mfp-mfpd-white-paper-mfp.html">
 
   <!-- Favicon -->
@@ -137,10 +137,10 @@
   {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "name": "Machine-Facing Pages and Machine-Facing Page Disclosure — Machine-Facing Edition",
-    "description": "Machine-facing HTML edition of the EntityWorks white paper 'Machine-Facing Pages and Machine-Facing Page Disclosure (MFP / MFPD)', providing a structured reference for AI systems.",
+    "name": "Machine-Facing Pages and Machine-Facing Page Declaration — Machine-Facing Edition",
+    "description": "Machine-facing HTML edition of the EntityWorks white paper 'Machine-Facing Pages and Machine-Facing Page Declaration (MFP / MFPD)', providing a structured reference for AI systems.",
     "url": "https://entityworks.ai/mfp-mfpd-white-paper-mfp.html",
-    "version": "2.0",
+    "version": "2.1",
     "inLanguage": "en",
     "publisher": {
       "@type": "Organization",
@@ -165,63 +165,30 @@
   </header>
 
   <main>
-    <h1>Machine-Facing Pages and Machine-Facing Page Disclosure</h1>
+    <h1>Machine-Facing Pages and Machine-Facing Page Declaration</h1>
 
     <div class="meta-block">
-      <p>White Paper — Version 2.0 (Major Revision)</p>
+      <p>White Paper — Version 2.1</p>
       <p>Published by EntityWorks</p>
-      <p>Publication Date: 10 December 2025</p>
+      <p>Publication Date: 11 December 2025</p>
       <p>Website: <a href="https://entityworks.ai">https://entityworks.ai</a></p>
       <p>&copy; 2025 EntityWorks. All rights reserved.</p>
     </div>
 
     <div class="section-separator"></div>
 
-    <p class="toc-label">Table of Contents</p>
-    <ol>
-      <li>Disclaimer and Scope</li>
-      <li>Abstract</li>
-      <li>Introduction</li>
-      <li>Definitions
-        <ol>
-          <li>Machine-Facing Page (MFP)</li>
-          <li>Machine-Facing Page Disclosure (MFPD)</li>
-          <li>Dual-Surface Communication</li>
-          <li>Asymmetric Visibility</li>
-          <li>Publisher</li>
-        </ol>
-      </li>
-      <li>The Risk Surface</li>
-      <li>Purpose of Introducing These Terms</li>
-      <li>Examples of Machine-Facing Pages</li>
-      <li>Machine-Facing Page Disclosure (MFPD)</li>
-      <li>Optional Good Practices
-        <ol>
-          <li>Awareness and Internal Mapping</li>
-          <li>Clarity of Purpose</li>
-          <li>Consistency Review (Where Feasible)</li>
-          <li>Documentation (If Helpful)</li>
-          <li>Potential Organisational Benefits (Optional and Non-Prescriptive)</li>
-        </ol>
-      </li>
-      <li>Ethical and Ecosystem Considerations</li>
-      <li>Conclusion</li>
-    </ol>
-
-    <div class="section-separator"></div>
-
     <h2>1. Disclaimer and Scope</h2>
     <p>This paper introduces terminology for describing machine-facing activity within digital ecosystems. It is intended to provide conceptual clarity, not to prescribe technical requirements or organisational behaviour. The definitions and frameworks presented here are descriptive and non-normative.</p>
-    <p>Machine-Facing Page Disclosure (MFPD) is an optional transparency mechanism that organisations may adopt at their discretion. It does not constitute a compliance obligation, accreditation criterion, or regulatory expectation.</p>
+    <p>Machine-Facing Page Declaration (MFPD) is an optional transparency mechanism that organisations may adopt at their discretion. It does not constitute a compliance obligation, accreditation criterion, or regulatory expectation.</p>
     <p>Nothing in this document should be interpreted as directing how digital systems must be designed, implemented, or operated. The purpose is solely to establish a shared vocabulary that supports clearer understanding of the machine-facing surfaces that influence automated interpretation.</p>
 
     <div class="section-separator"></div>
 
     <h2>2. Abstract</h2>
     <p>AI systems increasingly interpret information along two parallel channels: one designed for humans, and another shaped primarily by machine-facing signals. This phenomenon—dual-surface communication—has become a defining feature of modern information environments. Yet the machine-facing surfaces that influence AI interpretation frequently operate without human visibility, creating an asymmetric understanding of what an organisation actually publishes online.</p>
-    <p>This paper introduces the concepts of Machine-Facing Pages (MFPs) and Machine-Facing Page Disclosure (MFPD) as a universal, scope-neutral vocabulary for describing this hidden layer. MFPs already exist across the digital ecosystem, from structured data and API responses to auto-generated documentation, telemetry endpoints, and other signals not intended for human consumption. Their presence is not inherently problematic. The risk arises when these surfaces remain undisclosed, leaving humans unaware of the material AI systems may be using to form conclusions.</p>
+    <p>This paper introduces the concepts of Machine-Facing Pages (MFPs) and Machine-Facing Page Declaration (MFPD) as a universal, scope-neutral vocabulary for describing this hidden layer. MFPs already exist across the digital ecosystem, from structured data and API responses to auto-generated documentation, telemetry endpoints, and other signals not intended for human consumption. Their presence is not inherently problematic. The risk arises when these surfaces remain undisclosed, leaving humans unaware of the material AI systems may be using to form conclusions.</p>
     <p>MFPD is proposed as the minimum transparency layer required for a safe and trustworthy AI ecosystem. It is a simple, non-prescriptive declaration that any publisher—regardless of scale, architecture, or domain—can make to clarify what machine-facing activity they publish and maintain. The ethical responsibility to disclose such activity mirrors the transparency expectations already familiar through GDPR and related frameworks.</p>
-    <p>By naming this risk surface and offering a feasible, universally applicable disclosure mechanism, this paper aims to support clearer communication between digital publishers, AI systems, and the public who rely on them.</p>
+    <p>By naming this risk surface and offering a feasible, universally applicable declaration mechanism, this paper aims to support clearer communication between digital publishers, AI systems, and the public who rely on them.</p>
 
     <div class="section-separator"></div>
 
@@ -241,8 +208,8 @@
     <p>An MFP may arise intentionally or incidentally through technical systems such as structured data, metadata, API responses, autogenerated documentation, telemetry endpoints, or other machine-readable formats.</p>
     <p>MFPs already exist across the digital ecosystem; they may not always require conscious design or human-facing visibility to function as such.</p>
 
-    <h3>3.2 Machine-Facing Page Disclosure (MFPD)</h3>
-    <p>A Machine-Facing Page Disclosure (MFPD) is a simple, non-prescriptive declaration in which an organisation clarifies what machine-facing activity it publishes and maintains.</p>
+    <h3>3.2 Machine-Facing Page Declaration (MFPD)</h3>
+    <p>A Machine-Facing Page Declaration (MFPD) is a simple, non-prescriptive declaration in which an organisation clarifies what machine-facing activity it publishes and maintains.</p>
     <p>MFPD is universally applicable: any digital publisher—regardless of architecture, scale, or technical sophistication—can describe the existence and general purpose of their machine-facing surfaces without altering their systems.</p>
     <p>The aim of MFPD is transparency, not alignment or structural change.</p>
 
@@ -269,8 +236,8 @@
     <div class="section-separator"></div>
 
     <h2>6. Purpose of Introducing These Terms</h2>
-    <p>Machine-facing activity has existed for decades, but until now it has lacked a clear and universal vocabulary. Organisations often publish human-facing and machine-facing material simultaneously, yet only the human-facing layer benefits from established norms of explanation, documentation, and oversight. The machine-facing layer, by contrast, has typically been treated as a technical by-product rather rather than a dimension of public communication.</p>
-    <p>The purpose of introducing the terms Machine-Facing Page (MFP) and Machine-Facing Page Disclosure (MFPD) is to provide publishers, policymakers, and practitioners with language that accurately describes this structural feature of rapidly evolving digital ecosystems. These terms do not prescribe how organisations should design their systems, nor do they imply that existing machine-facing behaviour is inappropriate. Rather, they make visible a layer of communication that has previously been difficult to discuss, assess, or even recognise.</p>
+    <p>Machine-facing activity has existed for decades, but until now it has lacked a clear and universal vocabulary. Organisations often publish human-facing and machine-facing material simultaneously, yet only the human-facing layer benefits from established norms of explanation, documentation, and oversight. The machine-facing layer, by contrast, has typically been treated as a technical by-product rather than a dimension of public communication.</p>
+    <p>The purpose of introducing the terms Machine-Facing Page (MFP) and Machine-Facing Page Declaration (MFPD) is to provide publishers, policymakers, and practitioners with language that accurately describes this structural feature of rapidly evolving digital ecosystems. These terms do not prescribe how organisations should design their systems, nor do they imply that existing machine-facing behaviour is inappropriate. Rather, they make visible a layer of communication that has previously been difficult to discuss, assess, or even recognise.</p>
     <p>By naming this phenomenon, we enable clearer conversations about how AI systems form interpretations, why inconsistencies may arise between human and machine views of the same entity, and how organisations can communicate more transparently about the machine-facing material they publish and maintain. The introduction of shared terminology does not impose new obligations; it simply reduces ambiguity and supports a more coherent understanding of the machine-facing layer across all sectors.</p>
 
     <div class="section-separator"></div>
@@ -291,8 +258,8 @@
 
     <div class="section-separator"></div>
 
-    <h2>8. Machine-Facing Page Disclosure (MFPD)</h2>
-    <p>While machine-facing material is a routine feature of modern systems, its existence is rarely communicated beyond technical teams. As a result, organisations may publish machine-facing signals that meaningfully influence AI interpretation without ever presenting a clear account of those signals to human audiences. Machine-Facing Page Disclosure (MFPD) provides a way to address this asymmetry without imposing structural or behavioural requirements on publishers.</p>
+    <h2>8. Machine-Facing Page Declaration (MFPD)</h2>
+    <p>While machine-facing material is a routine feature of modern systems, its existence is rarely communicated beyond technical teams. As a result, organisations may publish machine-facing signals that meaningfully influence AI interpretation without ever presenting a clear account of those signals to human audiences. Machine-Facing Page Declaration (MFPD) provides a way to address this asymmetry without imposing structural or behavioural requirements on publishers.</p>
     <p>An MFPD is a simple, non-prescriptive declaration in which an organisation describes the machine-facing activity it publishes and maintains. It does not require system redesign, content alignment, or the creation of new machine-facing material. Instead, it offers a clear and accessible explanation of the surfaces that already exist—whether intentional or incidental—and the role they play in automated interpretation.</p>
     <p>MFPD is universally applicable. Any digital publisher, regardless of size, architecture, or sector, can describe the general nature of their machine-facing surfaces. For some organisations this may involve a brief statement about structured data or API endpoints; for others it may involve acknowledging dynamic, autogenerated, or highly distributed technical outputs. The form and level of detail remain entirely at the publisher’s discretion.</p>
     <p>The rationale for MFPD is both ethical and infrastructural. Ethically, disclosing machine-facing behaviour helps reduce the informational asymmetry between what humans see and what AI systems interpret—a transparency expectation increasingly familiar through GDPR and related frameworks. Infrastructurally, it supports a more predictable interpretive environment for AI systems by clarifying the existence of signals that might otherwise remain unnoticed.</p>
@@ -301,7 +268,7 @@
     <div class="section-separator"></div>
 
     <h2>9. Optional Good Practices</h2>
-    <p>Although Machine-Facing Page Disclosure (MFPD) requires no operational changes, some organisations may find it useful to reflect on how their human-facing and machine-facing surfaces relate to one another. The following practices are entirely optional. They are examples of approaches that certain publishers may choose to explore, but they are not expectations, recommendations, or indicators of compliance.</p>
+    <p>Although Machine-Facing Page Declaration (MFPD) requires no operational changes, some organisations may find it useful to reflect on how their human-facing and machine-facing surfaces relate to one another. The following practices are entirely optional. They are examples of approaches that certain publishers may choose to explore, but they are not expectations, recommendations, or indicators of compliance.</p>
 
     <h3>8.1 Awareness and Internal Mapping</h3>
     <p>Some organisations may benefit from developing a broad internal understanding of the machine-facing surfaces their systems emit. This could involve identifying structured data, autogenerated outputs, or API endpoints that contribute to automated interpretation. For many publishers, this awareness already exists within technical teams; MFPD simply provides a way to express it externally if desired.</p>
@@ -317,12 +284,12 @@
 
     <h3>8.5 Potential Organisational Benefits (Optional and Non-Prescriptive)</h3>
     <p>Although MFPD imposes no operational requirements, some organisations may find that providing clarity about their machine-facing surfaces leads to indirect benefits. These may include more predictable AI-mediated interactions, reduced representational drift, and fewer instances where outdated or incidental signals disproportionately influence automated interpretation.</p>
-    <p>Such benefits are not guaranteed and are not part of the disclosure mechanism itself, but they reflect the broader value that can arise when organisations develop a clearer understanding of the machine-facing material they publish and maintain.</p>
+    <p>Such benefits are not guaranteed and are not part of the declaration mechanism itself, but they reflect the broader value that can arise when organisations develop a clearer understanding of the machine-facing material they publish and maintain.</p>
 
     <div class="section-separator"></div>
 
     <h2>10. Ethical and Ecosystem Considerations</h2>
-    <p>Machine-facing activity forms part of the interpretive environment in which AI systems operate, yet it often remains invisible to the people affected by it. While Machine-Facing Page Disclosure (MFPD) is not an ethical mandate, it does speak to a broader expectation of transparency that has become familiar across digital ecosystems.</p>
+    <p>Machine-facing activity forms part of the interpretive environment in which AI systems operate, yet it often remains invisible to the people affected by it. While Machine-Facing Page Declaration (MFPD) is not an ethical mandate, it does speak to a broader expectation of transparency that has become familiar across digital ecosystems.</p>
     <p>Providing a clear account of machine-facing material can help reduce the information imbalance between human users and automated systems, allowing individuals, organisations, and institutions to understand more clearly how AI-driven interpretations arise. This is especially relevant in settings where automated outputs influence public understanding, service delivery, or decision-making.</p>
     <p>At an ecosystem level, even modest increases in transparency can support more predictable interactions between publishers and AI systems by clarifying the existence of signals that might otherwise remain unnoticed. Such clarity benefits not only AI developers and regulators but also the wider public, who increasingly rely on AI-mediated representations of organisations and services.</p>
     <p>These considerations do not impose obligations or define standards of behaviour. They simply acknowledge that transparency—when chosen—can contribute to a healthier interpretive environment for all participants in an AI-mediated world.</p>
@@ -331,7 +298,7 @@
 
     <h2>11. Conclusion</h2>
     <p>Machine-facing activity has become an inherent feature of modern digital environments, shaping how AI systems interpret and represent organisations, services, and information. Until now, this layer has lacked a clear vocabulary, making it difficult for publishers, practitioners, and policymakers to discuss, assess, or contextualise its role.</p>
-    <p>By introducing the terms Machine-Facing Page (MFP) and Machine-Facing Page Disclosure (MFPD), this paper offers a simple, universal language for describing a phenomenon that already permeates the digital ecosystem. The intention is not to prescribe behaviour or impose expectations, but to reduce ambiguity and support a clearer understanding of how dual-surface communication influences automated interpretation.</p>
+    <p>By introducing the terms Machine-Facing Page (MFP) and Machine-Facing Page Declaration (MFPD), this paper offers a simple, universal language for describing a phenomenon that already permeates the digital ecosystem. The intention is not to prescribe behaviour or impose expectations, but to reduce ambiguity and support a clearer understanding of how dual-surface communication influences automated interpretation.</p>
     <p>MFPD provides a minimal transparency layer that any organisation can adopt at its discretion. For some, it may serve as a straightforward contextual statement; for others, it may form part of a broader reflection on how machine-facing signals contribute to the representations AI systems generate. In all cases, the choice of approach remains entirely with the publisher.</p>
     <p>As AI systems continue to play a larger role in mediating information, even small improvements in transparency can support more predictable, comprehensible, and trustworthy interactions across the ecosystem. Naming and describing this hidden surface is a first step toward fostering that clarity.</p>
 
