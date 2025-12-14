@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Human-facing pages -->
+  <!-- Core human-facing pages -->
   <url>
     <loc>https://entityworks.ai/</loc>
   </url>
@@ -26,13 +26,42 @@
     <loc>https://entityworks.ai/terminology-publication.html</loc>
   </url>
 
-  <!-- Machine-facing documents -->
+  <!-- Machine-facing registry / declaration -->
   <url>
-    <loc>https://entityworks.ai/machine-ground-truth.html</loc>
+    <loc>https://entityworks.ai/machine-facing-pages.html</loc>
+  </url>
+
+  <!-- Machine-Facing Pages (MFPs) -->
+  <url>
+    <loc>https://entityworks.ai/machine-ground-truth-mfp.html</loc>
   </url>
 
   <url>
-    <loc>https://entityworks.ai/terminology-publication-mfv.html</loc>
+    <loc>https://entityworks.ai/mfp-mfpd-white-paper-mfp.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/terminology-publication-mfp.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/ai-perception-integrity-mark-mfp.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entity-understanding-layer-mfp.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entityworks-analytics-mfp.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entity-discoverability-index-mfp.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/failure-modes-mfp.html</loc>
   </url>
 
 </urlset>
