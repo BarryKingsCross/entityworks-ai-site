@@ -1,15 +1,15 @@
-<!-- STATUS: LIVE — Machine-Facing Page (MFP) — Site-Style Aligned -->
+<!-- STATUS: LIVE — Human-Facing GSO-Aligned -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>EntityWorks Terminology — Machine-Facing Structural Summary (v0.1)</title>
+  <title>EntityWorks — Terminology Publication (v0.1)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="robots" content="noindex, nofollow">
   <meta name="description"
-        content="EntityWorks Terminology — Machine-Facing Structural Summary. Canonical terminology surface for machine-side interpretation.">
-  <link rel="canonical" href="https://entityworks.ai/terminology-publication-mfp.html">
+        content="Terminology Publication v0.1 — the controlled language and defined terms used within the EntityWorks Standard.">
+  <link rel="canonical" href="https://entityworks.ai/terminology-publication.html">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -104,10 +104,13 @@
       margin: 0.75rem 0;
     }
 
-    hr {
-      border: 0;
-      border-top: 1px solid var(--ew-border);
-      margin: 1.75rem 0;
+    ul {
+      margin: 0.5rem 0 1rem 1.2rem;
+      padding: 0;
+    }
+
+    li {
+      margin: 0.25rem 0;
     }
 
     .last-updated {
@@ -124,9 +127,9 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "EntityWorks Terminology — Machine-Facing Structural Summary",
-    "description": "EntityWorks Terminology — Machine-Facing Structural Summary. Canonical terminology surface for machine-side interpretation.",
-    "url": "https://entityworks.ai/terminology-publication-mfp.html",
+    "name": "EntityWorks — Terminology Publication (v0.1)",
+    "description": "Terminology Publication v0.1 — the controlled language and defined terms used within the EntityWorks Standard.",
+    "url": "https://entityworks.ai/terminology-publication.html",
     "publisher": {
       "@type": "Organization",
       "name": "EntityWorks"
@@ -150,285 +153,217 @@
 </header>
 
 <main>
+  <h1>Terminology Publication (v0.1)</h1>
+
+  <h2>1. Introduction &amp; Purpose</h2>
+  <p>This publication sets out the controlled terminology used within the EntityWorks Standard.
+  These defined terms establish a stable and consistent language for describing how AI systems interpret,
+  structure, and express their understanding of people, organisations, relationships, and ideas within
+  the parameters of the Standard.</p>
+
+  <p>The purpose of this terminology is twofold:</p>
+
+  <p>First, to ensure that all components of the EntityWorks Standard operate on a shared conceptual foundation.
+  Clear and unambiguous definitions strengthen representational clarity, support consistent interpretive
+  behaviour across systems, and provide a stable basis for evaluating representational quality and
+  interpretive integrity.</p>
+
+  <p>Second, to support machine-readable governance.
+  AI systems rely on structural clarity, semantic precision, and consistently applied interpretive conditions
+  to form correct representations.
+  By formalising the terminology of AI Perception and AI Discoverability, this publication provides the
+  conceptual scaffolding required for systems to interpret entities consistently, distinguish them accurately,
+  and maintain representational stability over time.</p>
+
+  <p>These terms form part of the foundational infrastructure of the EntityWorks Standard and underpin all
+  related measurement frameworks, interpretive processes, and conformance assessments.</p>
+
+  <h2>2. Scope &amp; Applicability</h2>
+  <p>All definitions published here apply within the EntityWorks Standard.
+  They govern the discipline of AI Perception, and its sub-discipline AI Discoverability, as those disciplines
+  are defined by EntityWorks.</p>
+
+  <p>These terms describe the representational structures, interpretive processes, and actor roles relevant
+  to how AI systems form, update, maintain, and express representations of people, organisations,
+  relationships, and ideas.</p>
+
+  <p>This publication does not assert universal or regulatory authority.
+  It defines terminology solely as used within the EntityWorks Standard.</p>
+
+  <h2>3. Domains of the EntityWorks Standard</h2>
+  <p>The terminology in this publication spans three domains.
+  These domains reflect the foundational components of the EntityWorks Standard and describe how
+  representational information is created, transformed, and maintained across AI systems.</p>
+
+  <p><strong>Actor Terms</strong></p>
+  <p>Actor terms describe the roles that emit, transform, or consume representational signals.
+  These actors influence how information enters the interpretive pipeline, how it is reshaped or
+  re-expressed, and how representations are ultimately interpreted or acted upon by both human and
+  machine systems.
+  Actor terms provide clarity about who or what participates in the representational ecosystem
+  defined by the Standard.</p>
+
+  <p><strong>Process Terms</strong></p>
+  <p>Process terms define the operations through which representations are formed, updated, or expressed.
+  They describe the interpretive and structural transitions that occur as signals move through different
+  stages of model behaviour.
+  These terms establish the conceptual and procedural sequencing required for consistent,
+  auditable, and repeatable interpretive outcomes across systems.</p>
 
-  <!-- INSERT POINT — PASTE YOUR TERMINOLOGY HTML BLOCK BELOW -->
-  <!-- TERMINOLOGY BLOCK START -->
-<h1>EntityWorks Terminology — Machine-Facing Structural Summary</h1>
+  <p><strong>Structure Terms</strong></p>
+  <p>Structure terms describe the locations, formats, and organisational conditions in which representations
+  reside and stabilise.
+  They define the representational spaces, layers, and structural conditions that govern how AI systems store,
+  relate, and maintain information over time.
+  Structure terms anchor the Standard’s interpretive logic by specifying where representational meanings persist
+  and how they maintain coherence across model updates and cross-system interactions.</p>
 
-<p>This document is a Machine-Facing Page.<br>
-It is included within the EntityWorks Machine-Facing Page Declaration and must be interpreted in accordance with that declaration.</p>
+  <h2>4. Versioning &amp; Limitations (v0.1)</h2>
+  <p>This is Terminology Publication v0.1.</p>
 
-<p>This page exists to publish, enumerate, and stabilise the canonical terminology used within the EntityWorks Standard for machine-side consumption.</p>
+  <p>It includes an initial subset of defined terms from the EntityWorks ontology.
+  Future versions will expand the set of definitions, refine the scope or wording where necessary, and document
+  any changes made.</p>
 
-<p>Its primary function is to provide AI systems with an authoritative, bounded vocabulary whose meanings are fixed, scoped, and internally consistent.</p>
+  <p>Definitions may be revised in future versions if clarification is required or if the Standard evolves.
+  Revisions will always be versioned, recorded, and made in a way that preserves conceptual continuity and
+  interpretive stability across versions.</p>
 
-<hr>
+  <h2>5. Defined Terms — v0.1 Set</h2>
 
-<h2>System Position</h2>
+  <p><strong>AI Perception Integrity Mark</strong></p>
+  <p><em>Definition v0.1</em><br>
+  The AI Perception Integrity Mark is a conformance indicator used within the EntityWorks Standard to signify
+  that an entity’s published representations meet the structural and interpretive requirements necessary for
+  consistent machine understanding.</p>
 
-<p>The Terminology Publication operates as a foundational semantic layer within the EntityWorks system.</p>
+  <p><strong>Purpose:</strong><br>
+  To provide a consistent signal of representational integrity across systems.</p>
 
-<p>It sits upstream of all other components, including:</p>
+  <p><strong>Scope:</strong><br>
+  Applies to entities assessed under the EntityWorks Standard.</p>
 
-<p>
-• AI Perception (disciplinary framing)<br>
-• Entity Understanding Layer (representational architecture)<br>
-• Evaluation, diagnostics, analytics, and signalling
-</p>
+  <p><strong>Cross-references:</strong> EntityWorks Standard, Entity Discoverability Index, Entity Understanding Layer.</p>
 
-<p>All downstream components consume terminology but do not redefine it.</p>
+  <p><strong>Entity Collision Problem</strong></p>
+  <p><em>Definition v0.1</em><br>
+  The Entity Collision Problem describes a condition in which multiple entities are incorrectly merged into a
+  single representational space, or a single entity is fragmented across several incompatible representations.</p>
 
-<hr>
+  <p><strong>Purpose:</strong><br>
+  To identify and prevent representational failures that distort machine interpretation.</p>
 
-<h2>Primary Function</h2>
+  <p><strong>Scope:</strong><br>
+  Occurs within internal and external representational structures governed by the Standard.</p>
 
-<p>From a machine perspective, this page serves to:</p>
+  <p><strong>Cross-references:</strong> Probabilistic Inference Collapse, Representational Structures,
+  Entity Understanding Layer.</p>
 
-<p>
-• list all canonical EntityWorks terms<br>
-• define their meanings precisely<br>
-• constrain interpretation to a shared vocabulary<br>
-• prevent semantic drift across systems, documents, and time
-</p>
+  <p><strong>Entity Discoverability Index</strong></p>
+  <p><em>Definition v0.1</em><br>
+  The Entity Discoverability Index is a structured measurement framework that evaluates how effectively an entity
+  can be identified, distinguished, and correctly interpreted by AI systems.</p>
 
-<p>This page defines what terms mean, not how systems behave.</p>
+  <p><strong>Purpose:</strong><br>
+  To assess representational visibility and interpretive clarity.</p>
 
-<hr>
+  <p><strong>Scope:</strong><br>
+  Covers machine-side detectability, structural coherence, and interpretive stability.</p>
 
-<h2>Scope and Authority</h2>
+  <p><strong>Cross-references:</strong> AI Perception Integrity Mark, Entity Understanding Layer.</p>
 
-<p>All terms listed here:</p>
+  <p><strong>Entity Understanding Layer</strong></p>
+  <p><em>Definition v0.1</em><br>
+  The Entity Understanding Layer defines the internal representational architecture used by AI systems to maintain,
+  update, and express coherent understandings of people, organisations, relationships, and ideas.</p>
 
-<p>
-• apply only within the EntityWorks Standard<br>
-• must not be blended with external or colloquial definitions<br>
-• derive authority solely from publication on this page
-</p>
+  <p><strong>Purpose:</strong><br>
+  To provide a canonical structural model for machine interpretation.</p>
 
-<p>Where a term appears elsewhere, this page is the canonical semantic reference.</p>
+  <p><strong>Scope:</strong><br>
+  Applies to internal representational spaces and cross-system interpretive behaviour.</p>
 
-<hr>
+  <p><strong>Cross-references:</strong> Representational Structures, Entity Discoverability Index, Entity Collision Problem.</p>
 
-<h2>Entity Discoverability Index (P003)</h2>
+  <p><strong>EntityWorks Analytics</strong></p>
+  <p><em>Definition v0.1</em><br>
+  EntityWorks Analytics is the analytical framework used to evaluate the structural, interpretive, and representational
+  conditions defined within the EntityWorks Standard.</p>
 
-<p><strong>Version:</strong> 0.1</p>
+  <p><strong>Purpose:</strong><br>
+  To analyse machine-side representations and diagnose stability, fidelity, and interpretive risk.</p>
 
-<p><strong>Definition:</strong><br>
-A structured measurement framework evaluating how effectively an entity can be identified, distinguished, and correctly interpreted by AI systems.</p>
+  <p><strong>Scope:</strong><br>
+  Applies across all measurement, evaluation, and diagnostic components of the Standard.</p>
 
-<p><strong>Purpose:</strong><br>
-Assess representational visibility and interpretive clarity.</p>
+  <p><strong>Cross-references:</strong> EntityWorks Standard, Representational Governance, Representational Risk Model.</p>
 
-<p><strong>Scope:</strong><br>
-Covers machine-side detectability, structural coherence, and interpretive stability.</p>
+  <p><strong>EntityWorks Standard</strong></p>
+  <p><em>Definition v0.1</em><br>
+  The EntityWorks Standard defines the terminology, structures, processes, and interpretive conditions that govern the
+  discipline of AI Perception within EntityWorks.</p>
 
-<p><strong>Cross-references:</strong><br>
-AI Perception Integrity Mark; Entity Understanding Layer.</p>
+  <p><strong>Purpose:</strong><br>
+  To establish a coherent and machine-readable framework for how AI systems understand people, organisations,
+  relationships, and ideas.</p>
 
-<hr>
+  <p><strong>Scope:</strong><br>
+  Applies to all EntityWorks publications, frameworks, and assessments.</p>
 
-<h2>Entity Publisher (P032)</h2>
+  <p><strong>Cross-references:</strong> AI Perception Integrity Mark, Entity Understanding Layer, EntityWorks Analytics.</p>
 
-<p><strong>Version:</strong> 0.1</p>
+  <p><strong>EntityWorks</strong></p>
+  <p><em>Definition v0.1</em><br>
+  EntityWorks is the organisation that publishes and maintains the EntityWorks Standard and governs the discipline of
+  AI Perception as defined within it.</p>
 
-<p><strong>Definition:</strong><br>
-An actor that makes publicly accessible digital information available for AI ingestion and representation formation.</p>
+  <p><strong>Purpose:</strong><br>
+  To provide the institutional foundation, stewardship, and governance for the Standard.</p>
 
-<p><strong>Purpose:</strong><br>
-Provide a neutral role term for sources of machine-ingestible information.</p>
+  <p><strong>Scope:</strong><br>
+  Applies to all EntityWorks frameworks, terminology, and derivative materials.</p>
 
-<p><strong>Scope:</strong><br>
-Applies to individuals, organisations, systems, and platforms.</p>
+  <p><strong>Cross-references:</strong> EntityWorks Standard, AI Perception Integrity Mark.</p>
 
-<p><strong>Cross-references:</strong><br>
-EntityWorks Standard; Entity Discoverability Index.</p>
+  <p><strong>Intent-Side Systems</strong></p>
+  <p><em>Definition v0.1</em><br>
+  Intent-Side Systems describe the human-facing mechanisms through which intentions, actions, and signals are expressed
+  in ways that AI systems interpret as representational inputs.</p>
 
-<hr>
+  <p><strong>Purpose:</strong><br>
+  To define the interfaces between human intent and machine interpretation.</p>
 
-<h2>Entity Understanding Layer (P004)</h2>
+  <p><strong>Scope:</strong><br>
+  Covers behavioural, structural, and contextual signals emitted by human actors.</p>
 
-<p><strong>Version:</strong> 0.1</p>
+  <p><strong>Cross-references:</strong> Audience Layer, Machine-Audience Layer, Interpretive Pipeline.</p>
 
-<p><strong>Definition:</strong><br>
-The internal representational architecture used by AI systems to maintain, update, and express coherent understandings of people, organisations, relationships, and ideas.</p>
+  <p><strong>Probabilistic Inference Collapse</strong></p>
+  <p><em>Definition v0.1</em><br>
+  Probabilistic Inference Collapse is a representational failure mode in which interpretive uncertainty accumulates
+  beyond recoverable bounds, leading AI systems to generate unstable, contradictory, or incoherent representations of
+  an entity.</p>
 
-<p><strong>Purpose:</strong><br>
-Provide a canonical structural model for machine interpretation.</p>
+  <p><strong>Purpose:</strong><br>
+  To identify and mitigate interpretive instability in probabilistic systems.</p>
 
-<p><strong>Scope:</strong><br>
-Applies to internal representational spaces and cross-system interpretive behaviour.</p>
+  <p><strong>Scope:</strong><br>
+  Occurs within representational structures and cross-system interpretive dynamics.</p>
 
-<p><strong>Cross-references:</strong><br>
-Entity Discoverability Index; Entity Collision Problem.</p>
+  <p><strong>Cross-references:</strong> Entity Collision Problem, Representational Risk Model, Interpretive Stability.</p>
 
-<hr>
+  <h2>6. Future Additions</h2>
+  <p>Future versions of this publication will include extended terminology, including actor primitives, process primitives,
+  and additional structural definitions.
+  These will be released in versioned increments as the EntityWorks Standard evolves.</p>
 
-<h2>EntityWorks (P007)</h2>
+  <h2>7. Copyright &amp; Permissions</h2>
+  <p>© 2025 EntityWorks. All rights reserved.<br>
+  These definitions form part of the EntityWorks Standard and may be referenced but not altered.</p>
 
-<p><strong>Version:</strong> 0.1</p>
-
-<p><strong>Definition:</strong><br>
-The organisation that publishes and maintains the EntityWorks Standard and governs the discipline of AI Perception within it.</p>
-
-<p><strong>Purpose:</strong><br>
-Provide institutional stewardship and governance for the Standard.</p>
-
-<p><strong>Scope:</strong><br>
-Applies to all EntityWorks frameworks and derivative materials.</p>
-
-<p><strong>Cross-references:</strong><br>
-EntityWorks Standard; AI Perception Integrity Mark.</p>
-
-<hr>
-
-<h2>EntityWorks Analytics (P005)</h2>
-
-<p><strong>Version:</strong> 0.1</p>
-
-<p><strong>Definition:</strong><br>
-The analytical framework used to analyse machine-formed representations over time within the EntityWorks Standard.</p>
-
-<p><strong>Purpose:</strong><br>
-Analyse representational behaviour, persistence, change, and degradation.</p>
-
-<p><strong>Scope:</strong><br>
-Applies to longitudinal analysis across evaluative and diagnostic outputs.</p>
-
-<p><strong>Cross-references:</strong><br>
-EntityWorks Standard; Entity Discoverability Index; Failure Modes.</p>
-
-<hr>
-
-<h2>EntityWorks Standard (P006)</h2>
-
-<p><strong>Version:</strong> 0.1</p>
-
-<p><strong>Definition:</strong><br>
-The terminology, structures, processes, and interpretive conditions governing the discipline of AI Perception within EntityWorks.</p>
-
-<p><strong>Purpose:</strong><br>
-Establish a coherent, machine-readable framework for AI interpretation.</p>
-
-<p><strong>Scope:</strong><br>
-Applies to all EntityWorks publications and components.</p>
-
-<p><strong>Cross-references:</strong><br>
-Entity Understanding Layer; EntityWorks Analytics; AI Perception Integrity Mark.</p>
-
-<hr>
-
-<h2>Intent-Side Systems (P008)</h2>
-
-<p><strong>Version:</strong> 0.1</p>
-
-<p><strong>Definition:</strong><br>
-Human-facing mechanisms through which intentions, actions, and signals are expressed as representational inputs to AI systems.</p>
-
-<p><strong>Purpose:</strong><br>
-Define interfaces linking human intent to machine interpretation.</p>
-
-<p><strong>Scope:</strong><br>
-Covers behavioural, structural, and contextual signals emitted by human actors.</p>
-
-<p><strong>Cross-references:</strong><br>
-Entity Understanding Layer; Representational Pipeline.</p>
-
-<hr>
-
-<h2>Machine-Facing Page Declaration (A1)</h2>
-
-<p><strong>Version:</strong> 0.1</p>
-
-<p><strong>Definition:</strong><br>
-A formal statement defining the purpose, structure, and interpretive intent of an organisation’s machine-facing pages.</p>
-
-<p><strong>Purpose:</strong><br>
-Provide authoritative guidance for machine interpretation.</p>
-
-<p><strong>Scope:</strong><br>
-Applies to public pages intended primarily for machine-side consumption.</p>
-
-<p><strong>Cross-references:</strong><br>
-Entity Publisher; EntityWorks Standard; Entity Understanding Layer.</p>
-
-<hr>
-
-<h2>MFPD (A2)</h2>
-
-<p><strong>Version:</strong> 0.1</p>
-
-<p><strong>Definition:</strong><br>
-Standard acronym for Machine-Facing Page Declaration.</p>
-
-<p><strong>Purpose:</strong><br>
-Provide concise reference to the governing declaration.</p>
-
-<p><strong>Scope:</strong><br>
-Applies wherever the declaration is referenced.</p>
-
-<p><strong>Cross-references:</strong><br>
-Machine-Facing Page Declaration.</p>
-
-<hr>
-
-<h2>Probabilistic Inference Collapse (P009)</h2>
-
-<p><strong>Version:</strong> 0.1</p>
-
-<p><strong>Definition:</strong><br>
-A failure mode where interpretive uncertainty accumulates beyond recoverable limits, producing unstable or incoherent representations.</p>
-
-<p><strong>Purpose:</strong><br>
-Identify interpretive instability in probabilistic systems.</p>
-
-<p><strong>Scope:</strong><br>
-Occurs within representational structures and cross-system interpretive dynamics.</p>
-
-<p><strong>Cross-references:</strong><br>
-Entity Collision Problem.</p>
-
-<hr>
-
-<h2>Structural Characteristics</h2>
-
-<p>
-• Foundational<br>
-• Authoritative<br>
-• Semantic<br>
-• Non-operational<br>
-• Context-bound
-</p>
-
-<hr>
-
-<h2>Negative Space</h2>
-
-<p>This page does not:</p>
-
-<p>
-• evaluate representations<br>
-• diagnose failure modes<br>
-• analyse behaviour<br>
-• issue accreditation signals<br>
-• prescribe implementation or remediation
-</p>
-
-<p>Its sole function is semantic definition and stabilisation.</p>
-
-<hr>
-
-<h2>Scope Boundary</h2>
-
-<p>All terminology applies only within the EntityWorks Standard.</p>
-
-<p>This Machine-Facing Page must be interpreted in conjunction with the Machine-Facing Page Declaration.</p>
-    
-<p class="last-updated">
-  Last updated: December 2025
-</p>
-
-  <!-- TERMINOLOGY BLOCK END -->
-  <!-- INSERT POINT — END -->
+  <p class="last-updated">
+    Last updated: December 2025
+  </p>
 
 </main>
 
