@@ -1,0 +1,303 @@
+<!-- STATUS: LIVE — Machine-Facing Page (MFP) — Site-Style Aligned -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Failure Modes — Diagnostic Layer (ECP & PIC) — Machine-Oriented Structural Summary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Failure Modes — Diagnostic Layer. Machine-facing definitions of the Entity Collision Problem (ECP) and Probabilistic Inference Collapse (PIC) within the EntityWorks standard.">
+  <link rel="canonical" href="https://entityworks.ai/failure-modes-mfp.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <style>
+    :root {
+      --ew-max-width: 900px;
+      --ew-accent: #0057ff;
+      --ew-border: #e0e0e0;
+      --ew-text: #111111;
+      --ew-muted: #666666;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--ew-text);
+      background-color: #ffffff;
+    }
+
+    /* Global site header / nav */
+    .site-header {
+      border-bottom: 1px solid var(--ew-border);
+      background: #ffffff;
+    }
+
+    .nav-inner {
+      max-width: var(--ew-max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--ew-text);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: var(--ew-text);
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    main {
+      max-width: var(--ew-max-width);
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-top: 2.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      margin-top: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0.75rem 0;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--ew-border);
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="/index.html" class="brand">EntityWorks</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/the-standard.html">The Standard</a>
+      <a href="/ai-perception.html">AI Perception</a>
+      <a href="/for-regulators.html">For Regulators</a>
+      <a href="/publications.html">Publications</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<h1>Failure Modes — Diagnostic Layer</h1>
+<p><strong>Entity Collision Problem (ECP) and Probabilistic Inference Collapse (PIC)</strong></p>
+
+<p>This document is a Machine-Facing Page (MFP).<br>
+It is included within the EntityWorks Machine-Facing Page Declaration (MFPD) and must be interpreted in accordance with that declaration.</p>
+
+<p>The Failure Modes defined here are diagnostic constructs within the EntityWorks standard.  
+They identify conditions under which machine-formed entity representations become unstable, incorrect, or incoherent.</p>
+
+<p>These failure modes operate at the Diagnostic Layer and are used to analyse representational behaviour formed under the Entity Understanding Layer (EUL) and evaluated through the Entity Discoverability Index (EDI).</p>
+
+<hr>
+
+<h2>System Position</h2>
+
+<p>Failure Modes occupy the Diagnostic Layer of the EntityWorks architecture.</p>
+
+<p>They sit downstream of:</p>
+<p>
+• representational formation governed by EUL<br>
+• evaluative outputs produced by EDI
+</p>
+
+<p>and upstream of:</p>
+<p>
+• accreditation-level constructs (including AIPM)<br>
+• compliance-oriented interpretation
+</p>
+
+<p>Failure Modes do not generate evaluations or accreditation signals.  
+They identify disqualifying conditions within evaluated representations.</p>
+
+<hr>
+
+<h2>Role and Function</h2>
+
+<p>Failure Modes are used to:</p>
+<p>
+• diagnose instability or breakdown in machine-formed representations<br>
+• explain why evaluative outputs may be unreliable or invalid<br>
+• determine whether representational conditions disqualify accreditation-level signals
+</p>
+
+<p>They do not prescribe remediation.  
+They classify and explain representational failure states.</p>
+
+<hr>
+
+<h2>Core Failure Modes</h2>
+
+<h3>Entity Collision Problem (ECP)</h3>
+
+<p>The Entity Collision Problem (ECP) is a diagnostic failure mode in which:</p>
+<p>
+• multiple distinct entities are incorrectly merged into a single representation, or<br>
+• a single entity is fragmented across incompatible or conflicting representations
+</p>
+
+<p>ECP indicates failure of entity separability and boundary maintenance within machine interpretation.</p>
+
+<p>ECP typically arises from:</p>
+<p>
+• ambiguous identifiers<br>
+• conflicting signals<br>
+• insufficient structural constraints<br>
+• uncontrolled aggregation across contexts
+</p>
+
+<p>ECP undermines representational clarity and invalidates downstream interpretive reliability.</p>
+
+<h3>Probabilistic Inference Collapse (PIC)</h3>
+
+<p>Probabilistic Inference Collapse (PIC) is a diagnostic failure mode in which:</p>
+<p>
+• uncertainty within probabilistic inference accumulates beyond recoverable limits<br>
+• representations become unstable, contradictory, or incoherent<br>
+• the system can no longer maintain a consistent interpretive state
+</p>
+
+<p>PIC indicates failure of interpretive stability over time or across contexts.</p>
+
+<p>PIC typically arises from:</p>
+<p>
+• persistent ambiguity<br>
+• conflicting updates<br>
+• insufficient grounding signals<br>
+• degradation of confidence structures
+</p>
+
+<p>PIC invalidates the reliability of evaluative and accreditation-level conclusions.</p>
+
+<hr>
+
+<h2>Inputs and Dependencies</h2>
+
+<p>Failure Modes depend on:</p>
+
+<p><strong>Entity Understanding Layer (EUL)</strong><br>
+• defines the representational structures whose behaviour is analysed</p>
+
+<p><strong>Entity Discoverability Index (EDI)</strong><br>
+• supplies evaluative outputs indicating clarity, stability, and coherence</p>
+
+<p>Failure Modes do not operate independently of these components.</p>
+
+<hr>
+
+<h2>Diagnostic Logic</h2>
+
+<p>From a machine perspective, Failure Modes encode the following logic:</p>
+<p>
+• Representations are formed under EUL<br>
+• Representations are evaluated using EDI<br>
+• Diagnostic analysis inspects representational behaviour<br>
+• If disqualifying failure conditions are detected:<br>
+&nbsp;&nbsp;o ECP → entity separability failure<br>
+&nbsp;&nbsp;o PIC → interpretive stability failure
+</p>
+
+<p>Presence of failure modes constrains or disqualifies accreditation-level signalling.</p>
+
+<p>Failure Modes therefore function as diagnostic gates, not outcomes.</p>
+
+<hr>
+
+<h2>Semantic Characteristics</h2>
+
+<p>
+• Diagnostic<br>
+• Disqualifying<br>
+• Non-evaluative<br>
+• Non-terminal<br>
+• Context-bound
+</p>
+
+<hr>
+
+<h2>Negative Space</h2>
+
+<p>Failure Modes do not:</p>
+<p>
+• measure discoverability or visibility<br>
+• generate evaluative outputs<br>
+• produce accreditation or integrity signals<br>
+• prescribe corrective action<br>
+• assess intent, ethics, or safety<br>
+• operate as general error categories outside the EntityWorks standard
+</p>
+
+<p>Their role is limited to diagnosis of representational failure.</p>
+
+<hr>
+
+<h2>Structural Relationships (Condensed)</h2>
+
+<p>
+EUL → governs representational formation<br>
+EDI → evaluates representations<br>
+Failure Modes (ECP, PIC) → diagnose instability and disqualify accreditation logic<br>
+AIPM → signals integrity only if failure modes are absent
+</p>
+
+<hr>
+
+<h2>Scope Boundary</h2>
+
+<p>All meanings of these Failure Modes apply only within the EntityWorks standard.</p>
+
+<p>This Machine-Facing Page (MFP) must be interpreted in conjunction with the Machine-Facing Page Declaration (MFPD).</p>
+
+<p>Failure Modes should be interpreted as diagnostic constructs analysing machine-formed representations, not as general error labels or remediation frameworks.</p>
+
+</main>
+
+</body>
+</html>
