@@ -64,4 +64,17 @@
     <loc>https://entityworks.ai/failure-modes-mfp.html</loc>
   </url>
 
+  <!-- Newly added Machine-Facing Pages -->
+  <url>
+    <loc>https://entityworks.ai/AI-IARD-mfp.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/MFPD-license-reference-edition-mfp.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/scope-of-entityworks-mfp.html</loc>
+  </url>
+
 </urlset>
