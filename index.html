@@ -1,5 +1,5 @@
 <!-- STATUS: ALIGNED — EntityWorks Positioning Codex -->
-<!-- VERSION: 2025-12-11-INDEX-v5 -->
+<!-- VERSION: 2025-12-30-HOMEPAGE-v6b (STAND-FIRST OPENING) -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
   <meta name="description"
-        content="EntityWorks publishes and maintains the EntityWorks Standard, a structured framework designed to help digital publishers prepare their work for entry into AI systems.">
+        content="EntityWorks operates in the area concerned with how AI systems form, update, and express understanding of people, organisations, relationships, and ideas.">
   <link rel="canonical" href="https://entityworks.ai/">
 
   <!-- Favicon -->
@@ -84,12 +84,14 @@
       font-size: 1.6rem;
       margin-top: 0;
       margin-bottom: 1rem;
+      letter-spacing: -0.01em;
     }
 
     main h2 {
       font-size: 1.35rem;
-      margin-top: 2rem;
+      margin-top: 2.75rem;
       margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
     }
 
     p { margin: 0.75rem 0; }
@@ -99,7 +101,7 @@
       padding: 0;
     }
 
-    li { margin: 0.25rem 0; }
+    li { margin: 0.35rem 0; }
 
     .last-updated {
       font-size: 0.85rem;
@@ -107,6 +109,54 @@
       max-width: var(--ew-max-width);
       margin: 0 auto 0;
       padding: 0 1rem 1.5rem;
+    }
+
+    /* --- Minimal rhythm treatment (no layout redesign) --- */
+
+    main section { margin: 0; }
+    main section + section { margin-top: 2.5rem; }
+
+    /* Foreword/preamble signal */
+    .preamble {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--ew-border);
+    }
+
+    /* Stand-first (Option 1 + touch of Option 2) */
+    .standfirst {
+      font-size: 1.15rem;
+      font-weight: 600;
+      line-height: 1.45;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    /* Subtle paragraph cadence under key definitions */
+    .tight-next p + p { margin-top: 1rem; }
+
+    /* Map cue before scope list */
+    .map-block {
+      padding-top: 0.25rem;
+    }
+    .map-block ul {
+      margin-top: 1rem;
+      padding-top: 0.25rem;
+    }
+
+    /* Optional-branch signal for Explore */
+    .explore-block {
+      padding-top: 0.25rem;
+    }
+    .explore-block ul {
+      margin-top: 0.75rem;
+    }
+
+    /* Calmer closure */
+    .closure-block {
+      padding-top: 0.25rem;
     }
   </style>
 </head>
@@ -127,111 +177,117 @@
 
 <main>
 
-  <section>
-<p>
-  <strong>EntityWorks defines how AI systems are understood once others have to rely on them.</strong>
-</p>
+  <section class="preamble">
+    <p class="standfirst">
+      EntityWorks operates in the area concerned with how AI systems form, update, and express understanding of people, organisations, relationships, and ideas.
+    </p>
 
-<p>
-  As soon as people or organisations who did not build an AI system must depend on what that system understands, informal explanations stop being sufficient. EntityWorks provides a shared interpretive reference that allows such reliance to remain coherent across systems, contexts, and organisations.
-</p>
+    <p>
+      That work is published and maintained as the EntityWorks Standard, a structured body of reference material that sets out the terms, distinctions, and boundaries used to describe this area.
+      The Standard provides a stable point of reference for describing, comparing, and discussing how understanding is represented and communicated by AI systems across contexts.
+      The following material outlines the scope, components, and structure of the EntityWorks Standard and explains how its elements relate to one another.
+    </p>
+  </section>
 
+  <section class="tight-next">
     <h1>The EntityWorks Standard</h1>
+
     <p>
-      The EntityWorks Standard is a structured document designed to help digital publishers prepare their work for entry into AI systems. The Standard brings together definitions, frameworks, and conceptual tools that provide a structured reference for preparing digital material for entry into AI systems. Its focus is on the clear expression of intent in published material and on reducing interpretive gaps that arise when AI systems ingest and act upon that material.
+      The EntityWorks Standard is a coherent reference framework that brings together definitions, frameworks, and conceptual tools for examining how AI systems form, update, and express understanding. It establishes a common vocabulary and a set of distinctions to support consistent description, comparison, and interpretation across AI-system contexts.
     </p>
+
     <p>
-      Within its scope, the Standard addresses the structured preparation of information for AI systems. This includes the clarity of published material, the organisation of machine-visible content, and the use of transparent mechanisms that help reduce representational risk and support consistent interpretation.
-    </p>
-    <p>
-      Machine-Facing Pages and the Machine-Facing Page Declaration form one part of this broader framework. These components are described within the Standard to help organisations classify, document, and disclose the use of pages that exist outside normal human-visible navigation.
+      Within its scope, the Standard addresses how understanding is represented, communicated, and stabilised in relation to people, organisations, relationships, and ideas. This includes the organisation of machine-visible material, the articulation of intent in published content, and the identification of structures that affect interpretive clarity and coherence.
     </p>
   </section>
 
   <section>
     <h2>EntityWorks</h2>
     <p>
-      EntityWorks publishes and maintains the EntityWorks Standard. Its role is to steward the structures, terminology, and conceptual material that support clear and consistent preparation of information for entry into AI systems. EntityWorks oversees versioning, maintains the definitions and frameworks documented within the Standard, and provides explanatory material to help organisations and institutions understand and apply the Standard where relevant to their work.
+      EntityWorks publishes and maintains the EntityWorks Standard. Its role is to steward the structures, terminology, and conceptual material documented within the Standard and to ensure that these materials remain coherent, stable, and clearly articulated as a reference framework.
     </p>
     <p>
-      As the publisher of the Standard, EntityWorks is responsible for ensuring that its material remains stable, clearly documented, and accessible to those who rely on it. This includes managing updates, maintaining the organisation of the content, and supporting the long-term clarity and coherence of the Standard as it develops.
+      EntityWorks oversees versioning, maintains the definitions and frameworks that comprise the Standard, and publishes explanatory material that situates those components in relation to one another. As the publisher of the Standard, EntityWorks is responsible for managing updates, maintaining the organisation of the content, and supporting the long-term clarity and internal consistency of the Standard as it develops.
     </p>
   </section>
 
   <section>
     <h2>Core Concepts</h2>
     <p>
-      The EntityWorks Standard sets out the conceptual foundations that support its framework. These include the terminology, structures, and interpretive tools that the Standard uses to organise its material. Readers can explore the Standard directly to understand how these concepts are defined and how they relate to one another within the wider document.
+      The EntityWorks Standard sets out the conceptual foundations that support its framework. These include the terminology, structures, and interpretive tools used to organise the material within the Standard and to explain how its components relate to one another.
+    </p>
+    <p>
+      Readers can explore the Standard directly to understand how these elements are defined and how they function together as a coherent reference structure.
     </p>
     <p><a href="/the-standard.html">Explore the EntityWorks Standard →</a></p>
   </section>
 
-  <section>
+  <section class="map-block">
     <h2>Scope of the Standard</h2>
     <ul>
-      <li><strong>Interpretive Architecture & Structures</strong><br>Entity Understanding Layer (EUL)</li>
+      <li><strong>Interpretive Architecture and Structures</strong><br>Entity Understanding Layer (EUL)</li>
       <li><strong>Failure Modes Defined in the Standard</strong><br>Entity Collision Problem (ECP)<br>Probabilistic Inference Collapse (PIC)</li>
-      <li><strong>Evaluative & Indexing Components</strong><br>EntityWorks Discoverability Index (EDI)</li>
-      <li><strong>Assurance & Alignment Components</strong><br>AI Perception Integrity Mark (AIPM)</li>
+      <li><strong>Evaluative and Indexing Components</strong><br>EntityWorks Discoverability Index (EDI)</li>
+      <li><strong>Assurance and Alignment Components</strong><br>AI Perception Integrity Mark (AIPM)</li>
       <li><strong>Analytical Tools Developed Under the Standard</strong><br>EntityWorks Analytics</li>
-      <li><strong>Machine-Facing Publishing Components</strong><br>Machine-Facing Pages (MFPs)<br>Machine-Facing Page Declaration (MFPD)</li>
+      <li><strong>Machine-Facing Pages</strong><br>Machine-Facing Page Declaration (MFPD)</li>
     </ul>
   </section>
 
   <section>
-    <h2>Machine-Facing Pages & MFPD</h2>
+    <h2>Machine-Facing Pages and the Machine-Facing Page Declaration</h2>
     <p>
-      Machine-Facing Pages are digital pages that exist outside a site’s normal navigation or human-visible structure. Because they are not commonly encountered by users, their purpose may not be immediately evident. The EntityWorks Standard provides terminology and a proposed structure to help organisations classify these pages and disclose their use clearly and consistently.
+      Machine-Facing Pages are digital pages that exist outside a site’s normal navigation or human-visible structure. Because they are not commonly encountered by users, their purpose may not be immediately evident. The EntityWorks Standard provides terminology and structure for identifying, classifying, and describing the use of such pages in a clear and consistent way.
     </p>
     <p>
-      The Machine-Facing Page Declaration (MFPD) is a short statement that explains why an organisation uses Machine-Facing Pages and what those pages are intended to do. It makes the purpose of this material visible so that AI systems, regulators, and human stakeholders all understand the organisation’s entire digital publishing footprint.
+      The Machine-Facing Page Declaration (MFPD) is a short statement that explains an organisation’s use of Machine-Facing Pages and the role those pages are intended to serve. It provides visibility into material that forms part of an organisation’s digital publishing footprint but does not appear within its human-facing structure.
     </p>
     <p>
-      Within the EntityWorks Standard, the MFPD is documented as a voluntary transparency measure that organisations can use to support clarity and open communication when publishing material that is not typically encountered through a site’s human-facing structure. Within the Standard, the preparation and use of the Machine-Facing Page Declaration (MFPD) is documented as a transparency mechanism for describing the purpose and scope of machine-facing material within a digital publishing environment.
+      Within the EntityWorks Standard, the MFPD is documented as a voluntary transparency mechanism. Its purpose is to support clarity when publishing material that is accessible to automated systems but not ordinarily encountered by human readers.
     </p>
   </section>
 
   <section>
     <h2>Who This Is For</h2>
     <p>
-      The EntityWorks Standard may be relevant to organisations preparing digital material for entry into AI systems, regulators and policy bodies examining how such material is interpreted, practitioners and researchers working with representational systems, and anyone seeking clarity on the structures and terminology used within the Standard.
+      The EntityWorks Standard is intended for organisations that publish digital material consumed by AI systems, regulators and policy bodies examining how such material is interpreted, practitioners and researchers working with representational systems, and others seeking a clear reference for the structures and terminology documented within the Standard.
     </p>
     <p>
-      The material is written to support consistent understanding across these groups and to provide a stable reference for those engaging with its concepts.
+      The material is written to support consistent understanding across these audiences and to provide a stable point of reference when engaging with its concepts.
     </p>
   </section>
 
-  <section>
+  <section class="explore-block">
     <h2>Explore</h2>
     <ul>
       <li><a href="/the-standard.html">The EntityWorks Standard →</a></li>
       <li><a href="/for-regulators.html">For Regulators →</a></li>
       <li><a href="/publications.html">Publications →</a></li>
-      <li><a href="/machine-ground-truth-mfp.html">Machine-Facing Pages & MFPD →</a></li>
+      <li><a href="/machine-ground-truth-mfp.html">Machine-Facing Pages &amp; MFPD →</a></li>
     </ul>
   </section>
 
-  <section>
-    <h2>Stewardship & Versioning</h2>
+  <section class="closure-block">
+    <h2>Stewardship and Versioning</h2>
     <p>
-      EntityWorks is responsible for the accurate, consistent, and ongoing publication of the EntityWorks Standard. This includes maintaining version histories, documenting revisions, and ensuring that updates are presented clearly through supporting material.
+      EntityWorks is responsible for the accurate, consistent, and ongoing publication of the EntityWorks Standard. This includes maintaining version histories, documenting revisions, and ensuring that updates are presented clearly and remain accessible over time.
     </p>
     <p>
-      The aim of this stewardship is to provide a stable reference for organisations, practitioners, and institutions that engage with the concepts documented within the Standard.
+      The purpose of this stewardship is to preserve clarity, continuity, and interpretive stability for organisations, practitioners, and institutions that rely on the material.
     </p>
   </section>
 
-  <section>
+  <section class="closure-block">
     <h2>Contact</h2>
     <p>
-      For enquiries regarding the EntityWorks Standard or its published material, please contact:
+      For enquiries regarding the EntityWorks Standard or its published material, please contact:<br>
       <a href="mailto:hello@entityworks.ai">hello@entityworks.ai</a>
     </p>
   </section>
 
 </main>
 
-<p class="last-updated">Last updated: 11 December 2025</p>
+<p class="last-updated">Last updated: 30 December 2025</p>
 
 <div id="footer"></div>
 <script>
