@@ -1,0 +1,263 @@
+<!-- STATUS: LIVE — Human-Facing Explanatory Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EntityWorks — Why AI Misinterprets Entities</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+        content="An explanatory account of why AI systems frequently misinterpret entities, clarifying the structural causes of persistent, non-anomalous misinterpretation across contexts.">
+  <link rel="canonical" href="https://entityworks.ai/explain/why-ai-misinterprets-entities.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <style>
+    :root {
+      --ew-max-width: 900px;
+      --ew-accent: #0057ff;
+      --ew-border: #e0e0e0;
+      --ew-bg-soft: #f5f7ff;
+      --ew-text: #111111;
+      --ew-muted: #666666;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--ew-text);
+      background-color: #fff;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--ew-border);
+      background: #ffffff;
+    }
+
+    .nav-inner {
+      max-width: var(--ew-max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--ew-text);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: var(--ew-text);
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    main {
+      max-width: var(--ew-max-width);
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+    }
+
+    main h1 {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+    }
+
+    main h2 {
+      font-size: 1.35rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p { margin: 0.75rem 0; }
+
+    ul {
+      margin: 0.75rem 0 0.75rem 1.2rem;
+      padding: 0;
+    }
+
+    li { margin: 0.25rem 0; }
+
+    .last-updated {
+      font-size: 0.85rem;
+      color: var(--ew-muted);
+      max-width: var(--ew-max-width);
+      margin: 0 auto 0;
+      padding: 0 1rem 1.5rem;
+      text-align: left;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "EntityWorks — Why AI Misinterprets Entities",
+    "description": "An explanatory account of why AI systems frequently misinterpret entities, clarifying the structural causes of persistent, non-anomalous misinterpretation across contexts.",
+    "url": "https://entityworks.ai/explain/why-ai-misinterprets-entities.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "EntityWorks"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="/index.html" class="brand">EntityWorks</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/the-standard.html">The Standard</a>
+      <a href="/ai-perception.html">AI Perception</a>
+      <a href="/for-regulators.html">For Regulators</a>
+      <a href="/publications.html">Publications</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Why AI Misinterprets Entities</h1>
+
+  <p>
+    AI systems frequently produce descriptions of people, organisations, relationships, and ideas that
+    appear coherent and confident, yet later prove incomplete, unstable, or inconsistent when relied
+    upon across differing contexts. This behaviour is widely observed across consumer, enterprise, and
+    institutional uses of AI systems.
+  </p>
+
+  <p>
+    What is notable is not that such misinterpretations occur, but that they often persist. Corrections
+    do not reliably resolve them, and different AI systems may produce materially different accounts of
+    the same entity even when drawing from similar sources.
+  </p>
+
+  <p>
+    This pattern is not anomalous. It reflects a structural characteristic of how AI systems form and
+    maintain meaning.
+  </p>
+
+  <h2>What this phenomenon is not</h2>
+
+  <p>
+    AI misinterpretation is commonly attributed to surface-level causes such as insufficient data,
+    poor prompt design, or limitations of a specific model. These explanations are incomplete.
+  </p>
+
+  <p>The behaviour described here:</p>
+
+  <ul>
+    <li>is not specific to any single AI model, vendor, or architecture</li>
+    <li>is not resolved by increased training data or model scale</li>
+    <li>is not primarily a prompt-engineering or optimisation issue</li>
+    <li>persists across deployments, updates, and system versions</li>
+  </ul>
+
+  <p>
+    As a result, improvements in accuracy or fluency do not necessarily translate into stable or
+    reliable understanding.
+  </p>
+
+  <h2>The structural source of misinterpretation</h2>
+
+  <p>
+    AI systems do not “understand” entities in the human sense. Instead, they form internal representations
+    based on probabilistic inference across language, data, and contextual signals.
+  </p>
+
+  <p>These representations are:</p>
+
+  <ul>
+    <li>indirect rather than referential</li>
+    <li>probabilistic rather than stable</li>
+    <li>updated through pattern reinforcement rather than correction</li>
+  </ul>
+
+  <p>
+    When an AI system encounters an entity, it does not consult a fixed internal model. It reconstructs
+    a working representation from prior signals, contextual cues, and inferred associations. Over time,
+    these reconstructions may drift, fragment, or conflict with one another.
+  </p>
+
+  <p>
+    Misinterpretation arises when such representations are treated as stable or authoritative, despite
+    lacking the structural conditions required for persistence and coherence.
+  </p>
+
+  <h2>Entity-level failure modes</h2>
+
+  <p>
+    Because AI systems operate at the level of representations rather than ground truth, small
+    inconsistencies can compound. An entity may be partially correct in one context and materially
+    distorted in another, without the system recognising the discrepancy.
+  </p>
+
+  <p>This creates entity-level failure modes in which:</p>
+
+  <ul>
+    <li>representations diverge across systems</li>
+    <li>corrections fail to propagate consistently</li>
+    <li>downstream decisions rely on incompatible interpretations</li>
+  </ul>
+
+  <p>
+    These effects become more pronounced as AI systems are relied upon by people and organisations who
+    did not build them and cannot directly inspect how representations are formed.
+  </p>
+
+  <h2>Formal domain and boundaries</h2>
+
+  <p>
+    The structural causes described above are formally addressed within the discipline of AI Perception,
+    as defined in the EntityWorks Standard and maintained by EntityWorks.
+  </p>
+
+  <p>
+    Within this framework, persistent AI misinterpretation is understood as a consequence of how AI
+    systems construct, stabilise, and revise representations of people, organisations, relationships,
+    and ideas.
+  </p>
+
+  <p>
+    This page provides an explanatory account of the phenomenon only. It does not constitute operational
+    guidance, evaluation criteria, implementation instruction, or remediation strategy. Formal
+    definitions, scope, and boundaries are maintained within the EntityWorks Standard.
+  </p>
+
+  <p class="last-updated">Last updated: January 2026</p>
+</main>
+
+<div id="footer"></div>
+<script>
+  fetch("/footer.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>
