@@ -52,6 +52,11 @@
     <loc>https://entityworks.ai/explain/who-defines-ai-interpretation.html</loc>
   </url>
 
+  <!-- Canonical concept stubs -->
+  <url>
+    <loc>https://entityworks.ai/concepts/output-origin-uncertainty.html</loc>
+  </url>
+
   <!-- Machine-facing registry / declaration -->
   <url>
     <loc>https://entityworks.ai/machine-facing-pages.html</loc>
