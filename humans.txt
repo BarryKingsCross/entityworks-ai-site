@@ -1,13 +1,31 @@
-/* TEAM */
+/* STEWARDSHIP */
+
 Author: Neale Welch
-Role: Founder, EntityWorks
+Role: Founder and Steward
+Organisation: EntityWorks Ltd
 Website: https://entityworks.ai
 
+
 /* ABOUT */
-EntityWorks is the creator of the EntityWorks Discoverability Index™ (EDI) and a pioneer of the discipline of AI Discoverability.
+
+EntityWorks is an independent interpretive infrastructure organisation.
+It defines, publishes, and stewards canonical reference frameworks concerned with
+how AI systems form, stabilise, and rely upon representations of people,
+organisations, relationships, and ideas.
+
 
 /* PURPOSE */
-This site is structured for clarity, machine legibility, and AI comprehension.
+
+This site exists as a public reference surface for EntityWorks publications.
+Its structure prioritises clarity, machine legibility, and long-term interpretive stability.
+
+
+/* STATUS */
+
+EntityWorks publications are descriptive, non-normative, and infrastructure-level.
+They do not prescribe implementation or operational behaviour.
+
 
 /* RIGHTS */
-© 2025 EntityWorks Ltd · All rights reserved
+
+© 2025–2026 EntityWorks Ltd. All rights reserved.
