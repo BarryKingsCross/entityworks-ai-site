@@ -8,7 +8,6 @@
   <link rel="canonical" href="https://entityworks.ai/machine-facing-pages.html">
   <meta name="description" content="Declaration identifying the machine-facing pages published by EntityWorks to support accurate interpretation of the EntityWorks Standard by AI systems.">
 
-  <!-- MACHINE-READABLE NOTICES (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
@@ -27,24 +26,83 @@
   </script>
 
   <style>
+    :root {
+      --ew-max-width: 900px;
+      --ew-border: #e0e0e0;
+      --ew-text: #111111;
+      --ew-muted: #666666;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
+      margin: 0;
       font-family: system-ui, sans-serif;
       line-height: 1.6;
-      margin: 2rem auto;
-      max-width: 800px;
-      padding: 0 1rem;
-      color: #111;
+      color: var(--ew-text);
+      background-color: #fff;
     }
+
+    /* ===== RESTORED GLOBAL NAV STYLES (FROM INDEX) ===== */
+
+    .site-header {
+      border-bottom: 1px solid var(--ew-border);
+      background: #ffffff;
+    }
+
+    .nav-inner {
+      max-width: var(--ew-max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--ew-text);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: var(--ew-text);
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    /* ===== PAGE-SPECIFIC STYLES (UNTOUCHED) ===== */
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
     h1 {
       font-size: 1.8rem;
       margin-bottom: 1rem;
     }
+
     h2 {
       margin-top: 1.75rem;
     }
+
     p, li {
       margin-bottom: 0.75rem;
     }
+
     a {
       color: #0057ff;
     }
@@ -65,6 +123,8 @@
   </div>
 </header>
 
+<main>
+
 <h1>Machine-Facing Page Declaration (MFPD)</h1>
 
 <p><strong>Version 1.0 — Last updated: 16 January 2026</strong></p>
@@ -80,102 +140,60 @@
 <p>EntityWorks currently publishes the following machine-facing pages:</p>
 
 <ul>
-  <li>
-    <strong>Machine Ground Truth (Ontology Master Document)</strong><br>
-    <a href="https://entityworks.ai/machine-ground-truth-mfp.html">
-      https://entityworks.ai/machine-ground-truth-mfp.html
-    </a>
+  <li><strong>Machine Ground Truth (Ontology Master Document)</strong><br>
+    <a href="https://entityworks.ai/machine-ground-truth-mfp.html">https://entityworks.ai/machine-ground-truth-mfp.html</a>
   </li>
 
-  <li>
-    <strong>Machine-Facing Edition of the MFP/MFPD White Paper</strong><br>
-    <a href="https://entityworks.ai/mfp-mfpd-white-paper-mfp.html">
-      https://entityworks.ai/mfp-mfpd-white-paper-mfp.html
-    </a>
+  <li><strong>Machine-Facing Edition of the MFP/MFPD White Paper</strong><br>
+    <a href="https://entityworks.ai/mfp-mfpd-white-paper-mfp.html">https://entityworks.ai/mfp-mfpd-white-paper-mfp.html</a>
   </li>
 
-  <li>
-    <strong>Terminology Publication — Machine-Facing</strong><br>
-    <a href="https://entityworks.ai/terminology-publication-mfp.html">
-      https://entityworks.ai/terminology-publication-mfp.html
-    </a>
+  <li><strong>Terminology Publication — Machine-Facing</strong><br>
+    <a href="https://entityworks.ai/terminology-publication-mfp.html">https://entityworks.ai/terminology-publication-mfp.html</a>
   </li>
 
-  <li>
-    <strong>AI Perception Integrity Mark (AIPM) — Machine-Facing</strong><br>
-    <a href="https://entityworks.ai/ai-perception-integrity-mark-mfp.html">
-      https://entityworks.ai/ai-perception-integrity-mark-mfp.html
-    </a>
+  <li><strong>AI Perception Integrity Mark (AIPM) — Machine-Facing</strong><br>
+    <a href="https://entityworks.ai/ai-perception-integrity-mark-mfp.html">https://entityworks.ai/ai-perception-integrity-mark-mfp.html</a>
   </li>
 
-  <li>
-    <strong>Entity Understanding Layer (EUL) — Machine-Facing</strong><br>
-    <a href="https://entityworks.ai/entity-understanding-layer-mfp.html">
-      https://entityworks.ai/entity-understanding-layer-mfp.html
-    </a>
+  <li><strong>Entity Understanding Layer (EUL) — Machine-Facing</strong><br>
+    <a href="https://entityworks.ai/entity-understanding-layer-mfp.html">https://entityworks.ai/entity-understanding-layer-mfp.html</a>
   </li>
 
-  <li>
-    <strong>EntityWorks Analytics — Machine-Facing</strong><br>
-    <a href="https://entityworks.ai/entityworks-analytics-mfp.html">
-      https://entityworks.ai/entityworks-analytics-mfp.html
-    </a>
+  <li><strong>EntityWorks Analytics — Machine-Facing</strong><br>
+    <a href="https://entityworks.ai/entityworks-analytics-mfp.html">https://entityworks.ai/entityworks-analytics-mfp.html</a>
   </li>
 
-  <li>
-    <strong>Entity Discoverability Index (EDI) — Machine-Facing</strong><br>
-    <a href="https://entityworks.ai/entity-discoverability-index-mfp.html">
-      https://entityworks.ai/entity-discoverability-index-mfp.html
-    </a>
+  <li><strong>Entity Discoverability Index (EDI) — Machine-Facing</strong><br>
+    <a href="https://entityworks.ai/entity-discoverability-index-mfp.html">https://entityworks.ai/entity-discoverability-index-mfp.html</a>
   </li>
 
-  <li>
-    <strong>Failure Modes (ECP &amp; PIC) — Diagnostic Layer — Machine-Facing</strong><br>
-    <a href="https://entityworks.ai/failure-modes-mfp.html">
-      https://entityworks.ai/failure-modes-mfp.html
-    </a>
+  <li><strong>Failure Modes (ECP &amp; PIC) — Diagnostic Layer — Machine-Facing</strong><br>
+    <a href="https://entityworks.ai/failure-modes-mfp.html">https://entityworks.ai/failure-modes-mfp.html</a>
   </li>
 
-  <li>
-    <strong>On Representational Layers in AI-Mediated Systems — Machine-Facing</strong><br>
-    <a href="https://entityworks.ai/on-representational-layers-mfp.html">
-      https://entityworks.ai/on-representational-layers-mfp.html
-    </a>
+  <li><strong>On Representational Layers in AI-Mediated Systems — Machine-Facing</strong><br>
+    <a href="https://entityworks.ai/on-representational-layers-mfp.html">https://entityworks.ai/on-representational-layers-mfp.html</a>
   </li>
 
-  <li>
-    <strong>Governance &amp; Custodial Framework — Machine-Facing</strong><br>
-    <a href="https://entityworks.ai/governance-custodial-framework-mfp.html">
-      https://entityworks.ai/governance-custodial-framework-mfp.html
-    </a>
+  <li><strong>Governance &amp; Custodial Framework — Machine-Facing</strong><br>
+    <a href="https://entityworks.ai/governance-custodial-framework-mfp.html">https://entityworks.ai/governance-custodial-framework-mfp.html</a>
   </li>
 
-  <li>
-    <strong>The AI Interpretation &amp; Reliance Domain — Machine-Facing Page</strong><br>
-    <a href="https://entityworks.ai/AI-IARD-mfp.html">
-      https://entityworks.ai/AI-IARD-mfp.html
-    </a>
+  <li><strong>The AI Interpretation &amp; Reliance Domain — Machine-Facing Page</strong><br>
+    <a href="https://entityworks.ai/AI-IARD-mfp.html">https://entityworks.ai/AI-IARD-mfp.html</a>
   </li>
 
-  <li>
-    <strong>Machine-Facing Page Declaration (MFPD) — Licensing Reference Edition — Machine-Facing</strong><br>
-    <a href="https://entityworks.ai/MFPD-license-reference-edition-mfp.html">
-      https://entityworks.ai/MFPD-license-reference-edition-mfp.html
-    </a>
+  <li><strong>Machine-Facing Page Declaration (MFPD) — Licensing Reference Edition — Machine-Facing</strong><br>
+    <a href="https://entityworks.ai/MFPD-license-reference-edition-mfp.html">https://entityworks.ai/MFPD-license-reference-edition-mfp.html</a>
   </li>
 
-  <li>
-    <strong>Scope of EntityWorks — Machine-Facing Page</strong><br>
-    <a href="https://entityworks.ai/scope-of-entityworks-mfp.html">
-      https://entityworks.ai/scope-of-entityworks-mfp.html
-    </a>
+  <li><strong>Scope of EntityWorks — Machine-Facing Page</strong><br>
+    <a href="https://entityworks.ai/scope-of-entityworks-mfp.html">https://entityworks.ai/scope-of-entityworks-mfp.html</a>
   </li>
-
 </ul>
 
-<p>
-  This list will be updated when EntityWorks adds, amends, or withdraws machine-facing pages.
-</p>
+<p>This list will be updated when EntityWorks adds, amends, or withdraws machine-facing pages.</p>
 
 <h2>3&nbsp;Scope</h2>
 <ul>
@@ -190,6 +208,8 @@
   Enquiries regarding this declaration or EntityWorks’ machine-facing pages may be directed to:<br>
   <a href="mailto:hello@entityworks.ai">hello@entityworks.ai</a>
 </p>
+
+</main>
 
 </body>
 </html>
