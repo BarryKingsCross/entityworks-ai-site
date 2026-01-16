@@ -64,6 +64,10 @@
 
   <!-- Machine-Facing Pages (MFPs) -->
   <url>
+    <loc>https://entityworks.ai/governance-custodial-framework-mfp.html</loc>
+  </url>
+
+  <url>
     <loc>https://entityworks.ai/machine-ground-truth-mfp.html</loc>
   </url>
 
