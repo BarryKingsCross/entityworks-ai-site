@@ -112,4 +112,53 @@
     <loc>https://entityworks.ai/scope-of-entityworks-mfp.html</loc>
   </url>
 
+  <!-- Definition of Record — Human-Facing Canonical Pages -->
+  <url>
+    <loc>https://entityworks.ai/ai-discoverability-definition.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entity-understanding-layer-definition.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entity-collision-problem-definition.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/probabilistic-inference-collapse-definition.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/ai-perception-integrity-mark-definition.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/ai-mediated-representation-risk-definition.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/output-origin-uncertainty-definition.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entity-discoverability-index-definition.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entityworks-analytics-definition.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/ai-interpretation-and-reliance-domain-definition.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/machine-facing-pages-definition.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/machine-facing-page-declaration-definition.html</loc>
+  </url>
+
 </urlset>
