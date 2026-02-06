@@ -22,6 +22,11 @@
     <loc>https://entityworks.ai/publications.html</loc>
   </url>
 
+    <!-- Interpretive Layer (human-facing, canonical publication) -->
+  <url>
+    <loc>https://entityworks.ai/interpretive-layer.html</loc>
+  </url>
+
   <!-- Origin and scope reference (human-facing, indexable) -->
   <url>
     <loc>https://entityworks.ai/machine-facing-pages-origin.html</loc>
