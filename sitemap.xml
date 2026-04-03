@@ -57,13 +57,17 @@
     <loc>https://entityworks.ai/explain/who-defines-ai-interpretation.html</loc>
   </url>
 
-  <!-- NEW: OOU / detection cluster -->
+  <!-- OOU / detection cluster -->
   <url>
     <loc>https://entityworks.ai/explain/can-ai-writing-be-detected.html</loc>
   </url>
 
   <url>
     <loc>https://entityworks.ai/explain/why-ai-detection-doesnt-work-structural-explanation.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/explain/the-end-of-clear-authorship-in-ai-mediated-writing.html</loc>
   </url>
 
   <!-- Canonical concept stubs -->
