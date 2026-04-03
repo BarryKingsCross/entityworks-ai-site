@@ -22,7 +22,7 @@
     <loc>https://entityworks.ai/publications.html</loc>
   </url>
 
-    <!-- Interpretive Layer (human-facing, canonical publication) -->
+  <!-- Interpretive Layer (human-facing, canonical publication) -->
   <url>
     <loc>https://entityworks.ai/interpretive-layer.html</loc>
   </url>
@@ -55,6 +55,15 @@
 
   <url>
     <loc>https://entityworks.ai/explain/who-defines-ai-interpretation.html</loc>
+  </url>
+
+  <!-- NEW: OOU / detection cluster -->
+  <url>
+    <loc>https://entityworks.ai/explain/can-ai-writing-be-detected.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/explain/why-ai-detection-doesnt-work-structural-explanation.html</loc>
   </url>
 
   <!-- Canonical concept stubs -->
