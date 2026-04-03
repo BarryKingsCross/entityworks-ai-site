@@ -1,0 +1,336 @@
+<!-- STATUS: LIVE — Human-Facing Explanatory Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EntityWorks — Can AI Writing Be Detected?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+        content="A structural explanation of whether AI-generated writing can be detected, introducing Output Origin Uncertainty (OOU) and the limits of text-only detection.">
+  <link rel="canonical" href="https://entityworks.ai/explain/can-ai-writing-be-detected.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <style>
+    :root {
+      --ew-max-width: 900px;
+      --ew-accent: #0057ff;
+      --ew-border: #e0e0e0;
+      --ew-bg-soft: #f5f7ff;
+      --ew-text: #111111;
+      --ew-muted: #666666;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--ew-text);
+      background-color: #fff;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--ew-border);
+      background: #ffffff;
+    }
+
+    .nav-inner {
+      max-width: var(--ew-max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--ew-text);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: var(--ew-text);
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    main {
+      max-width: var(--ew-max-width);
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+    }
+
+    main h1 {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+    }
+
+    main h2 {
+      font-size: 1.35rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p { margin: 0.75rem 0; }
+
+    ul {
+      margin: 0.5rem 0 1rem 1.25rem;
+      padding-left: 1rem;
+    }
+
+    li {
+      margin: 0.25rem 0;
+    }
+
+    .last-updated {
+      font-size: 0.85rem;
+      color: var(--ew-muted);
+      max-width: var(--ew-max-width);
+      margin: 0 auto 0;
+      padding: 0 1rem 1.5rem;
+      text-align: left;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "EntityWorks — Can AI Writing Be Detected?",
+    "description": "A structural explanation of whether AI-generated writing can be detected, introducing Output Origin Uncertainty (OOU) and the limits of text-only detection.",
+    "url": "https://entityworks.ai/explain/can-ai-writing-be-detected.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "EntityWorks"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="/index.html" class="brand">EntityWorks</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/the-standard.html">The Standard</a>
+      <a href="/ai-perception.html">AI Perception</a>
+      <a href="/for-regulators.html">For Regulators</a>
+      <a href="/publications.html">Publications</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Can AI Writing Be Detected?</h1>
+
+  <h2>The Short Answer</h2>
+
+  <p>AI writing cannot be reliably identified from the text alone.</p>
+
+  <p>
+    Once a piece of writing exists without a verifiable record of how it was produced, there is no method that can determine with certainty whether it was written by a human, an AI system, or some combination of both.
+  </p>
+
+  <h2>Why Detection Feels Possible</h2>
+
+  <p>Detection tools exist, and they sometimes appear to work.</p>
+
+  <p>They analyse features such as:</p>
+
+  <ul>
+    <li>word choice</li>
+    <li>sentence structure</li>
+    <li>statistical patterns</li>
+    <li>predictability of phrasing</li>
+  </ul>
+
+  <p>
+    From these signals, they assign probabilities: likely AI, possibly human, or similar classifications.
+  </p>
+
+  <p>
+    In controlled conditions for example, unedited outputs from known models, these tools can show reasonable accuracy.
+  </p>
+
+  <p>
+    This creates the impression that authorship can be inferred from the text itself.
+  </p>
+
+  <h2>The Structural Limitation</h2>
+
+  <p>The difficulty is not primarily technical. It is structural.</p>
+
+  <p>A piece of text does not contain a record of its own origin.</p>
+
+  <p>
+    The observable properties of writing — vocabulary, grammar, style — describe what the text is, not how it was produced. Those properties can be generated by:
+  </p>
+
+  <ul>
+    <li>a human writing independently</li>
+    <li>an AI system generating text</li>
+    <li>a human editing or refining AI output</li>
+    <li>multiple iterations of both</li>
+  </ul>
+
+  <p>
+    Because these processes can produce overlapping outputs, there is no feature or combination of features that uniquely corresponds to one origin.
+  </p>
+
+  <p>Detection systems therefore rely on correlations, not direct evidence.</p>
+
+  <p>And correlations are:</p>
+
+  <ul>
+    <li>context-dependent</li>
+    <li>model-dependent</li>
+    <li>sensitive to editing</li>
+    <li>unstable over time</li>
+  </ul>
+
+  <p>
+    They can indicate patterns, but they cannot establish origin with reliability.
+  </p>
+
+  <h2>Output Origin Uncertainty</h2>
+
+  <p>
+    This condition can be described as <a href="/output-origin-uncertainty-definition.html">Output Origin Uncertainty (OOU)</a>.
+  </p>
+
+  <p>OOU refers to a simple structural fact:</p>
+
+  <p>
+    Once the chain of production is not preserved, the origin of a text cannot be recovered from the text alone.
+  </p>
+
+  <p>
+    This is not a limitation of current tools that will be resolved by scale or refinement. It arises from the relationship between production and observation.
+  </p>
+
+  <p>The output does not encode its own history.</p>
+
+  <h2>Why “Better Detection” Doesn’t Solve It</h2>
+
+  <p>It is reasonable to expect detection systems to improve.</p>
+
+  <p>They may:</p>
+
+  <ul>
+    <li>identify new statistical patterns</li>
+    <li>become more accurate on specific models</li>
+    <li>reduce error rates in controlled scenarios</li>
+  </ul>
+
+  <p>
+    However, these improvements do not remove the underlying constraint.
+  </p>
+
+  <p>
+    As models evolve, and as human and AI writing continue to overlap, any pattern used for detection can be reproduced, avoided, or altered through editing.
+  </p>
+
+  <p>
+    This means detection remains probabilistic and conditional, rather than definitive.
+  </p>
+
+  <h2>What About Watermarking and Provenance?</h2>
+
+  <p>
+    There is an important distinction between inferring origin from text alone, and recording or embedding origin during generation.
+  </p>
+
+  <p>
+    Techniques such as watermarking or cryptographic provenance aim to attach origin information to outputs at the point of creation.
+  </p>
+
+  <p>These approaches can be useful in controlled environments.</p>
+
+  <p>However, they depend on:</p>
+
+  <ul>
+    <li>the generating system implementing them</li>
+    <li>the signal remaining intact</li>
+    <li>the output not being modified or transformed</li>
+  </ul>
+
+  <p>
+    Once text is edited, paraphrased, or re-used, these signals can be weakened or removed.
+  </p>
+
+  <p>
+    Crucially, these systems do not change the core condition:
+  </p>
+
+  <p>
+    The text itself does not inherently contain reliable evidence of its origin.
+  </p>
+
+  <p>
+    They introduce external or injected signals, rather than enabling origin to be inferred from the text as such.
+  </p>
+
+  <h2>Practical Implications</h2>
+
+  <p>In practice, this means:</p>
+
+  <ul>
+    <li>Detection tools produce probabilistic assessments, not proof</li>
+    <li>False positives and false negatives are unavoidable</li>
+    <li>Edited or hybrid text quickly becomes indistinguishable</li>
+    <li>Short passages are especially difficult to classify</li>
+  </ul>
+
+  <p>
+    In contexts where origin matters — education, research, professional work — the output alone can no longer serve as unambiguous evidence of human capability.
+  </p>
+
+  <hr>
+
+  <section aria-labelledby="related-material">
+    <h2 id="related-material">Related Material</h2>
+    <p>This explanatory note relates to the formal definition of Output Origin Uncertainty and the wider EntityWorks Standard.</p>
+    <ul>
+      <li><a href="/output-origin-uncertainty-definition.html">Output Origin Uncertainty (OOU) — Definition of Record</a></li>
+      <li><a href="https://doi.org/10.5281/zenodo.19001500" target="_blank" rel="noopener">Canonical DOI for Output Origin Uncertainty (OOU)</a></li>
+      <li><a href="/the-standard.html">The EntityWorks Standard</a></li>
+      <li><a href="/entity-collision-problem-definition.html">Entity Collision Problem (ECP) — Definition of Record</a></li>
+      <li><a href="/entity-understanding-layer-definition.html">Entity Understanding Layer (EUL) — Definition of Record</a></li>
+    </ul>
+  </section>
+
+  <p class="last-updated">Last updated: April 2026</p>
+</main>
+
+<div id="footer"></div>
+<script>
+  fetch("/footer.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>
