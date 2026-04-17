@@ -1,0 +1,391 @@
+<!-- STATUS: LIVE — Human-Facing Bridge Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Who Is Interpreting AI? | EntityWorks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+        content="Who is interpreting AI? This page explains the difference between machine-side output generation and human-side interpretation, and how this is formally understood within the EntityWorks Standard.">
+  <link rel="canonical" href="https://entityworks.ai/explain/who-is-interpreting-ai.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <style>
+    :root {
+      --ew-max-width: 900px;
+      --ew-accent: #0057ff;
+      --ew-border: #e0e0e0;
+      --ew-bg-soft: #f5f7ff;
+      --ew-text: #111111;
+      --ew-muted: #666666;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--ew-text);
+      background-color: #fff;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--ew-border);
+      background: #ffffff;
+    }
+
+    .nav-inner {
+      max-width: var(--ew-max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--ew-text);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: var(--ew-text);
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    main {
+      max-width: var(--ew-max-width);
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+    }
+
+    main h1 {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+    }
+
+    main h2 {
+      font-size: 1.35rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    main h3 {
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p { margin: 0.75rem 0; }
+
+    ul {
+      margin: 0.5rem 0 1rem 1.2rem;
+      padding: 0;
+    }
+
+    li { margin: 0.25rem 0; }
+
+    .last-updated {
+      font-size: 0.85rem;
+      color: var(--ew-muted);
+      max-width: var(--ew-max-width);
+      margin: 0 auto 0;
+      padding: 0 1rem 1.5rem;
+      text-align: left;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Who Is Interpreting AI?",
+    "description": "Who is interpreting AI? This page explains the difference between machine-side output generation and human-side interpretation, and how this is formally understood within the EntityWorks Standard.",
+    "author": {
+      "@type": "Organization",
+      "name": "EntityWorks"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "EntityWorks"
+    },
+    "mainEntityOfPage": "https://entityworks.ai/explain/who-is-interpreting-ai.html"
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="/index.html" class="brand">EntityWorks</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/the-standard.html">The Standard</a>
+      <a href="/ai-perception.html">AI Perception</a>
+      <a href="/for-regulators.html">For Regulators</a>
+      <a href="/publications.html">Publications</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Who Is Interpreting AI?</h1>
+
+  <h2>Why this question arises</h2>
+
+  <p>
+    When people describe an AI system as “interpreting” information, they usually assume that the system itself is understanding input and forming meaning.
+  </p>
+
+  <p>
+    However, this assumption combines two different processes.
+  </p>
+
+  <p>
+    Every interaction with an AI system involves both:
+  </p>
+
+  <ul>
+    <li>the generation of outputs by the system</li>
+    <li>the interpretation of those outputs by a human</li>
+  </ul>
+
+  <p>
+    These processes occur together, but they are not the same.
+  </p>
+
+  <h2>Two distinct processes</h2>
+
+  <h3>1. Machine-side process</h3>
+
+  <p>
+    The AI system:
+  </p>
+
+  <ul>
+    <li>processes input through a trained model</li>
+    <li>activates internal patterns based on prior data</li>
+    <li>generates an output aligned with those patterns</li>
+  </ul>
+
+  <p>
+    This is not interpretation in a human sense. It is the formation and expression of internal representations.
+  </p>
+
+  <h3>2. Human-side process</h3>
+
+  <p>
+    The user:
+  </p>
+
+  <ul>
+    <li>reads the output</li>
+    <li>assigns meaning to it</li>
+    <li>interprets it as if it reflects understanding or intent</li>
+  </ul>
+
+  <p>
+    This is interpretation in the conventional sense.
+  </p>
+
+  <p>
+    These processes are distinct, even though they appear unified during interaction.
+  </p>
+
+  <h2>Where confusion occurs</h2>
+
+  <p>
+    Confusion arises when these two processes are treated as a single act of interpretation.
+  </p>
+
+  <p>
+    Because AI outputs are often fluent and coherent, users naturally interpret them as meaningful. This leads to the assumption that the AI system has already interpreted the input.
+  </p>
+
+  <p>
+    In practice:
+  </p>
+
+  <ul>
+    <li>the AI system generates an output based on internal representations</li>
+    <li>the human user interprets that output as meaningful</li>
+  </ul>
+
+  <p>
+    This creates a misattribution of interpretation from the human to the system.
+  </p>
+
+  <h2>Why this distinction matters</h2>
+
+  <p>
+    When interpretation is attributed to the system rather than the user, several issues follow.
+  </p>
+
+  <p>
+    For example:
+  </p>
+
+  <ul>
+    <li>outputs may be treated as if they reflect stable understanding</li>
+    <li>confidence in responses may be mistaken for correctness</li>
+    <li>inconsistencies may be overlooked</li>
+  </ul>
+
+  <p>
+    These effects do not arise from random failure. They arise from how interpretation is assigned.
+  </p>
+
+  <h2>When interpretation breaks down</h2>
+
+  <p>
+    Because interpretation occurs on the human side, different users may assign different meanings to the same output.
+  </p>
+
+  <p>
+    This can lead to situations where:
+  </p>
+
+  <ul>
+    <li>different users interpret the same response differently</li>
+    <li>the same user assigns different meanings in different contexts</li>
+    <li>outputs are treated as authoritative despite ambiguity</li>
+  </ul>
+
+  <p>
+    These effects arise from how meaning is assigned by the human user.
+  </p>
+
+  <p>
+    Separately, the AI system’s internal representations may also be unstable. This can lead to outputs that shift, conflict, or fail to consistently represent the same underlying entity or concept.
+  </p>
+
+  <p>
+    This can result in:
+  </p>
+
+  <ul>
+    <li>conflicting outputs across interactions</li>
+    <li>inconsistent descriptions of the same subject</li>
+    <li>apparent contradictions in responses</li>
+  </ul>
+
+  <p>
+    Within the EntityWorks Standard, this system-level instability is described as the <a href="https://entityworks.ai/entity-collision-problem-definition.html">Entity Collision Problem</a>.
+  </p>
+
+  <p>
+    It occurs when distinct real-world entities, or different aspects of the same entity, are represented in overlapping or conflicting ways within a model.
+  </p>
+
+  <h2>How this is formally understood</h2>
+
+  <p>
+    Within the EntityWorks Standard, the machine-side process is addressed within the discipline of <a href="https://entityworks.ai/ai-perception-definition.html">AI Perception</a>.
+  </p>
+
+  <p>
+    AI Perception describes how AI systems:
+  </p>
+
+  <ul>
+    <li>form representations</li>
+    <li>update those representations</li>
+    <li>express them through outputs</li>
+  </ul>
+
+  <p>
+    Human interpretation operates alongside this process, but is not part of the system itself.
+  </p>
+
+  <p>
+    Recognising this distinction clarifies what is happening during AI interaction.
+  </p>
+
+  <p>
+    These definitions apply within the scope of the EntityWorks Standard and do not prescribe usage outside that framework.
+  </p>
+
+  <h2>A clearer way to think about interpretation</h2>
+
+  <p>
+    Rather than asking whether an AI system is interpreting information, it is more accurate to distinguish between:
+  </p>
+
+  <ul>
+    <li>the generation of outputs by the system</li>
+    <li>the interpretation of those outputs by the user</li>
+  </ul>
+
+  <p>
+    A useful way to approach this is:
+  </p>
+
+  <p>
+    <strong>what representations is the system expressing, and how am I interpreting them?</strong>
+  </p>
+
+  <p>
+    This separation makes it possible to:
+  </p>
+
+  <ul>
+    <li>better understand how meaning is assigned</li>
+    <li>identify where misunderstandings arise</li>
+    <li>avoid attributing human interpretation to systems that do not possess it</li>
+  </ul>
+
+  <h2>Why this matters in practice</h2>
+
+  <p>
+    Understanding who is interpreting AI helps to reduce over-reliance and improve judgement.
+  </p>
+
+  <p>
+    It becomes possible to:
+  </p>
+
+  <ul>
+    <li>recognise the role of human interpretation in assigning meaning</li>
+    <li>understand why different interpretations occur</li>
+    <li>evaluate outputs more carefully</li>
+  </ul>
+
+  <p>
+    This provides a more stable basis for working with AI systems and interpreting their outputs.
+  </p>
+
+  <p class="last-updated">Last updated: April 2026</p>
+</main>
+
+<div id="footer"></div>
+<script>
+  fetch("/footer.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>
