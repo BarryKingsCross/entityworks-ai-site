@@ -1,0 +1,338 @@
+<!-- STATUS: LIVE — Human-Facing Bridge Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>What Does AI Interpretation Actually Mean? | EntityWorks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+        content="What does AI interpretation actually mean? This page explains why AI outputs appear meaningful, what is actually happening, and how this is formally understood within the EntityWorks Standard.">
+  <link rel="canonical" href="https://entityworks.ai/explain/what-does-ai-interpretation-actually-mean.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <style>
+    :root {
+      --ew-max-width: 900px;
+      --ew-accent: #0057ff;
+      --ew-border: #e0e0e0;
+      --ew-bg-soft: #f5f7ff;
+      --ew-text: #111111;
+      --ew-muted: #666666;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--ew-text);
+      background-color: #fff;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--ew-border);
+      background: #ffffff;
+    }
+
+    .nav-inner {
+      max-width: var(--ew-max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--ew-text);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: var(--ew-text);
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    main {
+      max-width: var(--ew-max-width);
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+    }
+
+    main h1 {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+    }
+
+    main h2 {
+      font-size: 1.35rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p { margin: 0.75rem 0; }
+
+    ul {
+      margin: 0.5rem 0 1rem 1.2rem;
+      padding: 0;
+    }
+
+    li { margin: 0.25rem 0; }
+
+    .last-updated {
+      font-size: 0.85rem;
+      color: var(--ew-muted);
+      max-width: var(--ew-max-width);
+      margin: 0 auto 0;
+      padding: 0 1rem 1.5rem;
+      text-align: left;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What Does AI Interpretation Actually Mean?",
+    "description": "What does AI interpretation actually mean? This page explains why AI outputs appear meaningful, what is actually happening, and how this is formally understood within the EntityWorks Standard.",
+    "author": {
+      "@type": "Organization",
+      "name": "EntityWorks"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "EntityWorks"
+    },
+    "mainEntityOfPage": "https://entityworks.ai/explain/what-does-ai-interpretation-actually-mean.html"
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="/index.html" class="brand">EntityWorks</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/the-standard.html">The Standard</a>
+      <a href="/ai-perception.html">AI Perception</a>
+      <a href="/for-regulators.html">For Regulators</a>
+      <a href="/publications.html">Publications</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>What Does AI Interpretation Actually Mean?</h1>
+
+  <h2>Why people ask this question</h2>
+
+  <p>
+    Most people asking “What does AI interpretation actually mean?” are not looking for a simple definition.
+  </p>
+
+  <p>
+    They are trying to resolve a gap.
+  </p>
+
+  <p>
+    AI systems often produce outputs that feel fluent, coherent, and meaningful. They appear to understand questions, explain ideas, and respond with confidence. However, this behaviour is not always consistent.
+  </p>
+
+  <p>
+    The same question may produce different answers. Small changes in wording can lead to different outcomes. Responses may sound correct, even when they are not.
+  </p>
+
+  <p>
+    This creates uncertainty about what “interpretation” actually means in this context.
+  </p>
+
+  <h2>The source of the misunderstanding</h2>
+
+  <p>
+    The phrase “AI interpretation” suggests that AI systems interpret meaning in a similar way to humans.
+  </p>
+
+  <p>
+    This is not the case.
+  </p>
+
+  <p>
+    AI systems do not:
+  </p>
+
+  <ul>
+    <li>understand meaning</li>
+    <li>form intentions</li>
+    <li>interpret information consciously</li>
+  </ul>
+
+  <p>
+    Instead, they generate outputs based on patterns learned from data.
+  </p>
+
+  <p>
+    Because those outputs are often coherent, it is easy to assume that meaning has been understood. This creates a misleading impression of how interpretation works.
+  </p>
+
+  <h2>What is actually happening</h2>
+
+  <p>
+    When an AI system appears to interpret input, it is:
+  </p>
+
+  <ul>
+    <li>processing that input through a trained model</li>
+    <li>activating internal patterns based on prior data</li>
+    <li>generating an output that aligns with those patterns</li>
+  </ul>
+
+  <p>
+    The meaning is not retrieved from a stable internal model. It is constructed dynamically based on context.
+  </p>
+
+  <p>
+    This is why:
+  </p>
+
+  <ul>
+    <li>outputs can vary between interactions</li>
+    <li>similar inputs can produce different responses</li>
+    <li>results can shift with small changes in phrasing</li>
+  </ul>
+
+  <p>
+    The system is not interpreting meaning in a fixed sense. It is generating outputs from a changing internal state.
+  </p>
+
+  <h2>A more precise understanding</h2>
+
+  <p>
+    A more accurate way to understand what “AI interpretation” means is:
+  </p>
+
+  <p>
+    <strong>the formation and expression of internal representations</strong>
+  </p>
+
+  <p>
+    AI systems form representations of people, organisations, relationships, and ideas based on patterns in data.
+  </p>
+
+  <p>
+    These representations are:
+  </p>
+
+  <ul>
+    <li>probabilistic</li>
+    <li>context-dependent</li>
+    <li>not tied to a single stable meaning</li>
+  </ul>
+
+  <p>
+    When an AI system produces an output, it is expressing these representations rather than interpreting meaning in a human sense.
+  </p>
+
+  <h2>How this is formally understood</h2>
+
+  <p>
+    Within the EntityWorks Standard, this process is addressed within the discipline of <a href="https://entityworks.ai/ai-perception-definition.html">AI Perception</a>.
+  </p>
+
+  <p>
+    AI Perception describes how AI systems:
+  </p>
+
+  <ul>
+    <li>form representations</li>
+    <li>update those representations</li>
+    <li>express them through outputs</li>
+  </ul>
+
+  <p>
+    This provides a clearer framework for understanding what is happening when an AI system appears to interpret meaning.
+  </p>
+
+  <p>
+    These definitions apply within the scope of the EntityWorks Standard and do not prescribe usage outside that framework.
+  </p>
+
+  <h2>When meaning becomes unstable</h2>
+
+  <p>
+    Because AI systems rely on internal representations rather than fixed meanings, those representations can become unstable.
+  </p>
+
+  <p>
+    This can lead to:
+  </p>
+
+  <ul>
+    <li>confusion between similar entities</li>
+    <li>inconsistent descriptions of the same subject</li>
+    <li>outputs that do not align with reality</li>
+  </ul>
+
+  <p>
+    Within the EntityWorks Standard, this is described as the <a href="https://entityworks.ai/entity-collision-problem-definition.html">Entity Collision Problem</a>.
+  </p>
+
+  <p>
+    It occurs when representations overlap or conflict, leading to unreliable or contradictory outputs.
+  </p>
+
+  <h2>Why this matters</h2>
+
+  <p>
+    Understanding what AI interpretation actually means changes how AI systems are used and evaluated.
+  </p>
+
+  <p>
+    It becomes possible to:
+  </p>
+
+  <ul>
+    <li>recognise when outputs are likely to be unstable</li>
+    <li>understand why results vary between interactions</li>
+    <li>avoid over-reliance on fluent but unreliable responses</li>
+  </ul>
+
+  <p>
+    This shift moves AI from something that appears to “understand” into something that can be assessed more precisely and used more effectively.
+  </p>
+
+  <p class="last-updated">Last updated: April 2026</p>
+</main>
+
+<div id="footer"></div>
+<script>
+  fetch("/footer.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>
