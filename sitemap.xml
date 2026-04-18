@@ -41,6 +41,7 @@
     <loc>https://entityworks.ai/explain/</loc>
   </url>
 
+  <!-- Existing explain pages -->
   <url>
     <loc>https://entityworks.ai/explain/ai-understanding.html</loc>
   </url>
@@ -55,6 +56,19 @@
 
   <url>
     <loc>https://entityworks.ai/explain/who-defines-ai-interpretation.html</loc>
+  </url>
+
+  <!-- NEW bridge pages -->
+  <url>
+    <loc>https://entityworks.ai/explain/what-is-ai-interpretation.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/explain/what-does-ai-interpretation-actually-mean.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/explain/who-is-interpreting-ai.html</loc>
   </url>
 
   <!-- OOU / detection cluster -->
