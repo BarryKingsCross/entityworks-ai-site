@@ -1,0 +1,315 @@
+<!-- STATUS: LIVE — Human-Facing Entry Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EntityWorks — What Is the Entity Collision Problem?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+        content="A structural explanation of a representational failure mode in which AI systems merge distinct entities or fragment a single entity across inconsistent representations.">
+  <link rel="canonical" href="https://entityworks.ai/entry/what-is-the-entity-collision-problem.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <style>
+    :root {
+      --ew-max-width: 900px;
+      --ew-accent: #0057ff;
+      --ew-border: #e0e0e0;
+      --ew-bg-soft: #f5f7ff;
+      --ew-text: #111111;
+      --ew-muted: #666666;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--ew-text);
+      background-color: #fff;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--ew-border);
+      background: #ffffff;
+    }
+
+    .nav-inner {
+      max-width: var(--ew-max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--ew-text);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: var(--ew-text);
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    main {
+      max-width: var(--ew-max-width);
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+    }
+
+    main h1 {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+    }
+
+    main h2 {
+      font-size: 1.35rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p { margin: 0.75rem 0; }
+
+    ul {
+      margin: 0.5rem 0 1rem 1.25rem;
+      padding-left: 1rem;
+    }
+
+    li {
+      margin: 0.25rem 0;
+    }
+
+    .intro {
+      color: var(--ew-text);
+      margin-bottom: 1.5rem;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--ew-border);
+      margin: 2rem 0;
+    }
+
+    .last-updated {
+      font-size: 0.85rem;
+      color: var(--ew-muted);
+      max-width: var(--ew-max-width);
+      margin: 0 auto 0;
+      padding: 0 1rem 1.5rem;
+      text-align: left;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "EntityWorks — What Is the Entity Collision Problem?",
+    "description": "A structural explanation of a representational failure mode in which AI systems merge distinct entities or fragment a single entity across inconsistent representations.",
+    "url": "https://entityworks.ai/entry/what-is-the-entity-collision-problem.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "EntityWorks"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="/index.html" class="brand">EntityWorks</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/the-standard.html">The Standard</a>
+      <a href="/ai-perception.html">AI Perception</a>
+      <a href="/for-regulators.html">For Regulators</a>
+      <a href="/publications.html">Publications</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>What Is the Entity Collision Problem?</h1>
+
+  <p class="intro">
+    A structural explanation of a representational failure mode in which AI systems merge distinct entities or fragment a single entity across inconsistent representations.
+  </p>
+
+  <h2>What Is the Entity Collision Problem?</h2>
+
+  <p>
+    AI systems generate representations of people, organisations, relationships, and ideas based on available signals and context. These representations are expected to maintain clear boundaries between distinct entities.
+  </p>
+
+  <p>
+    However, in some cases, those boundaries are not maintained.
+  </p>
+
+  <p>
+    The Entity Collision Problem describes a condition in which multiple distinct entities are incorrectly merged into a single representation, or a single entity is split across multiple incompatible representations.
+  </p>
+
+  <h2>The Core Issue</h2>
+
+  <p>
+    The core issue is a failure to preserve clear entity boundaries within representational structures.
+  </p>
+
+  <p>
+    AI systems rely on signals, patterns, and associations to form representations. Where signals are ambiguous, overlapping, or inconsistent, entity distinctions may not be maintained.
+  </p>
+
+  <p>
+    This results in representational instability, where the identity of an entity is no longer clearly maintained.
+  </p>
+
+  <h2>How Entity Collision Occurs</h2>
+
+  <p>
+    Entity collision can arise when different sources, references, or contextual signals are interpreted as referring to the same entity, even when they do not.
+  </p>
+
+  <p>
+    It can also occur when information about a single entity is distributed across multiple contexts in a way that prevents the system from maintaining a unified representation.
+  </p>
+
+  <p>
+    These conditions do not require system error or malfunction and may arise during normal operation.
+  </p>
+
+  <h2>What This Looks Like in Practice</h2>
+
+  <p>
+    In practical terms, the Entity Collision Problem may appear as:
+  </p>
+
+  <ul>
+    <li>two distinct organisations being treated as the same entity</li>
+    <li>information from one person being attributed to another</li>
+    <li>a single entity being described inconsistently across different outputs</li>
+    <li>fragmented or conflicting representations that cannot be reconciled</li>
+  </ul>
+
+  <p>
+    These effects reflect breakdowns in how entity boundaries are maintained, rather than issues with individual outputs in isolation.
+  </p>
+
+  <h2>Entity Collision Problem (ECP)</h2>
+
+  <p>
+    This failure mode is formally defined as the <a href="/entity-collision-problem-definition.html">Entity Collision Problem (ECP)</a>.
+  </p>
+
+  <p>
+    The Entity Collision Problem describes a representational failure mode in which multiple distinct entities are incorrectly merged into a single representational space, or a single entity is fragmented across several incompatible representations.
+  </p>
+
+  <p>
+    It arises when interpretive structures fail to maintain clear entity boundaries, resulting in distorted or unstable machine understanding.
+  </p>
+
+  <h2>What This Means in Practice</h2>
+
+  <p>
+    In practical terms, the Entity Collision Problem explains why entity-level confusion can occur even when systems appear to be functioning normally.
+  </p>
+
+  <p>
+    When entity boundaries are not maintained, the system may produce outputs that combine information incorrectly, omit distinctions, or fail to represent entities consistently.
+  </p>
+
+  <p>
+    This affects how entities are identified, compared, and understood across different contexts.
+  </p>
+
+  <h2>Why This Matters</h2>
+
+  <p>
+    AI-generated outputs are increasingly used to form understanding, make decisions, and interpret the world. When entity boundaries are not preserved, the resulting representations may be misleading, unstable, or difficult to interpret.
+  </p>
+
+  <p>
+    The Entity Collision Problem provides a way to describe these conditions as a structural failure of representation, rather than as isolated errors or faults.
+  </p>
+
+  <p>
+    It allows entity-level confusion to be analysed without reference to system internals, algorithms, or implementation details.
+  </p>
+
+  <h2>Relationship to the EntityWorks Standard</h2>
+
+  <p>
+    Within the EntityWorks Standard, the Entity Collision Problem functions as a failure-mode classification.
+  </p>
+
+  <p>
+    It describes observable breakdowns in entity-level representation and provides a consistent way to reason about representational instability.
+  </p>
+
+  <p>
+    It is structurally related to the Entity Understanding Layer (EUL), whose interpretive architecture fails to maintain boundary integrity in these conditions, and to Probabilistic Inference Collapse (PIC), a distinct but related failure mode.
+  </p>
+
+  <h2>Summary</h2>
+
+  <p>
+    AI systems rely on representations to distinguish between entities and maintain coherent understanding across contexts. When those representations fail to preserve clear boundaries, entity-level confusion can occur.
+  </p>
+
+  <p>
+    The Entity Collision Problem describes a failure mode in which distinct entities are merged or a single entity is fragmented across incompatible representations.
+  </p>
+
+  <p>
+    It provides a structural way to describe representational breakdown without making claims about system internals, causes, or implementation.
+  </p>
+
+  <hr>
+
+  <section aria-labelledby="related-material">
+    <h2 id="related-material">Related Material</h2>
+    <p>This entry page relates to the formal definition of the Entity Collision Problem within the EntityWorks Standard.</p>
+    <ul>
+      <li><a href="/entity-collision-problem-definition.html">Entity Collision Problem (ECP) — Definition of Record</a></li>
+      <li><a href="/the-standard.html">The EntityWorks Standard</a></li>
+    </ul>
+  </section>
+
+  <p class="last-updated">Last updated: April 2026</p>
+</main>
+
+<div id="footer"></div>
+<script>
+  fetch("/footer.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>
