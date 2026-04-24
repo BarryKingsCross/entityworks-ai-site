@@ -88,6 +88,43 @@
     <loc>https://entityworks.ai/explain/the-end-of-clear-authorship-in-ai-mediated-writing.html</loc>
   </url>
 
+    <!-- Entry pages -->
+  <url>
+    <loc>https://entityworks.ai/entry/how-ai-understanding-is-structured.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entry/how-ai-understands-a-person-or-company.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entry/what-is-ai-discoverability.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entry/what-is-ai-perception.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entry/what-is-the-entity-collision-problem.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entry/what-part-of-an-ai-answer-comes-from-the-ai-system.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entry/when-do-people-actually-rely-on-ai-outputs.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entry/why-ai-can-get-your-company-wrong.html</loc>
+  </url>
+
+  <url>
+    <loc>https://entityworks.ai/entry/why-ai-cant-prove-who-wrote-something.html</loc>
+  </url>
+
   <!-- Canonical concept stubs -->
   <url>
     <loc>https://entityworks.ai/concepts/output-origin-uncertainty.html</loc>
